@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/SCSS/style.css?v=2">
+    <link rel="stylesheet" href="SCSS/style.css?v=2">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"> 
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <title>Dormitories</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <title>Change Password</title>
 </head>
 <body>
     <div class="desktop">
@@ -20,25 +22,25 @@
         </div>
         <div class="menu">
             <div class="menu__profile" onclick="menuToggle();">
-               <img src="/Images/ProfileAdam.png" alt="profile image"> 
+               <img src="Images/ProfileAdam.png" alt="profile image"> 
             </div>
                <div class="menu__dropdown">
                    <p>Adam <br><span>ach@weuse.dk<br>Access: Editor</p></span>
                    <hr>
-                    <ul>
-                        <li><img src="/Images/EditIcon.png"><a href="/EditProfile.html">Edit profile</a>
-                        <li><img src="/Images/LockIconWhite.png"><a href="/ChangePassword.html">Edit Password</a>
-                        <li><img src="/Images/LastLoginsWhite.png"><a href="/LastLogins.html">Last Logins</a>
-                        <li><img src="/Images/logoutWhite.png"><a href="">Logout</a>
-                    </li>   
-                </ul>
+                   <ul>
+                        <li><img src="Images/EditIcon.png"><a href="/EditProfile.html">Edit profile</a>
+                        <li><img src="Images/LockIconWhite.png"><a href="ChangePassword.html">Edit Password</a>
+                        <li><img src="Images/LastLoginsWhite.png"><a href="LastLogins.html">Last Logins</a>
+                        <li><img src="Images/logoutWhite.png"><a href="">Logout</a>
+                    </li>     
+                   </ul>
                </div>  
         </div>
         <div class="toggleDark">
             <input type="checkbox" class="toggleDark__checkbox" id="checkbox">
             <label for="checkbox" class="toggleDark__checkboxLabel">
-                <img src="/Images/moonIcon.png" class="toggleDark__moon">
-                <img src="/Images/sunIcon.png" class="toggleDark__sun">
+                <img src="Images/moonIcon.png" class="toggleDark__moon">
+                <img src="Images/sunIcon.png" class="toggleDark__sun">
                 <div class="toggleDark__ball">
                 </div>
             </label>
@@ -46,46 +48,46 @@
     </header>
     <div class="sidemenu-wrapper">
         <nav class="sidemenu">
-            <img src="/Images/WeUseLogo.svg" id="logo"> 
+            <img src="Images/WeUseLogo.svg" id="logo"> 
             <ul>
-                <li><a href="/Dashboard.html"><img src="/Images/DasboardIcon.svg">Dashboard</a></li>
-                <li><a href="#" class="btn--communities"><img src="/Images/PeopleIcon.svg">Communities<span class="fas fa-sort-down first"></span></a></li>
+                <li><a href="Dashboard.html/"><img src="Images/DasboardIcon.svg">Dashboard</a></li>
+                <li><a href="#" class="btn--communities"><img src="Images/PeopleIcon.svg">Communities<span class="fas fa-sort-down first"></span></a></li>
                 <ul class="show--communities">
-                    <li><a href="/HousingAssociation.html">Housing associations</a></li>
-                    <li><a href="/Dormitories.html">Dormitories</a></li>
-                    <li><a href="NewCommunity.html">Add new</a></li>
+                    <li><a href="HousingAssociation.html/">Housing associations</a></li>
+                    <li><a href="Dormitories.html/">Dormitories</a></li>
+                    <li><a href="NewCommunity.html/">Add new</a></li>
                 </ul>
-                <li><a href="/Feedback.html"><img src="/Images/FeedbackIcon.svg">Feedback</a></li>
-                <li><a href="#" class="btn--design "><img src="/Images/heartIcon.svg">Design<span class="fas fa-sort-down second"></span></a></li>
+                <li><a href="Feedback.html/"><img src="Images/FeedbackIcon.svg/">Feedback</a></li>
+                <li><a href="#" class="btn--design "><img src="Images/heartIcon.svg/">Design<span class="fas fa-sort-down second"></span></a></li>
                 <ul class="show--design">
-                    <li><a href="/DesignGuidelines.html">Guidelines</a></li>
-                    <li><a href="/DesignColors.html">Colors</a></li>
-                    <li><a href="/DesignFontFamily.html">Font Family</a></li>
-                    <li><a href="/DesignIllustrations.html">Illustrations</a></li>
-                    <li><a href="/DesignComponents.html">Components</a></li>
+                    <li><a href="DesignGuidelines.html/">Guidelines</a></li>
+                    <li><a href="DesignColors.html/">Colors</a></li>
+                    <li><a href="DesignFontFamily.html/">Font Family</a></li>
+                    <li><a href="DesignIllustrations.html/">Illustrations</a></li>
+                    <li><a href="DesignComponents.html/">Components</a></li>
                 </ul>   
-                <li><a href="#" class="btn--manage"><img src="/Images/ManageIcon.svg">Manage Users<span class="fas fa-sort-down third"></span></a></li>
+                <li><a href="#" class="btn--manage"><img src="Images/ManageIcon.svg">Manage Users<span class="fas fa-sort-down third"></span></a></li>
                     <ul class="show--manage">
-                        <li><a href="CPUsers.html">Users</a></li>
-                        <li><a href="NewCPUsers.html">Add new</a></li>
+                        <li><a href="CPUsers.html/">Users</a></li>
+                        <li><a href="NewCPUsers.html/">Add new</a></li>
                     </ul>
             </ul>
             <ul id="btn__logout">
-                <li><a href="#"><img src="/Images/LogoutIcon.svg">Logout</a></li>
+                <li><a href="#"><img src="Images/LogoutIcon.svg/">Logout</a></li>
             </ul>
         </nav>
     </div>
       <div class="background"></div>
         <div class="mainContent">
             <ul class="breadcrumb">
-                <li><a href="/Dashboard.html">Dashboard</a></li>
+                <li><a href="Dashboard.html/">Dashboard</a></li>
                 <li>Dormitories</li>
             </ul>
             <h2>Dormitories</h2>
             <div>
-            <a href="/NewCommunity.html"><button class="btn--main"> <p>Add New</p> <img src="/Images/PlusIcon.svg"></button></a>
-            <button class="btn--secondary"><p>Filter</p> <img class="btn--lightMode" src="/Images/FilterIcon.svg"><img class="btn--darkMode" src="/Images/filterIconDM.svg"></button>
-            <button class="btn--secondary"><p>Search Housing Association</p> <img class="btn--lightMode" src="/Images/SearchIcon.svg"><img class="btn--darkMode" src="/Images/searchIconDM.svg"></button>
+            <a href="NewCommunity.html/"><button class="btn--main"> <p>Add New</p> <img src="Images/PlusIcon.svg"></button></a>
+            <button class="btn--secondary"><p>Filter</p> <img class="btn--lightMode" src="Images/FilterIcon.svg"><img class="btn--darkMode" src="Images/filterIconDM.svg"></button>
+            <button class="btn--secondary"><p>Search Housing Association</p> <img class="btn--lightMode" src="Images/SearchIcon.svg"><img class="btn--darkMode" src="Images/searchIconDM.svg"></button>
         </div>
          <!-------------::
              Table
@@ -117,8 +119,8 @@
 
             <div class="table">
                 <div class="table__cell--icon">
-                    <a href="#" class="btn-do--light5"><img class="btn--lightMode5" src="/Images/DropDownButtonIcon.svg"></a>
-                    <a href="#" class="btn-do--dark5"><img class="btn--darkMode5" src="/Images/DropDownBtnDM.svg"></a>
+                    <a href="#" class="btn-do--light5"><img class="btn--lightMode5" src="Images/DropDownButtonIcon.svg"></a>
+                    <a href="#" class="btn-do--dark5"><img class="btn--darkMode5" src="Images/DropDownBtnDM.svg"></a>
                 </div>
                 <div class="table__cell">
                     <p>Alssund Kollegiet</p>
@@ -133,10 +135,10 @@
                     <p>7</p>
                 </div>
                 <div class="table__cell--icon">
-                    <a href="/HAUsers.html"><img class="btn--lightMode" src="/Images/ListIcon.svg"><img class="btn--darkMode" src="/Images/listIconDM.svg"></a>
+                    <a href="HAUsers.html/"><img class="btn--lightMode" src="Images/ListIcon.svg"><img class="btn--darkMode" src="Images/listIconDM.svg"></a>
                 </div>
                 <div class="table__cell--icon">
-                    <a href="/EditCommunity.html"><img class="btn--lightMode" src="/Images/EditIconDark.svg"><img class="btn--darkMode" src="/Images/editIconDM.svg"></a>
+                    <a href="EditCommunity.html/"><img class="btn--lightMode" src="Images/EditIconDark.svg"><img class="btn--darkMode" src="Images/editIconDM.svg"></a>
                 </div>
             </div>
             <div class="table__dropDown5">
@@ -194,7 +196,7 @@
                             <p>afdeling 5</p>
                         </div>
                         <div class="table__cell--delete">
-                            <img src="/Images/DeleteIconRed.svg" alt="">
+                            <img src="Images/DeleteIconRed.svg" alt="">
                         </div>
                     </div>
                     <div class="table--new">
@@ -213,7 +215,7 @@
                             <p>afdeling 1</p>
                         </div>
                         <div class="table__cell--delete">
-                            <img src="/Images/DeleteIconRed.svg" alt="">
+                            <img src="Images/DeleteIconRed.svg" alt="">
                         </div>
                     </div>
                     <div class="table--new">
@@ -232,22 +234,22 @@
                             <p>afdeling 9</p>
                         </div>
                         <div class="table__cell--delete">
-                            <img src="/Images/DeleteIconRed.svg">
+                            <img src="Images/DeleteIconRed.svg">
                         </div>
                     </div>  
                     <div class="addNew">
                         <p>Add new department</p>
                         <div class="plusIcon">
-                            <img class="img--item lightMode" src="/Images/PlusCircleIcon.svg" >
-                            <img class="img--item darkMode" src="/Images/PlusIconWhite.svg">
+                            <img class="img--item lightMode" src="Images/PlusCircleIcon.svg" >
+                            <img class="img--item darkMode" src="Images/PlusIconWhite.svg">
                         </div>
                     </div> 
                 </div>
             </div>
             <div class="table">
                 <div class="table__cell--icon">
-                    <a href="#" class="btn-do--light6"><img class="btn--lightMode6" src="/Images/DropDownButtonIcon.svg"></a>
-                    <a href="#" class="btn-do--dark6"><img class="btn--darkMode6" src="/Images/DropDownBtnDM.svg"></a>
+                    <a href="#" class="btn-do--light6"><img class="btn--lightMode6" src="Images/DropDownButtonIcon.svg"></a>
+                    <a href="#" class="btn-do--dark6"><img class="btn--darkMode6" src="Images/DropDownBtnDM.svg"></a>
                 </div>
                 <div class="table__cell">
                     <p>Ungdoms Kollegie</p>
@@ -262,10 +264,10 @@
                     <p>1</p>
                 </div>
                 <div class="table__cell--icon">
-                    <a href="/HAUsers.html"><img class="btn--lightMode" src="/Images/ListIcon.svg"><img class="btn--darkMode" src="/Images/listIconDM.svg"></a>
+                    <a href="HAUsers.html/"><img class="btn--lightMode" src="Images/ListIcon.svg"><img class="btn--darkMode" src="Images/listIconDM.svg"></a>
                 </div>
                 <div class="table__cell--icon">
-                    <a href="/EditCommunity.html"><img class="btn--lightMode" src="/Images/EditIconDark.svg"><img class="btn--darkMode" src="/Images/editIconDM.svg"></a>
+                    <a href="EditCommunity.html/"><img class="btn--lightMode" src="Images/EditIconDark.svg"><img class="btn--darkMode" src="Images/editIconDM.svg"></a>
                 </div>
             </div>
             <div class="table__dropDown6">
@@ -323,7 +325,7 @@
                             <p>afdeling 7</p>
                         </div>
                         <div class="table__cell--delete">
-                            <img src="/Images/DeleteIconRed.svg" alt="">
+                            <img src="Images/DeleteIconRed.svg" alt="">
                         </div>
                     </div>
                     <div class="table--new">
@@ -342,7 +344,7 @@
                             <p>afdeling 51</p>
                         </div>
                         <div class="table__cell--delete">
-                            <img src="/Images/DeleteIconRed.svg" alt="">
+                            <img src="Images/DeleteIconRed.svg" alt="">
                         </div>
                     </div>
                     <div class="table--new">
@@ -361,14 +363,14 @@
                             <p>afdeling 10</p>
                         </div>
                         <div class="table__cell--delete">
-                            <img src="/Images/DeleteIconRed.svg">
+                            <img src="Images/DeleteIconRed.svg">
                         </div>
                     </div>  
                     <div class="addNew">
                         <p>Add new department</p>
                         <div class="plusIcon">
-                            <img class="img--item lightMode" src="/Images/PlusCircleIcon.svg" >
-                            <img class="img--item darkMode" src="/Images/PlusIconWhite.svg">
+                            <img class="img--item lightMode" src="Images/PlusCircleIcon.svg" >
+                            <img class="img--item darkMode" src="Images/PlusIconWhite.svg">
                         </div>
                     </div> 
                 </div>
@@ -376,8 +378,8 @@
             
             <div class="table">
                 <div class="table__cell--icon">
-                    <a href="#" class="btn-do--light7"><img class="btn--lightMode7" src="/Images/DropDownButtonIcon.svg"></a>
-                    <a href="#" class="btn-do--dark7"><img class="btn--darkMode7" src="/Images/DropDownBtnDM.svg"></a>
+                    <a href="#" class="btn-do--light7"><img class="btn--lightMode7" src="Images/DropDownButtonIcon.svg"></a>
+                    <a href="#" class="btn-do--dark7"><img class="btn--darkMode7" src="Images/DropDownBtnDM.svg"></a>
                 </div>
                 <div class="table__cell">
                     <p>Sønderskov Kollegie</p>
@@ -392,10 +394,10 @@
                     <p>4</p>
                 </div>
                 <div class="table__cell--icon">
-                    <a href="/HAUsers.html"><img class="btn--lightMode" src="/Images/ListIcon.svg"><img class="btn--darkMode" src="/Images/listIconDM.svg"></a>
+                    <a href="HAUsers.html/"><img class="btn--lightMode" src="Images/ListIcon.svg"><img class="btn--darkMode" src="Images/listIconDM.svg"></a>
                 </div>
                 <div class="table__cell--icon">
-                    <a href="/EditCommunity.html"><img class="btn--lightMode" src="/Images/EditIconDark.svg"><img class="btn--darkMode" src="/Images/editIconDM.svg"></a>
+                    <a href="EditCommunity.html/"><img class="btn--lightMode" src="Images/EditIconDark.svg"><img class="btn--darkMode" src="Images/editIconDM.svg"></a>
                 </div>
             </div>
             <div class="table__dropDown7">
@@ -453,7 +455,7 @@
                             <p>afdeling 23</p>
                         </div>
                         <div class="table__cell--delete">
-                            <img src="/Images/DeleteIconRed.svg" alt="">
+                            <img src="Images/DeleteIconRed.svg" alt="">
                         </div>
                     </div>
                     <div class="table--new">
@@ -472,7 +474,7 @@
                             <p>afdeling 1</p>
                         </div>
                         <div class="table__cell--delete">
-                            <img src="/Images/DeleteIconRed.svg" alt="">
+                            <img src="Images/DeleteIconRed.svg" alt="">
                         </div>
                     </div>
                     <div class="table--new">
@@ -491,20 +493,20 @@
                             <p>afdeling 15</p>
                         </div>
                         <div class="table__cell--delete">
-                            <img src="/Images/DeleteIconRed.svg">
+                            <img src="Images/DeleteIconRed.svg">
                         </div>
                     </div>  
                     <div class="addNew">
                         <p>Add new department</p>
                         <div class="plusIcon">
-                            <img class="img--item lightMode" src="/Images/PlusCircleIcon.svg" >
-                            <img class="img--item darkMode" src="/Images/PlusIconWhite.svg">
+                            <img class="img--item lightMode" src="Images/PlusCircleIcon.svg" >
+                            <img class="img--item darkMode" src="Images/PlusIconWhite.svg">
                         </div>
                     </div> 
         </div>
         <div id="no-mobile">
             <div class="mobile-message">
-                <h3>This site is onley available on desktop, please change device</h3>
+                <h3>This site is only available on desktop, please change device</h3>
             </div>
         </div>
 </div>
