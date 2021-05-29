@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="846" height="359" viewBox="0 0 846 359">
+  <g id="Group_625" data-name="Group 625" transform="translate(-427 -3476)">
+    <text id="Confirming_Action_Message" data-name="Confirming Action Message" transform="translate(428 3499)" fill="#636363" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="26" font-family="Objectivity-Super, Objectivity"><tspan x="0" y="0">Confirming Action Message</tspan></text>
+    <g id="Group_624" data-name="Group 624">
+      <g id="Group_572" data-name="Group 572" transform="translate(0 -10)">
+        <g id="Rectangle_377" data-name="Rectangle 377" transform="translate(428 3536)" fill="#fff" stroke="#f0c755" stroke-width="5">
+          <path d="M85,0H306a0,0,0,0,1,0,0V204a66,66,0,0,1-66,66H0a0,0,0,0,1,0,0V85A85,85,0,0,1,85,0Z" stroke="none"/>
+          <path d="M85,2.5H301A2.5,2.5,0,0,1,303.5,5V204A63.5,63.5,0,0,1,240,267.5H5A2.5,2.5,0,0,1,2.5,265V85A82.5,82.5,0,0,1,85,2.5Z" fill="none"/>
+        </g>
+        <text id="You_are_now_logging_out_from_WeUse_Control_Panel" data-name="You are now logging out from WeUse Control Panel" transform="translate(483 3671)" fill="#2b2b2b" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="16" font-family="Objectivity-Regular, Objectivity"><tspan x="0" y="12">You are now logging out </tspan><tspan x="0" y="32">from WeUse Control Panel</tspan></text>
+        <path id="Icon_awesome-exclamation-circle" data-name="Icon awesome-exclamation-circle" d="M85.575,43.069A42.506,42.506,0,1,1,43.069.563,42.5,42.5,0,0,1,85.575,43.069Zm-42.506,8.57a7.884,7.884,0,1,0,7.884,7.884A7.884,7.884,0,0,0,43.069,51.639ZM35.583,23.3l1.271,23.31a2.057,2.057,0,0,0,2.054,1.945h8.321a2.057,2.057,0,0,0,2.054-1.945L50.554,23.3A2.057,2.057,0,0,0,48.5,21.13H37.637A2.057,2.057,0,0,0,35.583,23.3Z" transform="translate(537.455 3552.158)" fill="#f0c755"/>
+        <g id="Rectangle_477" data-name="Rectangle 477" transform="translate(428 3749)" fill="#f0c755" stroke="#f0c755" stroke-width="4">
+          <path d="M0,0H303a0,0,0,0,1,0,0V0a57,57,0,0,1-57,57H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" stroke="none"/>
+          <path d="M3.06,2H299.94A1.06,1.06,0,0,1,301,3.06v0A51.94,51.94,0,0,1,249.06,55H3.06A1.06,1.06,0,0,1,2,53.94V3.06A1.06,1.06,0,0,1,3.06,2Z" fill="none"/>
+        </g>
+        <line id="Line_74" data-name="Line 74" y2="54.5" transform="translate(580.539 3750.25)" fill="none" stroke="#fff" stroke-width="2"/>
+        <text id="Cancel" transform="translate(477 3784)" fill="#2b2b2b" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="16" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700"><tspan x="0" y="0">Cancel</tspan></text>
+        <text id="Confirm" transform="translate(621 3784)" fill="#2b2b2b" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="16" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700"><tspan x="0" y="0">Confirm</tspan></text>
+      </g>
+      <g id="Delete_Warning" data-name="Delete Warning" transform="translate(907 3526)">
+        <g id="Rectangle_478" data-name="Rectangle 478" fill="#fff" stroke="#a62117" stroke-width="5">
+          <path d="M85,0H310a0,0,0,0,1,0,0V204a66,66,0,0,1-66,66H0a0,0,0,0,1,0,0V85A85,85,0,0,1,85,0Z" stroke="none"/>
+          <path d="M85,2.5H305A2.5,2.5,0,0,1,307.5,5V204A63.5,63.5,0,0,1,244,267.5H5A2.5,2.5,0,0,1,2.5,265V85A82.5,82.5,0,0,1,85,2.5Z" fill="none"/>
+        </g>
+        <text id="Are_you_sure_you_want_to_delete_this_user_" data-name="Are you sure you want to delete this user?" transform="translate(55 135)" fill="#2b2b2b" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="16" font-family="Objectivity-Regular, Objectivity"><tspan x="0" y="12">Are you sure you want to </tspan><tspan x="0" y="32">delete this user?</tspan></text>
+        <g id="Rectangle_479" data-name="Rectangle 479" transform="translate(0 213)" fill="#a62117" stroke="#a62117" stroke-width="4">
+          <path d="M0,0H307a0,0,0,0,1,0,0V0a57,57,0,0,1-57,57H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" stroke="none"/>
+          <path d="M3.06,2H303.94A1.06,1.06,0,0,1,305,3.06v0A51.94,51.94,0,0,1,253.06,55H3.06A1.06,1.06,0,0,1,2,53.94V3.06A1.06,1.06,0,0,1,3.06,2Z" fill="none"/>
+        </g>
+        <line id="Line_75" data-name="Line 75" y2="54.5" transform="translate(155.52 214.25)" fill="none" stroke="#fff" stroke-width="2"/>
+        <text id="Cancel-2" data-name="Cancel" transform="translate(50 248)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="16" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700"><tspan x="0" y="0">Cancel</tspan></text>
+        <text id="Confirm-2" data-name="Confirm" transform="translate(196 248)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="16" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700"><tspan x="0" y="0">Confirm</tspan></text>
+        <g id="Ellipse_56" data-name="Ellipse 56" transform="translate(113 15)" fill="#a62117" stroke="#707070" stroke-width="1">
+          <circle cx="42.5" cy="42.5" r="42.5" stroke="none"/>
+          <circle cx="42.5" cy="42.5" r="42" fill="none"/>
+        </g>
+        <path id="Icon_material-delete-forever" data-name="Icon material-delete-forever" d="M9.608,38.23a4.229,4.229,0,0,0,4.216,4.216H30.689a4.229,4.229,0,0,0,4.216-4.216v-25.3H9.608Zm5.186-15.01,2.972-2.972,4.49,4.469,4.469-4.469L29.7,23.22l-4.469,4.469L29.7,32.158l-2.972,2.972-4.469-4.469-4.469,4.469-2.972-2.972,4.469-4.469ZM29.635,6.608,27.527,4.5H16.986L14.878,6.608H7.5v4.216H37.014V6.608Z" transform="translate(133.263 34.027)" fill="#fff"/>
+      </g>
+      <text id="Delete_Warning_Message" data-name="Delete Warning Message" transform="translate(911 3500)" fill="#636363" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="26" font-family="Objectivity-Super, Objectivity"><tspan x="0" y="0">Delete Warning Message</tspan></text>
+      <text id="Color_for_warning_is_Warning_HEX_F0C755_" data-name="Color for warning is Warning, HEX #F0C755 " transform="translate(428 3831)" fill="#44546a" font-size="14" font-family="Objectivity-Regular, Objectivity"><tspan x="0" y="0">Color for warning is Warning, HEX #F0C755 </tspan></text>
+      <text id="Color_for_error_is_Fox_HEX_A62117_" data-name="Color for error is Fox, HEX #A62117 " transform="translate(907 3827)" fill="#44546a" font-size="14" font-family="Objectivity-Regular, Objectivity"><tspan x="0" y="0">Color for error is Fox, HEX #A62117 </tspan></text>
+    </g>
+  </g>
+</svg>

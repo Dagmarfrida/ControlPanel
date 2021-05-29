@@ -1,0 +1,141 @@
+/*---------- COLORS---------*/
+/*-------DARK MODE--------*/
+/*-------- TYPOGRAPHY-------*/
+.text--bold {
+  font-weight: 700;
+}
+
+.text--medium {
+  font-weight: 500;
+}
+
+/*----------LOGIN PAGE---------*/
+.login-body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: #475468;
+  background-image: linear-gradient(to left bottom, #17a754, #17a754, #00967f, #1c6a86, #475468);
+}
+
+.login-container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 7rem;
+  padding: 0 2rem;
+}
+.login-container a {
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+.login-container a:hover {
+  color: #17a754;
+}
+.login-container .img--team {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.login-container .img--team img {
+  width: 500px;
+}
+.login-container .login {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+.login-container .login__input {
+  position: relative;
+  display: grid;
+  grid-template-columns: 7% 93%;
+  margin: 25px 0;
+  padding: 5px 0;
+  border-bottom: 2px solid #fff;
+}
+.login-container .login__input .login--username {
+  margin-top: 0;
+}
+.login-container .login__icon {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-container .login__icon i {
+  transition: 0.3s;
+}
+.login-container .login__form {
+  width: 360px;
+}
+.login-container .login__form h2 {
+  margin: 15px 0;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2.9rem;
+}
+.login-container .login__form img {
+  height: 80px;
+  margin-bottom: 20px;
+}
+.login-container .login__input:before {
+  right: 50%;
+}
+.login-container .login__input:after {
+  left: 50%;
+}
+.login-container .login__input.focus:before, .login-container .login__input.focus:after {
+  width: 50%;
+}
+.login-container .login__input.focus > .login-container .login__text > h5 {
+  top: -5px;
+  font-size: 15px;
+}
+.login-container .login__input.focus > .login-container .login__icon > i {
+  color: #17a754;
+}
+.login-container .login__input > .login-container .login__text > input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0.5rem 0.7rem;
+  font-size: 18px;
+  color: #fff;
+  font-family: "poppins", sans-serif;
+}
+.login-container .login__input.login--password {
+  margin-bottom: 4px;
+}
+.login-container .login__input > .login-container .login__text {
+  position: relative;
+  height: 45px;
+}
+.login-container .login__input > .login-container .login__text > h5 {
+  position: absolute;
+  letter-spacing: 1px;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.login-container .login__input:before, .login-container .login__input:after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: #17a754;
+  transition: 0.4s;
+}/*# sourceMappingURL=login.css.map */

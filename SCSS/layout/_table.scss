@@ -1,0 +1,325 @@
+@use '../abstracts/' as *;
+  /*----------TABLE----------*/
+
+
+/*.table {
+    table-layout: auto;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 24px;
+    margin: 25px 25px 0 0;
+    max-width: 1500px;
+    color: $Whale;
+
+    th {
+        color: $HeadingColor;
+        text-align: left;
+        font-weight: bold;
+        font-size: 14px;
+        font-family: 'Objectivity-Bold';     
+    }
+    img {
+        text-align: right;
+        vertical-align: bottom;
+    }
+    th, td {
+        padding: 36px 15px;
+        min-width: 220px;
+    }
+}
+.table__label {
+    margin-bottom: 10px;
+
+    th {
+        padding-bottom: 0px;
+    }
+}
+.table__listRow {
+    padding: 22px;
+    background-color: $SurfaceColor;
+    box-shadow: $boxShadow;
+    border-radius: $bordersBig;
+
+    
+    img {
+        height: 22px;
+    }
+}
+td:first-child {
+    border-top-left-radius: 22px; 
+    border-bottom-left-radius: 22px;
+}
+td:last-child {
+    border-bottom-right-radius: 22px; 
+    border-top-right-radius: 22px; 
+}
+
+/*@media 
+only screen and (max-width: 2000px) {
+    .table {
+        width: 1200px;
+    } 
+}
+@media 
+only screen and (max-width: 1700px) {
+    .table {
+        width: 1000px;
+    } 
+}
+@media 
+only screen and (max-width: 1450px) {
+    .table {
+        width: 700px;
+    } 
+}*/
+/*TEST MED FLEXBOX*/
+.tableHeader {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    max-width: 1200px;
+    color: $HeadingColor;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 50px;
+    padding: 0 24px;
+}
+.table {
+    display: flex;
+    justify-content: space-between;
+   // background: $SurfaceColor;
+    border-radius: $bordersBig;
+    box-shadow: $boxShadow;
+    padding: 24px; 
+    max-width: 1200px;
+    color: $Whale;
+    align-items: center;
+    margin-top: 24px;
+    z-index: 2;
+    transform-style: preserve-3d;
+
+}
+.table__cell {
+    min-width: 0;
+    box-sizing: border-box;
+    flex-grow: 1;
+    width: 100%;
+    padding: 10px 5px;
+    list-style: none;
+   &--icon{
+    width: 50%;
+    padding: 10px 0;
+    }
+    .darkMode {
+        display: none;
+    }
+}
+.btn--darkMode, .btn--darkMode1, .btn--darkMode2, .btn--darkMode3, .btn--darkMode4, .btn--darkMode5, .btn--darkMode6, .btn--darkMode7 {
+    display: none;
+}
+
+/*------ FEEDBACK - TABLE ---------*/
+
+/*drop down made with help from https://codepen.io/Thibaut/pen/Jasci*/
+#owner {
+    width: 200px;
+    height: 40px;
+    border-radius: $bordersButtons;
+    color: $Whale;
+    border: solid 2px $Whale;
+
+}
+.container > .dropdown {
+    margin: 0 20px;
+    vertical-align: top;
+  }
+  
+  .dropdown {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    height: 32px;
+    width: 150px;
+    background: $White;
+    border: 1px solid;
+    border-color: $Whale;
+    border-radius: $bordersButtons;
+    background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+    background-image: -moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+    background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.06));
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+  }
+  
+  .dropdown:before, .dropdown:after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: 9px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 4px dashed;
+    border-color: $Whale transparent;
+    pointer-events: none;
+  }
+  
+  .dropdown:before {
+    border-bottom-style: solid;
+    border-top: none;
+  }
+  
+  .dropdown:after {
+    margin-top: 7px;
+    border-top-style: solid;
+    border-bottom: none;
+  }
+  
+  .dropdown-select {
+    position: relative;
+    width: 130%;
+    margin: 0;
+    padding: 6px 8px 6px 10px;
+    height: 32px;
+    line-height: 20px;
+    font-size: $MainTextS;
+    color: $Whale;
+    text-shadow: 0 1px white;
+    background: #f2f2f2; /* Fallback for IE 8 */
+    background: rgba(0, 0, 0, 0) !important; /* "transparent" doesn't work with Opera */
+    border: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+  }
+  
+  .dropdown-select:focus {
+    z-index: 3;
+    width: 100%;
+    color: $Whale;
+    outline: 2px solid $WeuseGreen;
+    outline: 2px solid -webkit-focus-ring-color;
+    outline-offset: -2px;
+  }
+  
+  .dropdown-select > option {
+    margin: 3px;
+    padding: 6px 8px;
+    text-shadow: none;
+    background: #f2f2f2;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+ 
+  
+  /*------- Drop down Dark Mode--------*/
+  .dropdown-dark {
+    background: $Whale;
+    border-color: #111111 #0a0a0a black;
+    background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.4));
+    background-image: -moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.4));
+    background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.4));
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4));
+    -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0 1px 1px rgba(0, 0, 0, 0.2);
+  }
+  
+  .dropdown-dark:before {
+    border-bottom-color: #aaa;
+  }
+  
+  .dropdown-dark:after {
+    border-top-color: #aaa;
+  }
+  
+  .dropdown-dark .dropdown-select {
+    color: #aaa;
+    text-shadow: 0 1px black;
+    background: #444;  /* Fallback for IE 8*/ 
+  }
+  
+  .dropdown-dark .dropdown-select:focus {
+    color: #ccc;
+  }
+  
+  .dropdown-dark .dropdown-select > option {
+    background: #444;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+  }
+
+  /*----------RADIO BUTTONS-----------*/
+
+  /*Code from: https://codepen.io/AbubakerSaeed/pen/QPOZdY*/
+
+  $radioSize: 20px;
+  $radioBorder: $Whale;
+  $radioActive: $WeuseGreen;
+  
+  .radio {
+      margin: 12px 0;
+      display: block;
+      cursor: pointer;
+      input {
+          display: none;
+          & + span {
+              line-height: $radioSize;
+              height: $radioSize;
+              padding-left: $radioSize;
+              display: block;
+              position: relative;
+              &:not(:empty) {
+                  padding-left: $radioSize + 8;
+              }
+              &:before,
+              &:after {
+                  content: '';
+                  width: $radioSize;
+                  height: $radioSize;
+                  display: block;
+                  border-radius: 50%;
+                  left: 0;
+                  top: 0;
+                  position: absolute;
+              }
+              &:before {
+                  background: $radioBorder;
+                  transition: background .2s ease, transform .4s cubic-bezier(.175, .885, .32, 2);
+              }
+              &:after {
+                  background: #fff;
+                  transform: scale(.78);
+                  transition: transform .6s cubic-bezier(.175, .885, .32, 1.4);
+              }
+          }
+          &:checked + span {
+              &:before {
+                  transform: scale(1.04);
+                  background: $radioActive;
+              }
+              &:after {
+                  transform: scale(.4);
+                  transition: transform .3s ease;
+              }
+          }
+      }
+      &:hover {
+          input {
+              & + span {
+                  &:before {
+                      transform: scale(.92);
+                  }
+                  &:after {
+                      transform: scale(.74);
+                  }
+              }
+              &:checked + span {
+                  &:after {
+                      transform: scale(.4);
+                  }
+              }
+          }
+      }
+  }
+  
+ 

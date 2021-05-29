@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1021" height="573" viewBox="0 0 1021 573">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.887" gradientTransform="matrix(0.642, 0.767, -0.712, 0.595, 0.535, -0.181)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#c9edba"/>
+      <stop offset="1" stop-color="#45b976"/>
+    </radialGradient>
+  </defs>
+  <g id="Group_617" data-name="Group 617" transform="translate(-469 -1809)">
+    <g id="Group_404" data-name="Group 404" transform="translate(471 1846)">
+      <rect id="Rectangle_442" data-name="Rectangle 442" width="145" height="117" rx="8" fill="#a62117"/>
+      <g id="Group_403" data-name="Group 403" transform="translate(160 17)">
+        <text id="Name_Fox" data-name="Name
+Fox" fill="#636363" font-size="14" font-family="Objectivity-Bold, Objectivity" font-weight="700"><tspan x="0" y="10">Name</tspan><tspan fill="#44546a" font-size="16" font-family="Objectivity-Regular, Objectivity" font-weight="400"><tspan x="0" y="29">Fox</tspan></tspan></text>
+        <text id="HEX_A62117" data-name="HEX
+#A62117" transform="translate(0 58)" fill="#636363" font-size="14" font-family="Objectivity-Bold, Objectivity" font-weight="700"><tspan x="0" y="0">HEX</tspan><tspan fill="#44546a" font-size="16" font-family="Objectivity-Regular, Objectivity" font-weight="400"><tspan x="0" y="19">#A62117</tspan></tspan></text>
+      </g>
+      <g id="Group_552" data-name="Group 552" transform="translate(474 17)">
+        <text id="Name_Giraffe" data-name="Name
+Giraffe" fill="#636363" font-size="14" font-family="Objectivity-Bold, Objectivity" font-weight="700"><tspan x="0" y="10">Name</tspan><tspan fill="#44546a" font-size="16" font-family="Objectivity-Regular, Objectivity" font-weight="400"><tspan x="0" y="29">Giraffe</tspan></tspan></text>
+        <text id="HEX_A62117-2" data-name="HEX
+#A62117" transform="translate(0 58)" fill="#636363" font-size="14" font-family="Objectivity-Bold, Objectivity" font-weight="700"><tspan x="0" y="0">HEX</tspan><tspan fill="#44546a" font-size="16" font-family="Objectivity-Regular, Objectivity" font-weight="400"><tspan x="0" y="19">#A62117</tspan></tspan></text>
+      </g>
+    </g>
+    <g id="Rectangle_442-2" data-name="Rectangle 442" transform="translate(471 2065)" fill="#f2f2f2" stroke="#707070" stroke-width="1">
+      <rect width="145" height="117" rx="8" stroke="none"/>
+      <rect x="0.5" y="0.5" width="144" height="116" rx="7.5" fill="none"/>
+    </g>
+    <path id="Path_1951" data-name="Path 1951" d="M8,0H137a8,8,0,0,1,8,8V109a8,8,0,0,1-8,8H8a8,8,0,0,1-8-8V8A8,8,0,0,1,8,0Z" transform="translate(786 2065)" fill="url(#radial-gradient)"/>
+    <path id="Path_1952" data-name="Path 1952" d="M8,0H137a8,8,0,0,1,8,8V109a8,8,0,0,1-8,8H8a8,8,0,0,1-8-8V8A8,8,0,0,1,8,0Z" transform="translate(795 2256)" fill="url(#radial-gradient)"/>
+    <g id="Group_403-2" data-name="Group 403" transform="translate(631 2082)">
+      <text id="Name_Polar" data-name="Name
+Polar" fill="#636363" font-size="14" font-family="Objectivity-Bold, Objectivity" font-weight="700"><tspan x="0" y="10">Name</tspan><tspan fill="#44546a" font-size="16" font-family="Objectivity-Regular, Objectivity" font-weight="400"><tspan x="0" y="29">Polar</tspan></tspan></text>
+      <text id="HEX_F2F2F2" data-name="HEX
+#F2F2F2" transform="translate(0 58)" fill="#636363" font-size="14" font-family="Objectivity-Bold, Objectivity" font-weight="700"><tspan x="0" y="0">HEX</tspan><tspan fill="#44546a" font-size="16" font-family="Objectivity-Regular, Objectivity" font-weight="400"><tspan x="0" y="19">#F2F2F2</tspan></tspan></text>
+    </g>
+    <g id="Group_553" data-name="Group 553" transform="translate(946 2082)">
+      <text id="Name_FancyPancy" data-name="Name
+FancyPancy" fill="#636363" font-size="14" font-family="Objectivity-Bold, Objectivity" font-weight="700"><tspan x="0" y="10">Name</tspan><tspan fill="#44546a" font-size="16" font-family="Objectivity-Regular, Objectivity" font-weight="400"><tspan x="0" y="29">FancyPancy</tspan></tspan></text>
+      <text id="HEX_Radial_Gradient_-_45B976_C9EDBA" data-name="HEX
+Radial Gradient - #45B976, #C9EDBA" transform="translate(0 58)" fill="#636363" font-size="14" font-family="Objectivity-Bold, Objectivity" font-weight="700"><tspan x="0" y="0">HEX</tspan><tspan fill="#44546a" font-size="16" font-family="Objectivity-Regular, Objectivity" font-weight="400"><tspan x="0" y="19">Radial Gradient - #45B976, #C9EDBA</tspan></tspan></text>
+    </g>
+    <g id="Group_552-2" data-name="Group 552" transform="translate(629 2272)">
+      <text id="Name_Dove" data-name="Name
+Dove" fill="#636363" font-size="14" font-family="Objectivity-Bold, Objectivity" font-weight="700"><tspan x="0" y="10">Name</tspan><tspan fill="#44546a" font-size="16" font-family="Objectivity-Regular, Objectivity" font-weight="400"><tspan x="0" y="29">Dove</tspan></tspan></text>
+      <text id="HEX_F7F7F7" data-name="HEX
+#F7F7F7" transform="translate(0 58)" fill="#636363" font-size="14" font-family="Objectivity-Bold, Objectivity" font-weight="700"><tspan x="0" y="0">HEX</tspan><tspan fill="#44546a" font-size="16" font-family="Objectivity-Regular, Objectivity" font-weight="400"><tspan x="0" y="19">#F7F7F7</tspan></tspan></text>
+    </g>
+    <text id="Error" transform="translate(469 1827)" fill="#636363" font-size="24" font-family="Objectivity-Medium, Objectivity" font-weight="500"><tspan x="0" y="0">Error</tspan></text>
+    <text id="Basic_Background" data-name="Basic
+Background" transform="translate(470 2017)" fill="#636363" font-size="24" font-family="Objectivity-Medium, Objectivity" font-weight="500"><tspan x="0" y="0">Basic</tspan><tspan x="0" y="30">Background</tspan></text>
+    <text id="Fancy_Background" data-name="Fancy
+Background" transform="translate(785 2017)" fill="#636363" font-size="24" font-family="Objectivity-Medium, Objectivity" font-weight="500"><tspan x="0" y="0">Fancy</tspan><tspan x="0" y="30">Background</tspan></text>
+    <text id="Warning" transform="translate(785 1827)" fill="#636363" font-size="24" font-family="Objectivity-Medium, Objectivity" font-weight="500"><tspan x="0" y="0">Warning</tspan></text>
+    <text id="Surface" transform="translate(471 2236)" fill="#636363" font-size="24" font-family="Objectivity-Medium, Objectivity" font-weight="500"><tspan x="0" y="0">Surface</tspan></text>
+    <rect id="Rectangle_652" data-name="Rectangle 652" width="145" height="117" rx="8" transform="translate(785 1846)" fill="#f0c755"/>
+    <g id="Rectangle_685" data-name="Rectangle 685" transform="translate(469 2255)" fill="#f7f7f7" stroke="#707070" stroke-width="1">
+      <rect width="145" height="117" rx="8" stroke="none"/>
+      <rect x="0.5" y="0.5" width="144" height="116" rx="7.5" fill="none"/>
+    </g>
+    <rect id="Rectangle_686" data-name="Rectangle 686" width="123" height="93" rx="8" transform="translate(795 2256)" fill="#f7f7f7"/>
+    <text id="Elements_on_top_of_a_fancypancy_background_have_blurred_background._" data-name="Elements on top of a fancypancy background have blurred
+background.
+
+
+" transform="translate(945 2263)" fill="#44546a" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="16" font-family="Objectivity-Regular, Objectivity"><tspan x="0" y="12">Elements on top of a fancypancy background have blurred</tspan><tspan x="0" y="32">background.</tspan></text>
+    <text id="Blur_amount_-_8_Brightness_-_2_Effect_opacity_-_35_" data-name="Blur amount - 8
+Brightness - 2
+Effect opacity - 35%" transform="translate(1071 2310)" fill="#44546a" font-size="16" font-family="Objectivity-Regular, Objectivity"><tspan x="0" y="12">Blur amount - 8</tspan><tspan x="0" y="32">Brightness - 2</tspan><tspan x="0" y="52">Effect opacity - 35%</tspan></text>
+    <text id="Hex_F7F7F7-2" data-name="Hex 
+#F7F7F7" transform="translate(949 2343)" fill="#636363" font-size="14" font-family="Objectivity-Bold, Objectivity" font-weight="700"><tspan x="0" y="10">Hex </tspan><tspan fill="#44546a" font-size="16" font-family="Objectivity-Regular, Objectivity" font-weight="400"><tspan x="0" y="29">#F7F7F7</tspan></tspan></text>
+    <text id="Name_Dove-2" data-name="Name 
+Dove" transform="translate(949 2304)" fill="#636363" font-size="14" font-family="Objectivity-Bold, Objectivity" font-weight="700"><tspan x="0" y="10">Name </tspan><tspan fill="#44546a" font-size="16" font-family="Objectivity-Regular, Objectivity" font-weight="400"><tspan x="0" y="29">Dove</tspan></tspan></text>
+  </g>
+</svg>

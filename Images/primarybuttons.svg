@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="771" height="58" viewBox="0 0 771 58">
+  <g id="Group_422" data-name="Group 422" transform="translate(-333 -838)">
+    <g id="Group_503" data-name="Group 503" transform="translate(333 859)">
+      <path id="Delete_box" data-name="Delete box" d="M8.784,0H119.216C124.067,0,128,3.639,128,8.129V27.871c0,4.49-3.933,8.129-8.784,8.129H8.784C3.933,36,0,32.361,0,27.871V8.129C0,3.639,3.933,0,8.784,0Z" fill="#17a754"/>
+      <text id="Slet" transform="translate(32 22)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="16" font-family="Objectivity-Medium, Objectivity" font-weight="500"><tspan x="0" y="0">Primary</tspan></text>
+    </g>
+    <g id="Group_504" data-name="Group 504" transform="translate(654 860)">
+      <path id="Delete_box-2" data-name="Delete box" d="M8.784,0H119.216C124.067,0,128,3.639,128,8.129V27.871c0,4.49-3.933,8.129-8.784,8.129H8.784C3.933,36,0,32.361,0,27.871V8.129C0,3.639,3.933,0,8.784,0Z" fill="#74ca98"/>
+      <text id="Slet-2" data-name="Slet" transform="translate(32 22)" fill="#2b2b2b" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="16" font-family="Objectivity-Medium, Objectivity" font-weight="500"><tspan x="0" y="0">Primary</tspan></text>
+    </g>
+    <g id="Group_505" data-name="Group 505" transform="translate(976 860)">
+      <path id="Delete_box-3" data-name="Delete box" d="M8.784,0H119.216C124.067,0,128,3.639,128,8.129V27.871c0,4.49-3.933,8.129-8.784,8.129H8.784C3.933,36,0,32.361,0,27.871V8.129C0,3.639,3.933,0,8.784,0Z" fill="#b4bbc3"/>
+      <text id="Slet-3" data-name="Slet" transform="translate(32 22)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="16" font-family="Objectivity-Medium, Objectivity" font-weight="500"><tspan x="0" y="0">Primary</tspan></text>
+    </g>
+    <text id="Active" transform="translate(366 850)" fill="#636363" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="14" font-family="Objectivity-Bold, Objectivity" font-weight="700"><tspan x="0" y="0">Active</tspan></text>
+    <text id="Hover" transform="translate(694 850)" fill="#636363" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="14" font-family="Objectivity-Bold, Objectivity" font-weight="700"><tspan x="0" y="0">Hover</tspan></text>
+    <text id="Disabled" transform="translate(1004 850)" fill="#636363" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="14" font-family="Objectivity-Bold, Objectivity" font-weight="700"><tspan x="0" y="0">Disabled</tspan></text>
+  </g>
+</svg>

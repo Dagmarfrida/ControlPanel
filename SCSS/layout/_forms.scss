@@ -1,0 +1,235 @@
+@use '../abstracts/' as *;
+@use '../components/' as *;
+
+.form__content {
+    background: $SurfaceColor;
+    box-shadow: $boxShadow;
+    padding: 20px;
+    border-radius: $bordersBig;
+    max-width: 800px;
+    margin-top: 30px;
+    
+    &.modal__content {
+        margin-top: 0;
+    }
+
+    .form {
+        &__details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px 0 12px 0;
+            font-weight: 500;
+            color: $HeadingColor;
+            text-transform: capitalize;
+
+            .form__input {
+                width: calc(100% / 2 - 20px);
+            }
+            .form--large {
+                margin-bottom: 30px;
+            }
+            .input--small {
+                width: calc(100% / 3 - 20px);
+                a {
+                    padding-top: 10px;
+                    text-align: right;
+                    color: $HeadingColor;
+                }            
+            }
+        }
+            input, textarea {
+                height: 45px;
+                width: 100%;
+                outline: none;
+                font-size: 16px;
+                border-radius: $bordersButtons;
+                padding-left: 15px;
+                border: 1px solid $MenuHover;
+                border-bottom-width: 2px;
+                transition: all 0.3s ease;
+                margin-bottom: 5px;
+              
+                &:focus, &:valid {
+                  border-color: $WeuseGreen;
+                  }
+            }
+    }
+        .checkbox__holder {
+            display: block;
+            line-height: 25px;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: $MainTextS;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+          
+            input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;
+
+                &:checked ~ .checkmark__span {
+                    background-color: $WeuseGreen;
+                  }
+                &:checked ~ .checkmark__span:after {
+                    display: block;
+                  }
+            }
+            .checkmark__span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 25px;
+                width: 25px;
+                background-color: rgb(225, 224, 224);
+                border-radius: $bordersButtons;
+                
+                &:after {
+                    left: 9px;
+                    top: 5px;
+                    width: 5px;
+                    height: 10px;
+                    border: solid $White;
+                    border-width: 0 3px 3px 0;
+                    -webkit-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                }
+            }
+        }
+        .checkmark__span:after {
+            content: "";
+            position: absolute;
+            display: none;
+          }
+          p {
+              margin-bottom: 50px;
+          a {
+              color: $HeadingColor;  
+          }
+        }
+}
+form .password__details {
+    margin: 20px 0 12px 0;
+}
+
+.form .form--small {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 30px;
+    margin: 0 0 12px 0;
+
+}
+.break {
+    height: 0;
+    width: 100%;
+}
+
+.password__input input {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.form .btn--save {
+   height: 45px;
+   text-align: center;
+
+   input {
+    padding: 10px 6px;
+    background-color: $White;
+    color: $Whale;
+    font-size: $MainTextM;
+    border: 3px solid $WeuseGreen;
+    width: 260px;
+    border-radius: $bordersButtons;
+    box-shadow: $boxShadow;
+ }   
+}
+
+.community__detailsSmall {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+    margin: 20px 0 12px 0; 
+}
+.form__img {
+    align-self: center;
+    
+    img {
+        border-radius: $bordersM;
+    }
+}
+
+#input--userRole {
+    display: flex;
+    align-items: center;
+    width: 278px;
+
+    .plusIcon {
+        margin-left: 10px;
+        height: 25px;
+
+        .darkMode {
+            display: none;
+        } 
+    }
+}
+
+/*----EDIT PROFILE------*/
+.profile__section { 
+    background: $SurfaceColor;
+    border-radius: $bordersBig;
+    box-shadow: $boxShadow;
+    max-width: 800px;
+    padding: 20px; 
+    margin: 0 auto;
+}
+.profile__img {
+    display: inline-block;
+    width: 49%;
+    text-align: right;
+
+    img {
+        width: 90px;
+    }
+}
+
+.profile__info {
+    display: inline-block;
+    width: 50%;
+    height: 90px;
+    vertical-align: super;
+    color: $Whale;
+    .text--medium {
+        font-weight: 600;
+    }
+    p {
+        margin-bottom: 10px;
+    }
+}
+.profile__inputs .profile__details {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 20px 0 12px 0;
+}
+
+
+/*-----LAST LOGINS------*/
+#lastLogins {
+    .darkMode {
+    display: none;
+    }
+}
+
+
+

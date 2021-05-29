@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="106" height="39" viewBox="0 0 106 39">
+  <g id="Group_615" data-name="Group 615" transform="translate(-1101 -650)">
+    <g id="Group_510" data-name="Group 510" transform="translate(1101 650)">
+      <path id="Delete_box" data-name="Delete box" d="M5.01,0H67.99A4.881,4.881,0,0,1,73,4.742V16.258A4.881,4.881,0,0,1,67.99,21H5.01A4.881,4.881,0,0,1,0,16.258V4.742A4.881,4.881,0,0,1,5.01,0Z" fill="#17a754"/>
+      <text id="Slet" transform="translate(17 13)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="10" font-family="Objectivity-Medium, Objectivity" font-weight="500"><tspan x="0" y="0">Primary</tspan></text>
+    </g>
+    <rect id="Rectangle_461" data-name="Rectangle 461" width="25" height="26" rx="8" transform="translate(1182 663)" fill="#17a754"/>
+    <path id="Icon_metro-checkmark" data-name="Icon metro-checkmark" d="M17.206,5.784l-8.13,8.13L5.281,10.12l-2.71,2.71,6.5,6.5L19.916,8.494Z" transform="translate(1183.258 663.44)" fill="#fff"/>
+  </g>
+</svg>

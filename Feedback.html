@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/SCSS/style.css?v=2">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"> 
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <title>Feedback</title>
+</head>
+
+<body>
+    <div class="desktop">
+    <header class="header">
+        <div class="search">
+            <form action="">
+                <input type="text" name="" placeholder="Type here..">
+                <input type="submit" name="" value="Search">
+            </form>
+        </div>
+        <div class="menu">
+            <div class="menu__profile" onclick="menuToggle();">
+               <img src="/Images/ProfileAdam.png" alt="profile image"> 
+            </div>
+               <div class="menu__dropdown">
+                   <p>Adam <br><span>ach@weuse.dk<br>Access: Editor</p></span>
+                   <hr>
+                    <ul>
+                        <li><img src="/Images/EditIcon.png"><a href="/EditProfile.html">Edit profile</a>
+                        <li><img src="/Images/LockIconWhite.png"><a href="/ChangePassword.html">Edit Password</a>
+                        <li><img src="/Images/LastLoginsWhite.png"><a href="/LastLogins.html">Last Logins</a>
+                        <li><img src="/Images/logoutWhite.png"><a href="">Logout</a>
+                    </li>   
+                </ul>
+               </div>  
+        </div>
+        <div class="toggleDark">
+            <input type="checkbox" class="toggleDark__checkbox" id="checkbox">
+            <label for="checkbox" class="toggleDark__checkboxLabel">
+                <img src="/Images/moonIcon.png" class="toggleDark__moon">
+                <img src="/Images/sunIcon.png" class="toggleDark__sun">
+                <div class="toggleDark__ball">
+                </div>
+            </label>
+        </div>
+    </header>
+    <div class="sidemenu-wrapper">
+        <nav class="sidemenu">
+            <img src="/Images/WeUseLogo.svg" id="logo"> 
+            <ul>
+                <li><a href="/Dashboard.html"><img src="/Images/DasboardIcon.svg">Dashboard</a></li>
+                <li><a href="#" class="btn--communities"><img src="/Images/PeopleIcon.svg">Communities<span class="fas fa-sort-down first"></span></a></li>
+                <ul class="show--communities">
+                    <li><a href="/HousingAssociation.html">Housing associations</a></li>
+                    <li><a href="/Dormitories.html">Dormitories</a></li>
+                    <li><a href="NewCommunity.html">Add new</a></li>
+                </ul>
+                <li><a href="/Feedback.html"><img src="/Images/FeedbackIcon.svg">Feedback</a></li>
+                <li><a href="#" class="btn--design "><img src="/Images/heartIcon.svg">Design<span class="fas fa-sort-down second"></span></a></li>
+                <ul class="show--design">
+                    <li><a href="/DesignGuidelines.html">Guidelines</a></li>
+                    <li><a href="/DesignColors.html">Colors</a></li>
+                    <li><a href="/DesignFontFamily.html">Font Family</a></li>
+                    <li><a href="/DesignIllustrations.html">Illustrations</a></li>
+                    <li><a href="/DesignComponents.html">Components</a></li>
+                </ul>   
+                <li><a href="#" class="btn--manage"><img src="/Images/ManageIcon.svg">Manage Users<span class="fas fa-sort-down third"></span></a></li>
+                    <ul class="show--manage">
+                        <li><a href="CPUsers.html">Users</a></li>
+                        <li><a href="NewCPUsers.html">Add new</a></li>
+                    </ul>
+            </ul>
+            <ul id="btn__logout">
+                <li><a href="#"><img src="/Images/LogoutIcon.svg">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+        <div class="background"></div>
+            <div class="mainContent">
+                <ul class="breadcrumb">
+                    <li><a href="/Dashboard.html">Dashboard</a></li>
+                    <li>Feedback</a></li>
+                </ul>
+                <h2>Feedback</h2>
+                <div>
+                <button class="btn--main"> <p>All</p></button>
+                <button class="btn--secondary"><p>Unsolved</p></button>
+                <button class="btn--secondary"><p>Solved</p></button>
+                <p class="feedback__undertext">*Solved feedbacks will be deleted after 30 days</p>
+            </div>
+            <!-------------::
+                Table
+                ::------------>
+                <div class="tableHeader">
+                    <div class="table__cell">
+                        <p>Feedback</p>
+                    </div>
+                    <div class="table__cell">
+                        <p>From</p>
+                    </div>
+                    <div class="table__cell">
+                        <p>Category <i class="fas fa-chevron-down"></i></p>
+                    </div>
+                    <div class="table__cell">
+                        <p>Owner</p>
+                    </div>
+                    <div class="table__cell">
+                       <p>Action</p>
+                    </div>
+                </div>
+                <div class="table" id="T1">
+                    <div class="table__cell">
+                        <p>The categories button is not working, it only shows an empty site and I really need to find a hammer because I want to hang up a picture frame</p>
+                    </div>
+                    <div class="table__cell">
+                        <p>Michael Mogensen</p>
+                    </div>
+                    <div class="table__cell">
+                        <p>14.05.2021</p>
+                    </div>
+                    <div class="table__cell">
+                        <div class="dropdown">
+                            <select name="one" class="dropdown-select">
+                                <option value="">Name…</option>
+                                <option value="1">Adam</option>
+                                <option value="2">Liam</option>
+                                <option value="3">Stian</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="table__cell">
+                        <div>
+                            <label class="radio">
+                                <input type="radio" name="T1" value="radio" onClick="changeColour('NAN','T1')">
+                                <span>No Action Needed</span>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="T1" value="radio" onClick="changeColour('IP','T1')">
+                                <span>In Progress</span>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="T1" value="radio" onClick="changeColour('S','T1')">
+                                <span>Solved</span>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="T1" value="radio" onClick="changeColour('D','T1')">
+                                <span>Delete</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                    <div class="table" id="T2">
+                        <div class="table__cell">
+                            <p>I think the green color on the upload button is not the right green, it is confusing. I would consider using purple instead</p>
+                        </div>
+                        <div class="table__cell">
+                            <p>Sine Lautrup</p>
+                        </div>
+                        <div class="table__cell">
+                            <p>4.05.2021</p>
+                        </div>
+                        <div class="table__cell">
+                            <div class="dropdown">
+                                <select name="one" class="dropdown-select">
+                                    <option value="">Name…</option>
+                                    <option value="1">Adam</option>
+                                    <option value="2">Liam</option>
+                                    <option value="3">Stian</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="table__cell">
+                            <div>
+                                <label class="radio">
+                                    <input type="radio" name="T2" value="radio1" onClick="changeColour('NAN','T2')" >
+                                    <span>No Action Needed</span>
+                                </label>
+                                <label class="radio">
+                                    <input type="radio" name="T2" value="radio2" onClick="changeColour('IP','T2')">
+                                    <span>In Progress</span>
+                                </label>
+                                <label class="radio">
+                                    <input type="radio" name="T2" value="radio3" onClick="changeColour('S','T2')">
+                                    <span>Solved</span>
+                                </label>
+                                <label class="radio">
+                                    <input type="radio" name="T2" onClick="changeColour('D','T2')" value="radio4">
+                                    <span>Delete</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="table" id="T3">
+                            <div class="table__cell">
+                                <p>The search function is not good enough. I never find the items I am searching for. Can you please look at it?</p>
+                            </div>
+                            <div class="table__cell">
+                                <p>Andre Fransen</p>
+                            </div>
+                            <div class="table__cell">
+                                <p>22.04.2021</p>
+                            </div>
+                            <div class="table__cell">
+                                <div class="dropdown">
+                                    <select name="one" class="dropdown-select">
+                                        <option value="">Name…</option>
+                                        <option value="1">Adam</option>
+                                        <option value="2">Liam</option>
+                                        <option value="3">Stian</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="table__cell">
+                                <div>
+                                    <label class="radio">
+                                        <input type="radio" name="T3" onClick="changeColour('NAN','T3')"  value="radio" >
+                                        <span>No Action Needed</span>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="T3" onClick="changeColour('IP','T3')" value="radio">
+                                        <span>In Progress</span>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="T3" onClick="changeColour('S','T3')" value="radio">
+                                        <span>Solved</span>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="T3"  onClick="changeColour('D','T3')" value="radio">
+                                        <span>Delete</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+        </div>
+    </div>
+    <div id="no-mobile">
+        <div class="mobile-message">
+            <h3>This site is onley available on desktop, please change device</h3>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="darkMode.js"></script>
+</body>
+</html>

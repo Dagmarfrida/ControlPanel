@@ -1,0 +1,13 @@
+input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+input:checked ~ .checkmark__span {
+        background-color: #17a754;
+}
+input:checked ~ .checkmark__span:after {
+        display: block;
+}

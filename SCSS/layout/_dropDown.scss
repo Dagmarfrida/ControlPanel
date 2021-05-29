@@ -1,0 +1,160 @@
+@use '../abstracts/' as *;
+@use '../components/' as *;
+
+.table__dropDown1, .table__dropDown2, .table__dropDown3, .table__dropDown4, .table__dropDown5, .table__dropDown6, .table__dropDown7 {
+    max-width: 1200px;
+    display: none;
+    justify-content: space-between;
+    /*padding: 10px;*/
+    background-color: #EBEBEB;
+    border-radius: 0 0 22px 22px;
+    color: $Whale;
+    box-shadow: $boxShadow;
+    margin-top: -5px;
+    
+
+    p {
+        text-transform: capitalize; 
+
+    }
+}
+
+.table__dropDown1.light1 {
+    display: flex;  
+}
+.table__dropDown2.light2 {
+    display: flex;  
+}
+.table__dropDown3.light3 {
+    display: flex;  
+}
+.table__dropDown4.light4 {
+    display: flex;  
+}
+.table__dropDown1.dark1 {
+    display: flex;  
+}
+.table__dropDown2.dark2 {
+    display: flex;  
+}
+.table__dropDown3.dark3 {
+    display: flex;  
+}
+.table__dropDown4.dark4 {
+    display: flex;  
+}
+.table__dropDown5.light5 {
+    display: flex;  
+}
+.table__dropDown6.light6 {
+    display: flex;  
+}
+.table__dropDown7.light7 {
+    display: flex;  
+}
+.table__dropDown5.dark5 {
+    display: flex;  
+}
+.table__dropDown6.dark6 {
+    display: flex;  
+}
+.table__dropDown7.dark7 {
+    display: flex;  
+}
+
+
+.btn--lightMode1.rotate, .btn--lightMode2.rotate, .btn--lightMode3.rotate, .btn--lightMode4.rotate, .btn--lightMode5.rotate, .btn--lightMode6.rotate, .btn--lightMode7.rotate {
+    transform: translateY(-50%) rotate(-180deg);
+}
+.btn--darkMode1.rotate, .btn--darkMode2.rotate, .btn--darkMode3.rotate, .btn--darkMode4.rotate,.btn--darkMode5.rotate, .btn--darkMode6.rotate, .btn--darkMode7.rotate {
+    transform: translateY(-50%) rotate(-180deg);
+}
+.table__dropDownRight {
+    .table--new {
+        align-items: center;
+        padding: 5px 10px;
+    }
+    .tableHeader {
+        margin-top: 10px;
+        padding: 5px 10px;
+        align-items: center;    
+    } 
+}
+.table__dropDown1, .table__dropDown2, .table__dropDown3, .table__dropDown4, .table__dropDown5, .table__dropDown6, .table__dropDown7 {
+    .table__cell {
+        width: 120px;
+    }
+}
+.table__cell {
+    padding-top: 10px 5px;
+
+        &--delete {
+            width: 50px;
+            text-align: center;
+        }
+    
+    &--flex {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    span {
+        opacity: 0;
+    }
+    p {
+        width: 100px;
+    }
+} 
+}
+.addNew {
+    display: flex;
+    float: right;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    p {
+        margin-right: 10px;
+    }
+    .plusIcon .darkMode {
+        display: none;
+    }
+}
+.table__dropdownLeft {
+    width: 400px; 
+}
+.table__text {
+    display: flex;
+    padding: 10px 20px;
+    margin-top: 10px;
+   
+    .table__flex {
+        margin-right: 30px;
+        .label {
+            font-weight: bold;
+        }
+        p {
+            margin-top: 10px;
+        }
+    }
+}
+.table--keycode {
+    display: inline-block;
+    background-color: #66D99A;
+    font-size: $MainTextM;
+    padding: 10px 20px;
+    border-radius: $bordersButtons;
+    margin: 20px 10px 0 50px;
+    span {
+        font-weight: bold;
+    }
+}
+.table--contact {
+    background: #dadde1;
+    display: inline-block;
+    border-radius: 0 15px 0 15px;
+    padding: 10px;
+    margin: 35px 10px 0 0;
+    p {
+        padding: 5px;
+        font-size: $MainTextS;
+    }   
+}

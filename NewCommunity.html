@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/SCSS/style.css?v=2">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"> 
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <title>New Housing Community</title>
+</head>
+<body>
+    <div class="desktop">
+    <header class="header">
+        <div class="search">
+            <form action="">
+                <input type="text" name="" placeholder="Type here..">
+                <input type="submit" name="" value="Search">
+            </form>
+        </div>
+        <div class="menu">
+            <div class="menu__profile" onclick="menuToggle();">
+               <img src="/Images/ProfileAdam.png" alt="profile image"> 
+            </div>
+               <div class="menu__dropdown">
+                   <p>Adam <br><span>ach@weuse.dk<br>Access: Editor</p></span>
+                   <hr>
+                    <ul>
+                        <li><img src="/Images/EditIcon.png"><a href="/EditProfile.html">Edit profile</a>
+                        <li><img src="/Images/LockIconWhite.png"><a href="/ChangePassword.html">Edit Password</a>
+                        <li><img src="/Images/LastLoginsWhite.png"><a href="/LastLogins.html">Last Logins</a>
+                        <li><img src="/Images/logoutWhite.png"><a href="">Logout</a>
+                    </li>     
+                   </ul>
+               </div>  
+        </div>
+        <div class="toggleDark">
+            <input type="checkbox" class="toggleDark__checkbox" id="checkbox">
+            <label for="checkbox" class="toggleDark__checkboxLabel">
+                <img src="/Images/moonIcon.png" class="toggleDark__moon">
+                <img src="/Images/sunIcon.png" class="toggleDark__sun">
+                <div class="toggleDark__ball">
+                </div>
+            </label>
+        </div>
+    </header>
+    <div class="sidemenu-wrapper">
+        <nav class="sidemenu">
+            <img src="/Images/WeUseLogo.svg" id="logo"> 
+            <ul>
+                <li><a href="/Dashboard.html"><img src="/Images/DasboardIcon.svg">Dashboard</a></li>
+                <li><a href="#" class="btn--communities"><img src="/Images/PeopleIcon.svg">Communities<span class="fas fa-sort-down first"></span></a></li>
+                <ul class="show--communities">
+                    <li><a href="/HousingAssociation.html">Housing associations</a></li>
+                    <li><a href="/Dormitories.html">Dormitories</a></li>
+                    <li><a href="NewCommunity.html">Add new</a></li>
+                </ul>
+                <li><a href="/Feedback.html"><img src="/Images/FeedbackIcon.svg">Feedback</a></li>
+                <li><a href="#" class="btn--design "><img src="/Images/heartIcon.svg">Design<span class="fas fa-sort-down second"></span></a></li>
+                <ul class="show--design">
+                    <li><a href="/DesignGuidelines.html">Guidelines</a></li>
+                    <li><a href="/DesignColors.html">Colors</a></li>
+                    <li><a href="/DesignFontFamily.html">Font Family</a></li>
+                    <li><a href="/DesignIllustrations.html">Illustrations</a></li>
+                    <li><a href="/DesignComponents.html">Components</a></li>
+                </ul>   
+                <li><a href="#" class="btn--manage"><img src="/Images/ManageIcon.svg">Manage Users<span class="fas fa-sort-down third"></span></a></li>
+                    <ul class="show--manage">
+                        <li><a href="CPUsers.html">Users</a></li>
+                        <li><a href="NewCPUsers.html">Add new</a></li>
+                    </ul>
+            </ul>
+            <ul id="btn__logout">
+                <li><a href="#"data-modal-target="#modalLogout"><img src="/Images/LogoutIcon.svg">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+<!--LOG OUT POP UP MODAL-->
+    <!--<div class="modal" id="modalLogout">
+        <div class="logout__content">
+            <img class="warning--img"src="/Images/warningIcon.svg" alt="">
+            <p>You are now logging out from WeUse Control Panel</p>
+            <button data-close-button class="btn--cancel">Cancel</button>
+            <button data-close-button class="btn--confirm">Confirm</button>
+        </div>
+    </div>   
+    <div id="overlay"></div>-->
+    
+    <div class="newCommunity-container mainContent">
+        <ul class="breadcrumb">
+            <li><a href="/Dashboard.html">Dashboard</a></li>
+            <li>New Community</li>
+        </ul>
+        <h2>New Housing Community</h2>
+        <div class="form__content">
+            <form action="#" class="form">
+            <div class="form__details">
+                <div class="form__input form--large">
+                    <span class="input__text">Name of housing community</span>
+                    <input type="text" required>
+                </div>
+                <div class="form__input form--large">
+                    <span class="input__text">Administration</span>
+                    <input type="text" required>
+                </div>
+                <div class="form__input form--large">
+                    <span class="input__text">Contact Person</span>
+                    <input type="text" required>
+                </div>
+                <div class="form__input form--large">
+                    <span class="input__text">Email</span>
+                    <input type="text"  required>
+                </div>
+            </div>
+            <div class="form__details form--small">
+                <div class="community__input input--small">
+                <span class="input__text">City</span>
+                <input type="text" required>
+                </div>
+                <div class="form__input input--small">
+                <span class="input__text">Zip Code</span>
+                <input type="text" required>
+                </div>
+                    <div class="container__checkbox">
+                        <label class="checkbox__holder">Housing Association
+                            <input type="radio" name="radio" class="checkbox--green">
+                            <span class="checkmark__span"></span>
+                        </label>   
+                        <label class="checkbox__holder">Dormitory
+                            <input type="radio" name="radio" class="checkbox--green">
+                            <span class="checkmark__span"></span>
+                        </label>   
+                    </div>             
+                <div class="break"></div>
+                <div class="form__input input--small">
+                    <span class="input__text">Number of Households</span>
+                    <input type="text" required>
+                </div>
+                <div class="form__input input--small">
+                    <span class="input__text">Keycode</span>
+                    <input type="text" required>            
+                </div>       
+            </div>
+            <p><a data-modal-target="#modalNew" href="#">Add New Department</a></p>
+            <div class="btn--save">
+                <input type="submit" value="Save">
+            </div>
+            </form>  
+        </div>
+        <!--ADD NEW COMMUNITY MODAL-->
+        <div class="modal" id="modalNew">
+            <div class="form__content modal__content">
+                <button data-close-button class="btn--close">&times;</button>
+                <form action="#" class="form">
+                    <div class="form__details modal--size">
+                        <div class="modal__inputs">
+                            <div class="modal--input">
+                                <span class="input__text">Department</span>
+                                <input type="text" required>
+                            </div>
+                            <div class="modal--input">
+                                <span class="input__text">Households</span>
+                                <input type="text" required>
+                            </div>
+                            <div class="modal--input" id="modal__linksWith">
+                                <div class="linksWith--input">
+                                    <span class="input__text">Links With</span>
+                                    <input type="text" required>
+                                </div>
+                                <div class="plusIcon">
+                                    <img class="img--item lightMode" src="/Images/PlusCircleIcon.svg" >
+                                    <img class="img--item darkMode" src="/Images/PlusIconWhite.svg">
+                                </div>
+                            </div>                        
+                        </div>
+                    </div>
+                    <div class="btn--save">
+                        <input type="submit" value="Save">
+                    </div>
+                </form>    
+            </div>
+        </div>   
+        <div id="overlay"></div>
+    </div>
+    </div>
+    <div id="no-mobile">
+        <div class="mobile-message">
+            <h3>This site is onley available on desktop, please change device</h3>
+        </div>
+    </div>
+<script src="main.js"></script>
+<script src="popup.js"></script>
+<script src="darkMode.js"></script>
+</body>
+</html>

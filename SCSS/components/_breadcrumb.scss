@@ -1,0 +1,28 @@
+@use '../abstracts/' as *;
+
+
+.breadcrumb {
+    padding: 10px 0;
+    list-style: none;
+    color: #44546A;
+  
+    li {
+        display: inline;
+        font-size: 18px;
+    
+        & + li:before {
+        padding: 8px;
+        color: #44546A;
+        content: "/ ";
+        }
+        a {
+            color: #44546A;
+            text-decoration: none;
+        
+        &:hover {
+            color: #17a754;
+            text-decoration: underline;
+            }
+        }
+    }
+}

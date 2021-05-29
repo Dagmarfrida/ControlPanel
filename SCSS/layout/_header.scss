@@ -1,0 +1,170 @@
+@use '../abstracts' as *; 
+ 
+ /*---------HEADER----------*/
+    .header {
+        display: flex;
+        float: right;
+        align-items: center;
+        margin: 16px auto 50px 16px;
+        margin-top: 16px;
+        margin-right: 16px;
+    }
+    /*-----------SEARCH-----------*/
+.search {
+    margin-right: 0px;
+    width: 400px;
+
+    input {
+        position: relative;
+        display: inline-block;
+        font-size: $MainTextM;
+        transition: 0.5s;
+        box-shadow: $boxShadow;
+    }
+    input[type="text"]{
+        background: $SurfaceColor;
+        width: 260px;
+        height: 47px;
+        border: none;
+        outline: none;
+        padding: 0 25px;
+        border-radius: $bordersButtons 0 0 $bordersButtons;
+    }
+    input[type="submit"] {
+        left: -5px;
+        position: relative;
+        border-radius: 0  $bordersButtons $bordersButtons 0; 
+        width: 100px;
+        height: 47px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-color: $WeuseGreen;
+        color: $White;
+    }
+    input[type="submit"]:hover{
+        background-color: $Whale;
+    }
+}
+            /*-------------PROFILE--------------*/
+.menu {
+    /*position: fixed;*/
+    margin-right: 30px;
+    top: 20px;
+    right: 30px;
+
+    &__profile {
+        position: relative;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        overflow: hidden;
+        cursor: pointer;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__dropdown {
+        position: absolute;
+        top: 100px;
+        right: 100px;
+        padding: 10px 20px;
+        background-color: $WeuseGreen;
+        width: 200px;
+        /*box-sizing: 0 5px 25px rgba(0,0,0.1);*/
+        border-radius: $bordersBig;
+        transition: 0.5sek;
+        visibility: hidden;
+        opacity: 0;
+
+        p {
+            width: 100%;
+            text-align: center;
+            font-size: $MainTextL;
+            padding: 20px 0;
+            color: $White;
+            line-height: 1.2em;
+        }
+        span {
+            font-size: $MainTextS;
+            color: $White;
+        }
+        ul li {
+            list-style: none;
+            padding: 10px 0;
+            /*border-top: 1px solid rgba(0,0,0.05);*/
+            display: flex;
+            align-items: center;
+            /*justify-content: center;*/
+    
+            img {
+                max-width: 20px;
+                margin-right: 10px;
+                transition: 0.5sek;
+            }
+            a {
+                display: inline-block;
+                text-decoration: none;
+                color: $White;
+            } 
+        }
+        ul li:hover a {
+            color: $Lion;
+        } 
+    }
+        &__dropdown::before{
+            content: '';
+            position: absolute;
+            top: -5px;
+            right: 28px;
+            width: 20px;
+            height: 20px;
+            background: $WeuseGreen;
+            transform: rotate(45deg);
+        }
+    
+    &__dropdown.active {
+        visibility: visible;
+        opacity: 1; 
+    }
+}
+
+        /*----------DARK MODE TOGGLE-----------*/
+.toggleDark__checkbox {
+    opacity: 0;
+    position: absolute;  
+}
+.toggleDark__checkbox:checked + .toggleDark__checkboxLabel .toggleDark__ball {
+    transform: translateX(29px);  
+}
+.toggleDark__checkboxLabel {
+    background-color: $WeuseGreen;
+    display: flex;
+    border-radius: 50px;
+    height: 30px;
+    width: 60px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+}
+.toggleDark__ball {
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    top: 3px;
+    left: 4px;
+    border-radius: 50%;
+    background-color: $White;
+    transition: transform 0.2s linear;
+}
+.toggleDark__checkbox:checked + .toggleDarkcheckboxLabel {
+    background-color: $Whale;
+}

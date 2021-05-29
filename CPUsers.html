@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/SCSS/style.css?v=2">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"> 
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <title>Control Panel Users</title>
+</head>
+<body>
+    <div class="desktop">
+    <header class="header">
+        <div class="search">
+            <form action="">
+                <input type="text" name="" placeholder="Type here..">
+                <input type="submit" name="" value="Search">
+            </form>
+        </div>
+        <div class="menu">
+            <div class="menu__profile" onclick="menuToggle();">
+               <img src="/Images/ProfileAdam.png" alt="profile image"> 
+            </div>
+               <div class="menu__dropdown">
+                   <p>Adam <br><span>ach@weuse.dk<br>Access: Editor</p></span>
+                   <hr>
+                    <ul>
+                        <li><img src="/Images/EditIcon.png"><a href="/EditProfile.html">Edit profile</a>
+                        <li><img src="/Images/LockIconWhite.png"><a href="/ChangePassword.html">Edit Password</a>
+                        <li><img src="/Images/LastLoginsWhite.png"><a href="/LastLogins.html">Last Logins</a>
+                        <li><img src="/Images/logoutWhite.png"><a href="">Logout</a>
+                    </li>   
+                   </ul>
+               </div>  
+        </div>
+        <div class="toggleDark">
+            <input type="checkbox" class="toggleDark__checkbox" id="checkbox">
+            <label for="checkbox" class="toggleDark__checkboxLabel">
+                <img src="/Images/moonIcon.png" class="toggleDark__moon">
+                <img src="/Images/sunIcon.png" class="toggleDark__sun">
+                <div class="toggleDark__ball">
+                </div>
+            </label>
+        </div>
+    </header>
+    
+    <div class="sidemenu-wrapper">
+        <nav class="sidemenu">
+            <img src="/Images/WeUseLogo.svg" id="logo"> 
+            <ul>
+                <li><a href="/Dashboard.html"><img src="/Images/DasboardIcon.svg">Dashboard</a></li>
+                <li><a href="#" class="btn--communities"><img src="/Images/PeopleIcon.svg">Communities<span class="fas fa-sort-down first"></span></a></li>
+                <ul class="show--communities">
+                    <li><a href="/HousingAssociation.html">Housing associations</a></li>
+                    <li><a href="/Dormitories.html">Dormitories</a></li>
+                    <li><a href="NewCommunity.html">Add new</a></li>
+                </ul>
+                <li><a href="/Feedback.html"><img src="/Images/FeedbackIcon.svg">Feedback</a></li>
+                <li><a href="#" class="btn--design "><img src="/Images/heartIcon.svg">Design<span class="fas fa-sort-down second"></span></a></li>
+                <ul class="show--design">
+                    <li><a href="/DesignGuidelines.html">Guidelines</a></li>
+                    <li><a href="/DesignColors.html">Colors</a></li>
+                    <li><a href="/DesignFontFamily.html">Font Family</a></li>
+                    <li><a href="/DesignIllustrations.html">Illustrations</a></li>
+                    <li><a href="/DesignComponents.html">Components</a></li>
+                </ul>   
+                <li><a href="#" class="btn--manage"><img src="/Images/ManageIcon.svg">Manage Users<span class="fas fa-sort-down third"></span></a></li>
+                    <ul class="show--manage">
+                        <li><a href="CPUsers.html">Users</a></li>
+                        <li><a href="NewCPUsers.html">Add new</a></li>
+                    </ul>
+            </ul>
+            <ul id="btn__logout">
+                <li><a href="#"><img src="/Images/LogoutIcon.svg">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="background"></div>
+        <div class="mainContent">
+            <ul class="breadcrumb">
+                <li><a href="/Dashboard.html">Dashboard</a></li>
+                <li>WeUsers</li>
+            </ul>
+            <h2>WeUsers</h2>
+            <div>
+                <a href="/NewCommunity.html"><button class="btn--main"> <p>Add New</p> <img src="/Images/PlusIcon.svg"></button></a>
+                <button class="btn--secondary"><p>Filter</p> <img class="btn--lightMode" src="/Images/FilterIcon.svg"><img class="btn--darkMode" src="/Images/filterIconDM.svg"></button>
+                <button class="btn--secondary"><p>Search Housing Association</p> <img class="btn--lightMode" src="/Images/SearchIcon.svg"><img class="btn--darkMode" src="/Images/searchIconDM.svg"></button>
+        </div>
+    <!-------------::
+             Table
+            ::------------>
+
+            <div class="tableHeader">
+                <div class="table__cell">
+                    <p>First Name</p>
+                </div>
+                <div class="table__cell">
+                    <p>Last Name</p>
+                </div>
+                <div class="table__cell">
+                    <p>Email</p>
+                </div>
+                <div class="table__cell">
+                    <p>Department</p>
+                </div>
+                <div class="table__cell--icon">
+                   <p>User Role</p>
+                </div>
+                <div class="table__cell--icon">
+                   <p>Edit</p>
+                </div>
+            </div>
+
+            <div class="table">
+                <div class="table__cell">
+                    <p>Anders</p>
+                </div>
+                <div class="table__cell">
+                    <p>Andersen</p>
+                </div>
+                <div class="table__cell">
+                    <p>ana@email.dk</p>
+                </div>
+                <div class="table__cell">
+                    <p>Marketing, Oslo</p>
+                </div>
+                <div class="table__cell--icon">
+                  <p>Marketing, Editor</p>
+                </div>
+                <div class="table__cell--icon">
+                    <a href="/EditCPusers.html"><img class="btn--lightMode" src="/Images/EditIconDark.svg"><img class="btn--darkMode" src="/Images/editIconDM.svg"></a>
+                </div>
+            </div>
+            <div class="table">
+                <div class="table__cell">
+                    <p>Damien</p>
+                </div>
+                <div class="table__cell">
+                    <p>Dickson</p>
+                </div>
+                <div class="table__cell">
+                    <p>dad@email.dk</p>
+                </div>
+                <div class="table__cell">
+                    <p>Programmer, Danmark</p>
+                </div>
+                <div class="table__cell--icon">
+                   <p>Editor</p>
+                </div>
+                <div class="table__cell--icon">
+                    <a href="/EditCPusers.html"><img class="btn--lightMode" src="/Images/EditIconDark.svg"><img class="btn--darkMode" src="/Images/editIconDM.svg"></a>
+                </div>
+            </div>
+            <div class="table">
+                <div class="table__cell">
+                    <p>Gunther</p>
+                </div>
+                <div class="table__cell">
+                    <p>Guntherson</p>
+                </div>
+                <div class="table__cell">
+                    <p>gug@email.dk</p>
+                </div>
+                <div class="table__cell">
+                    <p>Project Manager, Barcelona</p>
+                </div>
+                <div class="table__cell--icon">
+                   <p>Marketing</p>
+                </div>
+                <div class="table__cell--icon">
+                    <a href="/EditCPusers.html"><img class="btn--lightMode" src="/Images/EditIconDark.svg"><img class="btn--darkMode" src="/Images/editIconDM.svg"></a>
+                </div>
+            </div>
+            <div class="table">
+                <div class="table__cell">
+                    <p>Sigtryggur</p>
+                </div>
+                <div class="table__cell">
+                    <p>Steingrímsson</p>
+                </div>
+                <div class="table__cell">
+                    <p>sis@email.ck</p>
+                </div>
+                <div class="table__cell">
+                    <p>SoMe Marketing, Akureyri</p>
+                </div>
+                <div class="table__cell--icon">
+                   <p>Marketing, Writer</p>
+                </div>
+                <div class="table__cell--icon">
+                    <a href="/EditCPusers.html"><img class="btn--lightMode" src="/Images/EditIconDark.svg"><img class="btn--darkMode" src="/Images/editIconDM.svg"></a>
+                </div>
+            </div>
+</div>
+    </div>
+    <div id="no-mobile">
+        <div class="mobile-message">
+            <h3>This site is onley available on desktop, please change device</h3>
+        </div>
+    </div>
+<script src="main.js"></script>
+<script src="darkMode.js"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+@use '../abstracts/' as *;
+/*--------DARK MODE---------*/
+body.dark {
+    background-color: #121212;
+
+    .body--editUser {
+        background: #121212 url(/Images//EditUserDM.png) no-repeat bottom center;
+    }
+    .toggleDark__checkboxLabel {
+        background: rgb(51,51,51);
+        background: radial-gradient(circle, rgba(51,51,51,1) 0%, rgba(26,26,26,1) 84%); ;
+    }
+
+    h2, h3, h4, h5, p, ::placeholder, .text--large.design, .text--medium.design, .text--small.design {
+        color: $DM-Text;
+        font-weight: normal;
+    } 
+    .sidemenu-wrapper {
+        nav ul li a:hover {
+            background: $DM-MenuHover;
+        }
+        nav ul li.active a {
+            background: $DM-MenuHover;
+        }
+        nav ul ul li.active ul li a {
+            background: $DM-MenuHover;
+        }
+    }
+    
+    .breadcrumb, li+li:before, .basic-table, .listLabel th, .radio, .dropdown-select {
+        color: $DM-Text;
+        text-shadow: none;
+    }
+   
+    li a {
+        color: $DM-Text;
+        text-decoration: none;
+
+        &hover {
+            color: $DM-Text;
+            text-decoration: underline;
+        }
+    }
+   
+    .sidemenu, .listRow, .quick__box, .latest__box, .new__box, .form__content, .table__dropDown1.dark1, .table__dropDown2.dark2, .table__dropDown3.dark3, .table__dropDown4.dark4, .table__dropDown5.dark5, .table__dropDown6.dark6, .table__dropDown7.dark7 {
+        background: rgb(51,51,51);
+        background: radial-gradient(circle, rgba(51,51,51,1) 0%, rgba(26,26,26,1) 84%);
+        box-shadow: none;
+    }  
+    .table--contact {
+        background: $DM-Surface;
+    }
+    
+    .form__content {
+        .form input {
+        background-color: #333 ;
+        border: 2px solid #121212;
+        }
+        .form__details {
+        color: $DM-Text;
+        .input--small a {
+            color: $WeuseGreen;
+        }
+        }
+        .checkbox__holder .checkmark__span {
+            background-color: #333 ;
+            border: 2px solid #121212;
+        }
+        p a {
+            color: $WeuseGreen;
+        }
+        .btn--save input {
+            background-color: #50869A;
+            color: $DM-Text;
+        }
+    }
+    
+    button, a {
+        /*font-size: $MainTextM;
+        min-width: 155px;*/
+        box-shadow: none;
+
+        .darkMode {
+            display: unset;
+        }
+        .lightMode {
+            display: none;
+        }
+    }
+    .table__cell {
+        .darkMode {
+            display: unset;
+        }
+        .lightMode {
+            display: none;
+        }
+    }
+    .btn--close, .close-button {
+        color: $DM-Text;
+    }
+    .button-main {
+        background-color: $WeuseGreen;
+        color: $DM-Text;
+    }
+    .button-secondary {
+        background-color: $DM-Surface;
+        color: $DM-Text;
+    }
+    .search  input {
+        box-shadow: none;
+     
+        &[type="text"]{
+            background: rgb(51,51,51);
+            background: radial-gradient(circle, rgba(51,51,51,1) 0%, rgba(26,26,26,1) 84%);
+            color: $DM-Text
+        }
+    }   
+    
+    .totals__numbers {
+        background-image: linear-gradient(to right bottom, #00796b, #258a7d, #3c9b8f, #51ada2, #65bfb5);
+    }
+    .btn__quick {
+        background-image: linear-gradient(to left top, #649fc3, #5195c2, #3d8bc0, #2781bf, #0277bd);
+        .darkMode {
+            display: unset;
+            float: right;
+        }
+        .lightMode {
+            display: none;
+        }
+    }
+    .latest__listrow {
+        background-image: linear-gradient(to right, #02a77c, #059e77, #089571, #0b8d6c, #0e8466);
+        a {
+            color: $DM-Text;
+        }
+    }
+    .plusIcon {
+        .darkMode {
+            display: unset;
+            float: right;
+        }
+        .lightMode {
+            display: none;
+        }
+    }
+    
+    .btn--secondary {
+        background: #121212;
+        p {
+            color: $WeuseGreen;
+        }
+    }
+    .btn--darkMode, .btn--darkMode1, .btn--darkMode2, .btn--darkMode3, .btn--darkMode4, .btn--darkMode5, .btn--darkMode6, .btn--darkMode7  {
+        display: unset;
+    }
+    .btn--lightMode, .btn--lightMode1, .btn--lightMode2, .btn--lightMode3, .btn--lightMode4, .btn--lightMode5, .btn--lightMode6, .btn--lightMode7 {
+        display: none;
+    }
+    .dropdown {
+        background: #333;
+        border: 1px solid #121212;
+        box-shadow: none;
+        &:before, &:after {
+            border-color: $WeuseGreen transparent;
+        }
+    }
+    #input--userRole .plusIcon .darkMode {
+        display: unset;
+    }
+    #lastLogins {
+        .darkMode {
+        display: unset;
+    }
+        .lightMode {
+            display: none;
+        }
+    }
+    .table--keycode {
+        background-color: #00796B;
+    } 
+}
+
+/*------DESIGN SITES------*/
+
+

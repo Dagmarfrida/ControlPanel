@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="776" height="380" viewBox="0 0 776 380">
+  <g id="Group_623" data-name="Group 623" transform="translate(-436 -2877)">
+    <text id="Label" transform="translate(446 2888)" fill="#636363" font-size="14" font-family="Objectivity-Bold, Objectivity" font-weight="700"><tspan x="0" y="0">Label</tspan></text>
+    <text id="Label-2" data-name="Label" transform="translate(446 3021)" fill="#636363" font-size="14" font-family="Objectivity-Bold, Objectivity" font-weight="700"><tspan x="0" y="0">Label</tspan></text>
+    <text id="Label-3" data-name="Label" transform="translate(448 3154)" fill="#636363" font-size="14" font-family="Objectivity-Bold, Objectivity" font-weight="700"><tspan x="0" y="0">Label</tspan></text>
+    <rect id="Rectangle_3" data-name="Rectangle 3" width="776" height="88" rx="15" transform="translate(436 2903)" fill="#d1eddd"/>
+    <rect id="Rectangle_3-2" data-name="Rectangle 3" width="776" height="88" rx="15" transform="translate(436 3169)" fill="#edd3d1"/>
+    <rect id="Rectangle_3-3" data-name="Rectangle 3" width="776" height="88" rx="15" transform="translate(436 3036)" fill="#fef2cc"/>
+    <g id="Rectangle_3-4" data-name="Rectangle 3" transform="translate(436 2903)" fill="#fff" stroke="#697688" stroke-width="1">
+      <rect width="776" height="61" rx="15" stroke="none"/>
+      <rect x="0.5" y="0.5" width="775" height="60" rx="14.5" fill="none"/>
+    </g>
+    <text id="NewPassword" transform="translate(458 2940)" fill="#44546a" font-size="18" font-family="Objectivity-Regular, Objectivity"><tspan x="0" y="0">NewPassword</tspan></text>
+    <g id="Rectangle_3-5" data-name="Rectangle 3" transform="translate(436 3169)" fill="#fff" stroke="#697688" stroke-width="1">
+      <rect width="776" height="61" rx="15" stroke="none"/>
+      <rect x="0.5" y="0.5" width="775" height="60" rx="14.5" fill="none"/>
+    </g>
+    <text id="NewPassword-2" data-name="NewPassword" transform="translate(454 3206)" fill="#44546a" font-size="18" font-family="Objectivity-Regular, Objectivity"><tspan x="0" y="0">NewPassword</tspan></text>
+    <g id="Rectangle_3-6" data-name="Rectangle 3" transform="translate(436 3036)" fill="#fff" stroke="#697688" stroke-width="1">
+      <rect width="776" height="61" rx="15" stroke="none"/>
+      <rect x="0.5" y="0.5" width="775" height="60" rx="14.5" fill="none"/>
+    </g>
+    <text id="NewPassword-3" data-name="NewPassword" transform="translate(454 3073)" fill="#44546a" font-size="18" font-family="Objectivity-Regular, Objectivity"><tspan x="0" y="0">NewPassword</tspan></text>
+    <text id="Strong_Password_-_Good_Job_" data-name="Strong Password - Good Job!" transform="translate(463 2981)" fill="#44546a" font-size="14" font-family="Objectivity-Regular, Objectivity"><tspan x="0" y="0">Strong Password - Good Job!</tspan></text>
+    <text id="Weak_Password_-_Consider_Least_8_Characters" data-name="Weak Password - Consider Least 8 Characters" transform="translate(458 3247)" fill="#44546a" font-size="14" font-family="Objectivity-Regular, Objectivity"><tspan x="0" y="0">Weak Password - Consider Least 8 Characters</tspan></text>
+    <text id="Medium_Password_-_You_Could_Do_Better_" data-name="Medium Password - You Could Do Better!" transform="translate(459 3114)" fill="#44546a" font-size="14" font-family="Objectivity-Regular, Objectivity"><tspan x="0" y="0">Medium Password - You Could Do Better!</tspan></text>
+  </g>
+</svg>

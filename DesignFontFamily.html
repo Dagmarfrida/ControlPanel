@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/SCSS/style.css?v=2">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"> 
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <title>Housing Association</title>
+</head>
+<body>
+    <div class="desktop">
+        <header class="header">
+            <div class="search">
+                <form action="">
+                    <input type="text" name="" placeholder="Type here..">
+                    <input type="submit" name="" value="Search">
+                </form>
+            </div>
+            <div class="menu">
+                <div class="menu__profile" onclick="menuToggle();">
+                   <img src="/Images/ProfileAdam.png" alt="profile image"> 
+                </div>
+                   <div class="menu__dropdown">
+                       <p>Adam <br><span>ach@weuse.dk<br>Access: Editor</p></span>
+                       <hr>
+                        <ul>
+                            <li><img src="/Images/EditIcon.png"><a href="/EditProfile.html">Edit profile</a>
+                            <li><img src="/Images/LockIconWhite.png"><a href="/ChangePassword.html">Edit Password</a>
+                            <li><img src="/Images/LastLoginsWhite.png"><a href="/LastLogins.html">Last Logins</a>
+                            <li><img src="/Images/logoutWhite.png"><a href="">Logout</a>
+                        </li>   
+                    </ul>
+                   </div>  
+            </div>
+            <div class="toggleDark">
+                <input type="checkbox" class="toggleDark__checkbox" id="checkbox">
+                <label for="checkbox" class="toggleDark__checkboxLabel">
+                    <img src="/Images/moonIcon.png" class="toggleDark__moon">
+                    <img src="/Images/sunIcon.png" class="toggleDark__sun">
+                    <div class="toggleDark__ball">
+                    </div>
+                </label>
+            </div>
+        </header>
+    
+        <div class="sidemenu-wrapper">
+            <nav class="sidemenu">
+                <img src="/Images/WeUseLogo.svg" id="logo"> 
+                <ul>
+                    <li><a href="/Dashboard.html"><img src="/Images/DasboardIcon.svg">Dashboard</a></li>
+                    <li><a href="#" class="btn--communities"><img src="/Images/PeopleIcon.svg">Communities<span class="fas fa-sort-down first"></span></a></li>
+                    <ul class="show--communities">
+                        <li><a href="/HousingAssociation.html">Housing associations</a></li>
+                        <li><a href="/Dormitories.html">Dormitories</a></li>
+                        <li><a href="NewCommunity.html">Add new</a></li>
+                    </ul>
+                    <li><a href="/Feedback.html"><img src="/Images/FeedbackIcon.svg">Feedback</a></li>
+                    <li><a href="#" class="btn--design "><img src="/Images/heartIcon.svg">Design<span class="fas fa-sort-down second"></span></a></li>
+                    <ul class="show--design">
+                        <li><a href="/DesignGuidelines.html">Guidelines</a></li>
+                        <li><a href="/DesignColors.html">Colors</a></li>
+                        <li><a href="/DesignFontFamily.html">Font Family</a></li>
+                        <li><a href="/DesignIllustrations.html">Illustrations</a></li>
+                        <li><a href="/DesignComponents.html">Components</a></li>
+                    </ul>   
+                    <li><a href="#" class="btn--manage"><img src="/Images/ManageIcon.svg">Manage Users<span class="fas fa-sort-down third"></span></a></li>
+                        <ul class="show--manage">
+                            <li><a href="CPUsers.html">Users</a></li>
+                            <li><a href="NewCPUsers.html">Add new</a></li>
+                        </ul>
+                </ul>
+                <ul id="btn__logout">
+                    <li><a href="#"><img src="/Images/LogoutIcon.svg">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="mainContent">
+            <ul class="breadcrumb">
+                <li><a href="/Dashboard.html">Dashboard</a></li>
+                <li><a href="/DesignGuidelines.html">Design Guidelines</a></li>
+                <li>Font Family</li>
+            </ul>
+            <h2>Font Family</h2>
+        
+            <p class="text--medium design"> <span class="text--large">Objectivity is our brand typeface. </span> 
+            We use it in all of our material and medias. We just think it looks nice and has a bit of professional look and feel. We have a variation in weight so it can be adjusted in every situation.</p>
+            <div class="form__content fonts">
+                <img src="/Images/fontsIllustrations.svg" alt="Weuse font family">
+    
+            </div>
+        </div>
+        <div id="no-mobile">
+            <div class="mobile-message">
+                <h3>This site is onley available on desktop, please change device</h3>
+            </div>
+        </div>
+    </div>
+<script src="darkMode.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

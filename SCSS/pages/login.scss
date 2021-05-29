@@ -1,0 +1,150 @@
+    @use '../abstracts/' as *;
+    /*----------LOGIN PAGE---------*/
+.login-body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: rgb(71,84,104);
+    background-image: linear-gradient(to left bottom, #17a754, #17a754, #00967f, #1c6a86, #475468);
+}
+    
+.login-container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap :7rem;
+    padding: 0 2rem;
+
+    a{
+        display: block;
+        text-align: right;
+        text-decoration: none;
+        color: $White;
+        font-size: 0.9rem;
+        transition: .3s;
+   
+        &:hover {
+            color: $WeuseGreen;
+        }
+    
+} 
+    .img--team {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        img{
+            width: 500px;
+        }
+    }
+    
+    .login {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+
+        &__input {
+            position: relative;
+            display: grid;
+            grid-template-columns: 7% 93%;
+            margin: 25px 0;
+            padding: 5px 0;
+            border-bottom: 2px solid $White;
+
+            .login--username {
+                margin-top: 0;
+            }  
+        }
+        &__icon{
+            color: $White;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            i {
+                transition: .3s;
+            }
+        }
+        &__form {
+            width: 360px;
+
+            h2 {
+                margin: 15px 0;
+                color: $White;
+                text-transform: uppercase;
+                font-size: 2.9rem;
+            }
+           
+            img {
+                height: 80px;
+                margin-bottom: 20px;
+            }
+        }
+        &__input:before {
+            right: 50%;
+        }
+        
+        &__input:after {
+            left: 50%;
+        }
+        
+        &__input.focus:before, &__input.focus:after {
+            width: 50%;
+        }
+        
+        &__input.focus > &__text > h5 {
+            top: -5px;
+            font-size: 15px;
+        }
+        
+        &__input.focus > &__icon > i {
+            color: $WeuseGreen;
+        }
+        
+        &__input > &__text > input {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            outline: none;
+            background: none;
+            padding: 0.5rem 0.7rem;
+            font-size: $MainTextM;
+            color: $White;
+            font-family: 'poppins', sans-serif;
+        }
+        
+        &__input.login--password {
+            margin-bottom: 4px;
+        }
+        &__input > &__text {
+            position: relative;
+            height: 45px;
+        }
+        
+        &__input > &__text > h5 {
+            position: absolute;
+            letter-spacing: 1px;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: $White;
+            font-size: 18px;
+            transition: .3s;
+        }
+        
+        &__input:before, &__input:after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            width: 0%;
+            height: 2px;
+            background-color: $WeuseGreen;
+            transition: .4s;
+        }
+    }
+}
+    

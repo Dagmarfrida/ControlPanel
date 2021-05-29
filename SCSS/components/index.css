@@ -1,0 +1,76 @@
+/*---------- COLORS---------*/
+/*-------DARK MODE--------*/
+/*-------- TYPOGRAPHY-------*/
+.text--bold {
+  font-weight: 700;
+}
+
+.text--medium {
+  font-weight: 500;
+}
+
+button {
+  font-size: 18px;
+  box-shadow: 0 8px 24px rgba(15, 106, 54, 0.16);
+  border-radius: 8px;
+}
+button img {
+  padding: 0 0 0 15px;
+  text-align: right;
+}
+button p {
+  text-align: left;
+  display: inline;
+}
+
+.btn--main {
+  margin: 1.5rem 0.5rem;
+  padding: 12px 10px;
+  background-color: #17a754;
+  color: #fff;
+  border: none;
+  min-width: 155px;
+}
+
+.btn--secondary {
+  margin: 1.5rem 0.5rem;
+  padding: 10px 6px;
+  background-color: #fff;
+  color: #44546A;
+  border: 3px solid #17a754;
+  min-width: 155px;
+}
+.btn--secondary .darkMode {
+  display: none;
+}
+
+.btn--delete {
+  margin: 1.5rem 0.5rem;
+  padding: 12px 10px;
+  background-color: #A62117;
+  color: #fff;
+  border: none;
+  min-width: 155px;
+}
+
+.btn__submit {
+  display: block;
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  background-image: linear-gradient(to right, #17a754, #19b35a, #1abf60, #1ccb67);
+  background-size: 200%;
+  font-size: 1.2rem;
+  color: #fff;
+  text-transform: capitalize;
+  margin: 1rem 0;
+  cursor: pointer;
+  transition: 0.5s;
+  box-shadow: 0 8px 24px rgba(15, 106, 54, 0.16);
+  min-width: 155px;
+}
+.btn__submit:hover {
+  background-position: right;
+}/*# sourceMappingURL=index.css.map */

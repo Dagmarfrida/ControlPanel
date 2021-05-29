@@ -1,0 +1,135 @@
+@use '../SCSS/abstracts/' as *; 
+@use '../SCSS/components/' as *;
+@use '../SCSS/layout/' as *;
+@use '../SCSS/pages/' as *;
+
+@font-face {
+    font-family: "objectivity";
+    src: url("objectivity/Objectivity-Regular.woff") format("woff"),
+    url("objectivity/Objectivity-Regular.otf") format("opentype"),
+    url("objectivity.svg#filename") format("svg");
+    src: url("objectivity.eot");
+    }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'objectivity';
+}
+body, html {
+    height: 100%;
+    margin: 0;
+}
+html {
+    font-size: 16px;
+}
+body {
+    padding: auto 16px;
+    font-family: objectivity;
+    background-color: $BgColor;
+    transition: background-color 0.3s linear;
+    /*overflow-x: hidden;*/
+
+    h2 {
+      text-transform: capitalize;
+      font-size: $Heading2;
+      color: $Whale;
+      text-transform: capitalize;
+    }
+
+    h3 {
+        font-family: 'Objectivity-Medium';
+        font-size: $Heading3;
+        font-weight: 500;
+        color: $HeadingColor;
+        margin-top: 13px;
+        text-transform: capitalize;
+    }
+    h4 {
+        font-size: $Heading4;
+        font-weight: 900;
+        color: $HeadingColor;
+        text-transform: capitalize;
+        padding: 20px 0 12px 0;
+    }
+    a {
+        text-transform: capitalize;
+        .darkMode {
+            display: none;
+        }
+    }
+    
+    h5 {
+      text-transform: capitalize;
+      color: $HeadingColor;
+    }
+    .title {
+        margin-bottom: 2rem;
+        font-size: 2rem;
+    }
+}
+.body--editCommunity {
+    background: $BgColor url(/Images//EditCommunity.png) no-repeat center 30vh;
+    h3 {
+        color: $Fox;
+        text-transform: uppercase;
+    }
+}
+.body--editUser {
+    background: $BgColor url(/Images//EditUser.png) no-repeat bottom center;
+    h3 {
+        color: $Fox;
+        text-transform: uppercase;
+}
+}
+   /*------MAIN CONTENT-------*/ 
+.mainContent {
+    width: calc(100% - #{368px});
+    margin-left: 368px;
+    box-sizing: border-box;
+  }
+  
+ 
+  /*------MOBILE MESSAGE------*/
+  @media only screen and (max-width: 1200px) {
+      body {
+        background-image: linear-gradient(to top, #fcc000, #d4c000, #adbd12, #87b929, #60b23d, #3baa5a, #14a170, #00967e, #008789, #087689, #34647e, #44546a);
+        background-attachment: fixed;    
+    }
+      .desktop {
+          visibility: hidden;
+        }
+        #no-mobile {
+            visibility: visible;
+            position: absolute;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            
+            
+        }
+        .mobile-message {
+            height: 400px;
+            width: 300px;
+            background: $Lion;
+            color: #333;
+            padding: 20px;
+            border-radius: $bordersM;
+        }
+  }
+  @media only screen and (min-width: 1201px) {
+      #no-mobile {
+          visibility: hidden;
+      }
+      body {
+         visibility: visible;
+      }
+
+  }
+
+
+  

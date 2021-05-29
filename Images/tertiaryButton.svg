@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="771" height="57" viewBox="0 0 771 57">
+  <g id="Group_425" data-name="Group 425" transform="translate(-333 -1299)">
+    <text id="Active" transform="translate(364 1311)" fill="#636363" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="14" font-family="Objectivity-Bold, Objectivity" font-weight="700"><tspan x="0" y="0">Active</tspan></text>
+    <text id="Hover" transform="translate(692 1311)" fill="#636363" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="14" font-family="Objectivity-Bold, Objectivity" font-weight="700"><tspan x="0" y="0">Hover</tspan></text>
+    <text id="Disabled" transform="translate(1002 1311)" fill="#636363" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="14" font-family="Objectivity-Bold, Objectivity" font-weight="700"><tspan x="0" y="0">Disabled</tspan></text>
+    <g id="Group_491" data-name="Group 491" transform="translate(333 1320)">
+      <path id="Delete_box" data-name="Delete box" d="M8.784,0H119.216C124.067,0,128,3.639,128,8.129V27.871c0,4.49-3.933,8.129-8.784,8.129H8.784C3.933,36,0,32.361,0,27.871V8.129C0,3.639,3.933,0,8.784,0Z" fill="#44546a"/>
+      <text id="Slet" transform="translate(33 22)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="16" font-family="Objectivity-Medium, Objectivity" font-weight="500"><tspan x="0" y="0">Add Me</tspan></text>
+    </g>
+    <g id="Group_492" data-name="Group 492" transform="translate(654 1320)">
+      <g id="Delete_box-2" data-name="Delete box" fill="none">
+        <path d="M8.784,0H119.216C124.067,0,128,3.639,128,8.129V27.871c0,4.49-3.933,8.129-8.784,8.129H8.784C3.933,36,0,32.361,0,27.871V8.129C0,3.639,3.933,0,8.784,0Z" stroke="none"/>
+        <path d="M 8.784309387207031 2 C 5.043434143066406 2 2 4.749473571777344 2 8.129035949707031 L 2 27.87096405029297 C 2 31.25052642822266 5.043434143066406 34 8.784309387207031 34 L 119.2156753540039 34 C 122.9565658569336 34 126 31.25052642822266 126 27.87096405029297 L 126 8.129035949707031 C 126 4.749473571777344 122.9565658569336 2 119.2156753540039 2 L 8.784309387207031 2 M 8.784309387207031 0 L 119.2156753540039 0 C 124.0671234130859 0 128 3.639492034912109 128 8.129035949707031 L 128 27.87096405029297 C 128 32.36050796508789 124.0671234130859 36 119.2156753540039 36 L 8.784309387207031 36 C 3.932868957519531 36 0 32.36050796508789 0 27.87096405029297 L 0 8.129035949707031 C 0 3.639492034912109 3.932868957519531 0 8.784309387207031 0 Z" stroke="none" fill="#3a4a5e"/>
+      </g>
+      <text id="Slet-2" data-name="Slet" transform="translate(33 12)" fill="#44546a" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="16" font-family="Objectivity-Medium, Objectivity" font-weight="500"><tspan x="0" y="12">Add Me</tspan></text>
+    </g>
+    <g id="Group_493" data-name="Group 493" transform="translate(976 1320)">
+      <path id="Delete_box-3" data-name="Delete box" d="M8.784,0H119.216C124.067,0,128,3.639,128,8.129V27.871c0,4.49-3.933,8.129-8.784,8.129H8.784C3.933,36,0,32.361,0,27.871V8.129C0,3.639,3.933,0,8.784,0Z" fill="#dadde1"/>
+      <text id="Slet-3" data-name="Slet" transform="translate(33 22)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="16" font-family="Objectivity-Medium, Objectivity" font-weight="500"><tspan x="0" y="0">Add Me</tspan></text>
+    </g>
+  </g>
+</svg>

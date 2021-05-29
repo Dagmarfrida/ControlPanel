@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="87" viewBox="0 0 780 87">
+  <g id="Group_622" data-name="Group 622" transform="translate(-446 -2661)">
+    <text id="Label" transform="translate(446 2672)" fill="#636363" font-size="14" font-family="Objectivity-Bold, Objectivity" font-weight="700"><tspan x="0" y="0">Label</tspan></text>
+    <g id="Rectangle_722" data-name="Rectangle 722" transform="translate(446 2687)" fill="#fff" stroke="#697688" stroke-width="1">
+      <rect width="780" height="61" rx="15" stroke="none"/>
+      <rect x="0.5" y="0.5" width="779" height="60" rx="14.5" fill="none"/>
+    </g>
+    <text id="Text" transform="translate(460 2724)" fill="#44546a" font-size="18" font-family="Objectivity-Regular, Objectivity"><tspan x="0" y="0">Text</tspan></text>
+  </g>
+</svg>

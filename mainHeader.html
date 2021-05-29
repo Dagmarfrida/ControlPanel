@@ -1,0 +1,33 @@
+<header class="header">
+    <div class="search">
+        <form action="">
+            <input type="text" name="" placeholder="Type here..">
+            <input type="submit" name="" value="Search">
+        </form>
+    </div>
+    <div class="menu">
+        <div class="menu__profile" onclick="menuToggle();">
+           <img src="/Images/ProfileAdam.png" alt="profile image"> 
+        </div>
+           <div class="menu__dropdown">
+               <p>Adam <br><span>ach@weuse.dk<br>Access: Editor</p></span>
+               <hr>
+               <ul>
+                    <li><img src="/Images/EditIcon.png"><a href="">Edit profile</a>
+                    <li><img src="/Images/LockIconWhite.png"><a href="">Edit Password</a>
+                    <li><img src="/Images/LastLoginsWhite.png"><a href="">Last Logins</a>
+                    <li><img src="/Images/logoutWhite.png"><a href="">Logout</a>
+                </li>     
+               </ul>
+           </div>  
+    </div>
+    <div class="toggleDark">
+        <input type="checkbox" class="toggleDark__checkbox" id="checkbox">
+        <label for="checkbox" class="toggleDark__checkboxLabel">
+            <img src="/Images/moonIcon.png" class="toggleDark__moon">
+            <img src="/Images/sunIcon.png" class="toggleDark__sun">
+            <div class="toggleDark__ball">
+            </div>
+        </label>
+    </div>
+</header>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/SCSS/style.css?v=2">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"> 
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <title>Items</title>
+</head>
+<body>
+    <div class="desktop">
+    <header class="header">
+        <div class="search">
+            <form action="">
+                <input type="text" name="" placeholder="Type here..">
+                <input type="submit" name="" value="Search">
+            </form>
+        </div>
+        <div class="menu">
+            <div class="menu__profile" onclick="menuToggle();">
+               <img src="/Images/ProfileAdam.png" alt="profile image"> 
+            </div>
+               <div class="menu__dropdown">
+                   <p>Adam <br><span>ach@weuse.dk<br>Access: Editor</p></span>
+                   <hr>
+                    <ul>
+                        <li><img src="/Images/EditIcon.png"><a href="/EditProfile.html">Edit profile</a>
+                        <li><img src="/Images/LockIconWhite.png"><a href="/ChangePassword.html">Edit Password</a>
+                        <li><img src="/Images/LastLoginsWhite.png"><a href="/LastLogins.html">Last Logins</a>
+                        <li><img src="/Images/logoutWhite.png"><a href="">Logout</a>
+                    </li>   
+                </ul>
+               </div>  
+        </div>
+        <div class="toggleDark">
+            <input type="checkbox" class="toggleDark__checkbox" id="checkbox">
+            <label for="checkbox" class="toggleDark__checkboxLabel">
+                <img src="/Images/moonIcon.png" class="toggleDark__moon">
+                <img src="/Images/sunIcon.png" class="toggleDark__sun">
+                <div class="toggleDark__ball">
+                </div>
+            </label>
+        </div>
+    </header>
+    <div class="sidemenu-wrapper">
+        <nav class="sidemenu">
+            <img src="/Images/WeUseLogo.svg" id="logo"> 
+            <ul>
+                <li><a href="/Dashboard.html"><img src="/Images/DasboardIcon.svg">Dashboard</a></li>
+                <li><a href="#" class="btn--communities"><img src="/Images/PeopleIcon.svg">Communities<span class="fas fa-sort-down first"></span></a></li>
+                <ul class="show--communities">
+                    <li><a href="/HousingAssociation.html">Housing associations</a></li>
+                    <li><a href="/Dormitories.html">Dormitories</a></li>
+                    <li><a href="NewCommunity.html">Add new</a></li>
+                </ul>
+                <li><a href="/Feedback.html"><img src="/Images/FeedbackIcon.svg">Feedback</a></li>
+                <li><a href="#" class="btn--design "><img src="/Images/heartIcon.svg">Design<span class="fas fa-sort-down second"></span></a></li>
+                <ul class="show--design">
+                    <li><a href="/DesignGuidelines.html">Guidelines</a></li>
+                    <li><a href="/DesignColors.html">Colors</a></li>
+                    <li><a href="/DesignFontFamily.html">Font Family</a></li>
+                    <li><a href="/DesignIllustrations.html">Illustrations</a></li>
+                    <li><a href="/DesignComponents.html">Components</a></li>
+                </ul>   
+                <li><a href="#" class="btn--manage"><img src="/Images/ManageIcon.svg">Manage Users<span class="fas fa-sort-down third"></span></a></li>
+                    <ul class="show--manage">
+                        <li><a href="CPUsers.html">Users</a></li>
+                        <li><a href="NewCPUsers.html">Add new</a></li>
+                    </ul>
+            </ul>
+            <ul id="btn__logout">
+                <li><a href="#"><img src="/Images/LogoutIcon.svg">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+      <div class="background"></div>
+        <div class="mainContent">
+            <ul class="breadcrumb">
+                <li><a href="/Dashboard.html">Dashboard</a></li>
+                <li><a href="/HousingAssociation.html">Housing Association</a></li>
+                <li><a href="HAUsers.html">Users</a></li>
+                <li>Items</li>
+            </ul>
+            <h3>Items</h3>
+    
+         <!-------------::
+             Table
+            ::------------>
+            <div class="tableHeader">
+                <div class="table__cell">
+                    <p>Item Name</p>
+                </div>
+                <div class="table__cell">
+                    <p>Item Points</p>
+                </div>
+                <div class="table__cell">
+                    <p>Deposit</p>
+                </div>
+                <div class="table__cell">
+                    <p>Id</p>
+                </div>
+                <div class="table__cell--icon">
+                   <p>Edit</p>
+                </div>
+            </div>    
+            <div class="table">
+                <div class="table__cell">
+                    <p>Boardgame</p>
+                </div>
+                <div class="table__cell">
+                    <p>30</p>
+                </div>
+                <div class="table__cell">
+                    <p>30</p>
+                </div>
+                <div class="table__cell">
+                    <p>#393948</p>
+                </div>
+                <div class="table__cell">
+                    <img data-modal-target="#modal"src="/Images/EditIconDark.svg" >
+                </div>
+            </div>
+            <div class="table">
+                <div class="table__cell">
+                    <p>Drill</p>
+                </div>
+                <div class="table__cell">
+                    <p>20</p>
+                </div>
+                <div class="table__cell">
+                    <p>30</p>
+                </div>
+                <div class="table__cell">
+                    <p>#583930</p>
+                </div>
+                <div class="table__cell">
+                    <img data-modal-target="#modal"src="/Images/EditIconDark.svg" >
+                </div>
+            </div>
+                <div class="table">
+                    <div class="table__cell">
+                        <p>Printer</p>
+                    </div>
+                    <div class="table__cell">
+                        <p>15</p>
+                    </div>
+                    <div class="table__cell">
+                        <p>50</p>
+                    </div>
+                    <div class="table__cell">
+                        <p>#876530</p>
+                    </div>
+                    <div class="table__cell">
+                        <img data-modal-target="#modal"src="/Images/EditIconDark.svg" >
+                    </div>
+                </div>
+        </div>
+       <div class="modal" id="modal">
+            <div class="form__content modal__content">
+                <button data-close-button class="btn--close">&times;</button>
+                <form action="#" class="form">
+                    <div class="form__details">
+                        <div class="modal__inputs">
+                            <div class="modal--input">
+                                <span class="input__text">Item</span>
+                                <input type="text" required>
+                            </div>
+                            <div class="modal--input">
+                                <span class="input__text">Description</span>
+                                <textarea id="textarea" cols="2" rows="5" type="text" required></textarea>
+                            </div>
+                            <div class="modal--input">
+                                <span class="input__text">Category</span>
+                                <select id="categories" name="categories">
+                                    <option value="Home">Home</option>
+                                    <option value="Tools">Tools</option>
+                                    <option value="Technology">Technology</option>
+                                    <option value="Entertainment">Entertainment</option>
+                                </select>
+                            </div>
+                        
+                        </div>
+                        <div class="modal__img">
+                            <img src="/Images/ticketToRide.jpeg" alt="">
+                            <p><a href="#">Delete Photo</a></p>
+                        </div>
+                    </div>
+                    <div class="modal__buttons">
+                        <button class="btn--delete">Delete</button>
+                        <button class="btn--secondary">Save</button>
+                    </div>
+                </form>    
+            </div>
+        </div>   
+        <div id="overlay"></div>
+    </div>
+    <div id="no-mobile">
+        <div class="mobile-message">
+            <h3>This site is onley available on desktop, please change device</h3>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="popup.js"></script>
+    <script src="darkMode.js"></script>
+</body>
+</html>

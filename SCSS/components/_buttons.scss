@@ -1,0 +1,67 @@
+@use '../abstracts/' as *;
+button {
+    font-size: $MainTextM;
+    
+    box-shadow: $boxShadow;
+    border-radius: $bordersButtons;
+        img {
+            padding: 0 0 0 15px;
+            text-align: right;
+        }
+        p {
+            text-align: left;
+            display: inline;
+        }
+}
+.btn--main {
+    margin: 1.5rem 0.5rem;
+    padding: 12px 10px;
+    background-color: $WeuseGreen;
+    color: $White;
+    border: none;
+    min-width: 155px;
+    
+}
+.btn--secondary {
+    margin: 1.5rem 0.5rem;
+    padding: 10px 6px;
+    background-color: $White;
+    color: $Whale;
+    border: 3px solid $WeuseGreen;
+    min-width: 155px;
+
+    .darkMode {
+        display: none;
+    }
+    
+}
+.btn--delete {
+    margin: 1.5rem 0.5rem;
+    padding: 12px 10px;
+    background-color: $Fox;
+    color: $White;
+    border: none;
+    min-width: 155px;
+}
+.btn__submit {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: $bordersButtons;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to right, #17a754, #19b35a, #1abf60, #1ccb67);
+    background-size: 200%;
+    font-size: 1.2rem;
+    color: $White;
+    text-transform: capitalize;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: .5s;
+    box-shadow: $boxShadow;
+    min-width: 155px;
+
+    &:hover {
+        background-position: right;
+    }
+}

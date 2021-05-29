@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/SCSS/style.css?v=2">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"> 
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <title>Housing Association</title>
+</head>
+<body>
+    <div class="desktop">
+    <header class="header">
+        <div class="search">
+            <form action="">
+                <input type="text" name="" placeholder="Type here..">
+                <input type="submit" name="" value="Search">
+            </form>
+        </div>
+        <div class="menu">
+            <div class="menu__profile" onclick="menuToggle();">
+               <img src="/Images/ProfileAdam.png" alt="profile image"> 
+            </div>
+               <div class="menu__dropdown">
+                   <p>Adam <br><span>ach@weuse.dk<br>Access: Editor</p></span>
+                   <hr>
+                    <ul>
+                        <li><img src="/Images/EditIcon.png"><a href="/EditProfile.html">Edit profile</a>
+                        <li><img src="/Images/LockIconWhite.png"><a href="/ChangePassword.html">Edit Password</a>
+                        <li><img src="/Images/LastLoginsWhite.png"><a href="/LastLogins.html">Last Logins</a>
+                        <li><img src="/Images/logoutWhite.png"><a href="">Logout</a>
+                    </li>   
+                </ul>
+               </div>  
+        </div>
+        <div class="toggleDark">
+            <input type="checkbox" class="toggleDark__checkbox" id="checkbox">
+            <label for="checkbox" class="toggleDark__checkboxLabel">
+                <img src="/Images/moonIcon.png" class="toggleDark__moon">
+                <img src="/Images/sunIcon.png" class="toggleDark__sun">
+                <div class="toggleDark__ball">
+                </div>
+            </label>
+        </div>
+    </header>
+    
+    <div class="sidemenu-wrapper">
+        <nav class="sidemenu">
+            <img src="/Images/WeUseLogo.svg" id="logo"> 
+            <ul>
+                <li><a href="/Dashboard.html"><img src="/Images/DasboardIcon.svg">Dashboard</a></li>
+                <li><a href="#" class="btn--communities"><img src="/Images/PeopleIcon.svg">Communities<span class="fas fa-sort-down first"></span></a></li>
+                <ul class="show--communities">
+                    <li><a href="/HousingAssociation.html">Housing associations</a></li>
+                    <li><a href="/Dormitories.html">Dormitories</a></li>
+                    <li><a href="NewCommunity.html">Add new</a></li>
+                </ul>
+                <li><a href="/Feedback.html"><img src="/Images/FeedbackIcon.svg">Feedback</a></li>
+                <li><a href="#" class="btn--design "><img src="/Images/heartIcon.svg">Design<span class="fas fa-sort-down second"></span></a></li>
+                <ul class="show--design">
+                    <li><a href="/DesignGuidelines.html">Guidelines</a></li>
+                    <li><a href="/DesignColors.html">Colors</a></li>
+                    <li><a href="/DesignFontFamily.html">Font Family</a></li>
+                    <li><a href="/DesignIllustrations.html">Illustrations</a></li>
+                    <li><a href="/DesignComponents.html">Components</a></li>
+                </ul>   
+                <li><a href="#" class="btn--manage"><img src="/Images/ManageIcon.svg">Manage Users<span class="fas fa-sort-down third"></span></a></li>
+                    <ul class="show--manage">
+                        <li><a href="CPUsers.html">Users</a></li>
+                        <li><a href="NewCPUsers.html">Add new</a></li>
+                    </ul>
+            </ul>
+            <ul id="btn__logout">
+                <li><a href="#"><img src="/Images/LogoutIcon.svg">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+      <div class="background"></div>
+        <div class="mainContent">
+            <ul class="breadcrumb">
+                <li><a href="/Dashboard.html">Dashboard</a></li>
+                <li>Housing Association</li>
+            </ul>
+            <h2>Housing Association</h2>
+            <div>
+            <a href="/NewCommunity.html"><button class="btn--main"> <p>Add New</p> <img src="/Images/PlusIcon.svg"></button></a>
+            <button class="btn--secondary"><p>Filter</p> <img class="btn--lightMode" src="/Images/FilterIcon.svg"><img class="btn--darkMode" src="/Images/filterIconDM.svg"></button>
+            <button class="btn--secondary"><p>Search Housing Association</p> <img class="btn--lightMode" src="/Images/SearchIcon.svg"><img class="btn--darkMode" src="/Images/searchIconDM.svg"></button>
+        </div>
+        <!-------------::
+             Table
+            ::------------>
+
+            <div class="tableHeader">
+                <div class="table__cell--icon">
+                    <span></span>
+                </div>
+                <div class="table__cell">
+                    <p>Housing Association</p>
+                </div>
+                <div class="table__cell">
+                    <p>Administration</p>
+                </div>
+                <div class="table__cell">
+                    <p>Location</p>
+                </div>
+                <div class="table__cell">
+                    <p>Departments</p>
+                </div>
+                <div class="table__cell--icon">
+                   <p>Household List</p>
+                </div>
+                <div class="table__cell--icon">
+                   <p>Edit</p>
+                </div>
+            </div>
+            <div class="table">
+                <div class="table__cell--icon">
+                    <a href="#" class="btn-ha--light1"><img class="btn--lightMode1" src="/Images/DropDownButtonIcon.svg"></a>
+                    <a href="#" class="btn-ha--dark1"><img class="btn--darkMode1" src="/Images/DropDownBtnDM.svg"></a>
+                </div>
+                <div class="table__cell">
+                    <p>Boligforeningen Ungdomsbo</p>
+                </div>
+                <div class="table__cell">
+                    <p>Søbo</p>
+                </div>
+                <div class="table__cell">
+                    <p>Esbjerg</p>
+                </div>
+                <div class="table__cell">
+                    <p>4</p>
+                </div>
+                <div class="table__cell--icon">
+                   <a href="/HAUsers.html"><img class="btn--lightMode" src="/Images/ListIcon.svg"><img class="btn--darkMode" src="/Images/listIconDM.svg"></a>
+                </div>
+                <div class="table__cell--icon">
+                    <a href="/EditCommunity.html"><img class="btn--lightMode" src="/Images/EditIconDark.svg"><img class="btn--darkMode" src="/Images/editIconDM.svg"></a>
+                </div>
+            </div>
+            <div class="table__dropDown1">
+                <div class="table__dropdownLeft">
+                    <div class="table__text">
+                        <div class="table__flex">
+                            <p class="label">Total Households</p>
+                            <p>2000</p>
+                        </div>
+                        <div class="table__flex">
+                            <p class="label">Signed Up</p>
+                            <p>1000</p>
+                        </div>
+                    </div>
+                    <div class="table--keycode">
+                        <p><span>Keycode:</span>    #40695</p>
+                    </div>
+                    <div class="table--contact">
+                        <p class="text--medium">Contact Person:</p>
+                        <p>Donald Trump</p>
+                        <p>Email: duck@email.com</p>
+                    </div>
+                </div>
+                <div class="table__dropDownRight">
+                    <div class="tableHeader">
+                        <div class=table__cell>
+                            <p>departments</p>
+                        </div>
+                        <div class=table__cell>
+                            <p>Households</p>
+                        </div>
+                        <div class=table__cell>
+                            <p>Signed Up</p>
+                        </div>
+                        <div class=table__cell--flex>
+                            <p>Links With </p>
+                        </div>
+                        <div class=table__cell--delete>
+                            <p>Delete</p>
+                        </div>
+                    </div>
+                    <div class="table--new">
+                        <div class="table__cell">
+                            <p>afdeling 5</p>
+                        </div>
+                        <div class="table__cell">
+                            <p>500</p>
+                        </div>
+                        <div class="table__cell">
+                            <p>400</p>
+                        </div>
+                        <div class="table__cell--flex">
+                            <p>afdeling 3</p>
+                            <p>afdeling 5</p>
+                            <p>afdeling 10</p>
+                        </div>
+                        <div class="table__cell--delete">
+                            <img src="/Images/DeleteIconRed.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="table--new">
+                        <div class="table__cell">
+                            <p>afdeling 7</p>
+                        </div>
+                        <div class="table__cell">
+                            <p>400</p>
+                        </div>
+                        <div class="table__cell">
+                            <p>300</p>
+                        </div>
+                        <div class="table__cell--flex">
+                            <p>afdeling 1</p>
+                            <p>afdeling 5</p>
+                            <p>afdeling 4</p>
+                        </div>
+                        <div class="table__cell--delete">
+                            <img src="/Images/DeleteIconRed.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="table--new">
+                        <div class="table__cell">
+                            <p>afdeling 8</p>
+                        </div>
+                        <div class="table__cell">
+                            <p>800</p>
+                        </div>
+                        <div class="table__cell">
+                            <p>500</p>
+                        </div>
+                        <div class="table__cell--flex">
+                            <p>afdeling 9</p>
+                            <p>afdeling 3</p>
+                            <p>afdeling 8</p>
+                        </div>
+                        <div class="table__cell--delete">
+                            <img src="/Images/DeleteIconRed.svg">
+                        </div>
+                    </div>  
+                    <div class="addNew">
+                        <p>Add new department</p>
+                        <div class="plusIcon">
+                            <img class="img--item lightMode" src="/Images/PlusCircleIcon.svg" >
+                            <img class="img--item darkMode" src="/Images/PlusIconWhite.svg">
+                        </div>
+                    </div>     
+                </div>  
+            </div>
+            <div class="table">
+                <div class="table__cell--icon">
+                    <a href="#" class="btn-ha--light2"><img class="btn--lightMode2" src="/Images/DropDownButtonIcon.svg"></a>
+                    <a href="#" class="btn-ha--dark2"><img class="btn--darkMode2" src="/Images/DropDownBtnDM.svg"></a>
+                </div>
+                <div class="table__cell">
+                    <p>Søbo</p>
+                </div>
+                <div class="table__cell">
+                    <p>Søbo</p>
+                </div>
+                <div class="table__cell">
+                    <p>Sønderborg</p>
+                </div>
+                <div class="table__cell">
+                    <p>7</p>
+                </div>
+                <div class="table__cell--icon">
+                    <a href="/HAUsers.html"><img class="btn--lightMode" src="/Images/ListIcon.svg"><img class="btn--darkMode" src="/Images/listIconDM.svg"></a>
+                </div>
+                <div class="table__cell--icon">
+                    <a href="/EditCommunity.html"><img class="btn--lightMode" src="/Images/EditIconDark.svg"><img class="btn--darkMode" src="/Images/editIconDM.svg"></a>
+                </div>
+            </div>
+            <div class="table__dropDown2">
+                <div class="table__dropdownLeft">
+                    <div class="table__text">
+                        <div class="table__flex">
+                            <p class="label">Total Households</p>
+                            <p>1400</p>
+                        </div>
+                        <div class="table__flex">
+                            <p class="label">Signed Up</p>
+                            <p>1000</p>
+                        </div>
+                    </div>
+                    <div class="table--keycode">
+                        <p><span>Keycode:</span>    #55898</p>
+                    </div>
+                    <div class="table--contact">
+                        <p class="text--medium">Contact Person:</p>
+                        <p>Donald Trump</p>
+                        <p>Email: duck@email.com</p>
+                    </div>
+                </div>
+                <div class="table__dropDownRight">
+                    <div class="tableHeader">
+                        <div class=table__cell>
+                            <p>departments</p>
+                        </div>
+                        <div class=table__cell>
+                            <p>Households</p>
+                        </div>
+                        <div class=table__cell>
+                            <p>Signed Up</p>
+                        </div>
+                        <div class=table__cell--flex>
+                            <p>Links With</p>
+                        </div>
+                        <div class=table__cell--delete>
+                            <p>Delete</p>
+                        </div>
+                    </div>
+                    <div class="table--new">
+                        <div class="table__cell">
+                            <p>afdeling 1</p>
+                        </div>
+                        <div class="table__cell">
+                            <p>200</p>
+                        </div>
+                        <div class="table__cell">
+                            <p>200</p>
+                        </div>
+                        <div class="table__cell--flex">
+                            <p>afdeling 11</p>
+                            <p>afdeling 2</p>
+                            <p>afdeling 12</p>
+                        </div>
+                        <div class="table__cell--delete">
+                            <img src="/Images/DeleteIconRed.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="table--new">
+                        <div class="table__cell">
+                            <p>afdeling 2</p>
+                        </div>
+                        <div class="table__cell">
+                            <p>500</p>
+                        </div>
+                        <div class="table__cell">
+                            <p>300</p>
+                        </div>
+                        <div class="table__cell--flex">
+                            <p>afdeling 3</p>
+                            <p>afdeling 22</p>
+                            <p>afdeling 30</p>
+                        </div>
+                        <div class="table__cell--delete">
+                            <img src="/Images/DeleteIconRed.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="table--new">
+                        <div class="table__cell">
+                            <p>afdeling 3</p>
+                        </div>
+                        <div class="table__cell">
+                            <p>2000</p>
+                        </div>
+                        <div class="table__cell">
+                            <p>1800</p>
+                        </div>
+                        <div class="table__cell--flex">
+                            <p>afdeling 8</p>
+                            <p>afdeling 9</p>
+                            <p>afdeling 10</p>
+                        </div>
+                        <div class="table__cell--delete">
+                            <img src="/Images/DeleteIconRed.svg">
+                        </div>
+                    </div>  
+                    <div class="addNew">
+                        <p>Add new department</p>
+                        <div class="plusIcon">
+                            <img class="img--item lightMode" src="/Images/PlusCircleIcon.svg" >
+                            <img class="img--item darkMode" src="/Images/PlusIconWhite.svg">
+                        </div>
+                    </div>  
+                </div>   
+            </div>  
+            <div class="table">
+                <div class="table__cell--icon">
+                    <a href="#" class="btn-ha--light3"><img class="btn--lightMode3" src="/Images/DropDownButtonIcon.svg"></a>
+                    <a href="#" class="btn-ha--dark3"><img class="btn--darkMode3" src="/Images/DropDownBtnDM.svg"></a>
+                </div>
+                <div class="table__cell">
+                    <p>Boligforeningen Pensionister</p>
+                </div>
+                <div class="table__cell">
+                    <p>Salus</p>
+                </div>
+                <div class="table__cell">
+                    <p>Aabenraa</p>
+                </div>
+                <div class="table__cell">
+                    <p>2</p>
+                </div>
+                <div class="table__cell--icon">
+                    <a href="/HAUsers.html"><img class="btn--lightMode" src="/Images/ListIcon.svg"><img class="btn--darkMode" src="/Images/listIconDM.svg"></a>
+                </div>
+                <div class="table__cell--icon">
+                    <a href="/EditCommunity.html"><img class="btn--lightMode" src="/Images/EditIconDark.svg"><img class="btn--darkMode" src="/Images/editIconDM.svg"></a>
+                </div>
+            </div>
+            <div class="table__dropDown3">
+                <div class="table__dropdownLeft">
+                    <div class="table__text">
+                        <div class="table__flex">
+                            <p class="label">Total Households</p>
+                            <p>2500</p>
+                        </div>
+                        <div class="table__flex">
+                            <p class="label">Signed Up</p>
+                            <p>2500</p>
+                        </div>
+                    </div>
+                    <div class="table--keycode">
+                        <p><span>Keycode:</span>    #84765</p>
+                    </div>
+                    <div class="table--contact">
+                        <p class="text--medium">Contact Person:</p>
+                        <p>Barack Obama</p>
+                        <p>Email: nr.1@email.com</p>
+                    </div>
+                </div>
+                <div class="table__dropDownRight">
+                    <div class="tableHeader">
+                        <div class=table__cell>
+                            <p>departments</p>
+                        </div>
+                        <div class=table__cell>
+                            <p>Households</p>
+                        </div>
+                        <div class=table__cell>
+                            <p>Signed Up</p>
+                        </div>
+                        <div class=table__cell--flex>
+                            <p>Links With</p>
+                        </div>
+                        <div class=table__cell--delete>
+                            <p>Delete</p>
+                        </div>
+                    </div>
+                    <div class="table--new">
+                        <div class="table__cell">
+                            <p>afdeling 6</p>
+                        </div>
+                        <div class="table__cell">
+                            <p>600</p>
+                        </div>
+                        <div class="table__cell">
+                            <p>500</p>
+                        </div>
+                        <div class="table__cell--flex">
+                            <p>afdeling 4</p>
+                            <p>afdeling 5</p>
+                            <p>afdeling 15</p>
+                        </div>
+                        <div class="table__cell--delete">
+                            <img src="/Images/DeleteIconRed.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="table--new">
+                        <div class="table__cell">
+                            <p>afdeling 10</p>
+                        </div>
+                        <div class="table__cell">
+                            <p>900</p>
+                        </div>
+                        <div class="table__cell">
+                            <p>7000</p>
+                        </div>
+                        <div class="table__cell--flex">
+                            <p>afdeling 12</p>
+                            <p>afdeling 15</p>
+                            <p>afdeling 16</p>
+                        </div>
+                        <div class="table__cell--delete">
+                            <img src="/Images/DeleteIconRed.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="table--new">
+                        <div class="table__cell">
+                            <p>afdeling 22</p>
+                        </div>
+                        <div class="table__cell">
+                            <p>800</p>
+                        </div>
+                        <div class="table__cell">
+                            <p>800</p>
+                        </div>
+                        <div class="table__cell--flex">
+                            <p>afdeling 20</p>
+                            <p>afdeling 23</p>
+                            <p>afdeling 25</p>
+                        </div>
+                        <div class="table__cell--delete">
+                            <img src="/Images/DeleteIconRed.svg">
+                        </div>
+                    </div>  
+                    <div class="addNew">
+                        <p>Add new department</p>
+                        <div class="plusIcon">
+                            <img class="img--item lightMode" src="/Images/PlusCircleIcon.svg" >
+                            <img class="img--item darkMode" src="/Images/PlusIconWhite.svg">
+                        </div>
+                    </div>  
+                </div>   
+            </div>  
+            <div class="table">
+                <div class="table__cell--icon">
+                    <a href="#" class="btn-ha--light4"><img class="btn--lightMode4" src="/Images/DropDownButtonIcon.svg"></a>
+                    <a href="#" class="btn-ha--dark4"><img class="btn--darkMode4" src="/Images/DropDownBtnDM.svg"></a>
+                </div>
+                <div class="table__cell">
+                    <p>Boligforeningen Ungdomsbo</p>
+                </div>
+                <div class="table__cell">
+                    <p>Søbo</p>
+                </div>
+                <div class="table__cell">
+                    <p>Esbjerg</p>
+                </div>
+                <div class="table__cell">
+                    <p>4</p>
+                </div>
+                <div class="table__cell--icon">
+                    <a href="/HAUsers.html"><img class="btn--lightMode" src="/Images/ListIcon.svg"><img class="btn--darkMode" src="/Images/listIconDM.svg"></a>
+                </div>
+                <div class="table__cell--icon">
+                    <a href="/EditCommunity.html"><img class="btn--lightMode" src="/Images/EditIconDark.svg"><img class="btn--darkMode" src="/Images/editIconDM.svg"></a>
+                </div>
+            </div>
+            <div class="table__dropDown4">
+                <div class="table__dropdownLeft">
+                    <div class="table__text">
+                        <div class="table__flex">
+                            <p class="label">Total Households</p>
+                            <p>5000</p>
+                        </div>
+                        <div class="table__flex">
+                            <p class="label">Signed Up</p>
+                            <p>4000</p>
+                        </div>
+                    </div>
+                    <div class="table--keycode">
+                        <p><span>Keycode:</span>    #63845</p>
+                    </div>
+                    <div class="table--contact">
+                        <p class="text--medium">Contact Person:</p>
+                        <p>Bill Clinton</p>
+                        <p>Email: clit@email.com</p>
+                    </div>
+                </div>
+                <div class="table__dropDownRight">
+                    <div class="tableHeader">
+                        <div class=table__cell>
+                            <p>departments</p>
+                        </div>
+                        <div class=table__cell>
+                            <p>Households</p>
+                        </div>
+                        <div class=table__cell>
+                            <p>Signed Up</p>
+                        </div>
+                        <div class=table__cell--flex>
+                            <p>Links With</p>
+                        </div>
+                        <div class=table__cell--delete>
+                            <p>Delete</p>
+                        </div>
+                    </div>
+                    <div class="table--new">
+                        <div class="table__cell">
+                            <p>afdeling 3</p>
+                        </div>
+                        <div class="table__cell">
+                            <p>500</p>
+                        </div>
+                        <div class="table__cell">
+                            <p>500</p>
+                        </div>
+                        <div class="table__cell--flex">
+                            <p>afdeling 1</p>
+                            <p>afdeling 2</p>
+                            <p>afdeling 3</p>
+                        </div>
+                        <div class="table__cell--delete">
+                            <img src="/Images/DeleteIconRed.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="table--new">
+                        <div class="table__cell">
+                            <p>afdeling 7</p>
+                        </div>
+                        <div class="table__cell">
+                            <p>700</p>
+                        </div>
+                        <div class="table__cell">
+                            <p>400</p>
+                        </div>
+                        <div class="table__cell--flex">
+                            <p>afdeling 33</p>
+                            <p>afdeling 55</p>
+                            <p>afdeling 11</p>
+                        </div>
+                        <div class="table__cell--delete">
+                            <img src="/Images/DeleteIconRed.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="table--new">
+                        <div class="table__cell">
+                            <p>afdeling 3</p>
+                        </div>
+                        <div class="table__cell">
+                            <p>900</p>
+                        </div>
+                        <div class="table__cell">
+                            <p>600</p>
+                        </div>
+                        <div class="table__cell--flex">
+                            <p>afdeling 5</p>
+                            <p>afdeling 6</p>
+                            <p>afdeling 10</p>
+                        </div>
+                        <div class="table__cell--delete">
+                            <img src="/Images/DeleteIconRed.svg">
+                        </div>
+                    </div>  
+                    <div class="addNew">
+                        <p>Add new department</p>
+                        <div class="plusIcon">
+                            <img class="img--item lightMode" src="/Images/PlusCircleIcon.svg" >
+                            <img class="img--item darkMode" src="/Images/PlusIconWhite.svg">
+                        </div>
+                    </div>     
+            </div>  
+        </div>
+    </div>
+    <div id="no-mobile">
+        <div class="mobile-message">
+            <h3>This site is onley available on desktop, please change device</h3>
+        </div>
+    </div>
+<script src="main.js"></script>
+<script src="darkMode.js"></script>
+<script src="listDropDown.js"></script>
+</body>
+</html>

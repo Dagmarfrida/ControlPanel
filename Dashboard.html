@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/SCSS/style.css?v=2">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"> 
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="desktop">
+    <header class="header">
+        <div class="search">
+            <form action="">
+                <input type="text" name="" placeholder="Type here..">
+                <input type="submit" name="" value="Search">
+            </form>
+        </div>
+        <div class="menu">
+            <div class="menu__profile" onclick="menuToggle();">
+               <img src="/Images/ProfileAdam.png" alt="profile image"> 
+            </div>
+               <div class="menu__dropdown">
+                   <p>Adam <br><span>ach@weuse.dk<br>Access: Editor</p></span>
+                   <hr>
+                    <ul>
+                        <li><img src="/Images/EditIcon.png"><a href="/EditProfile.html">Edit profile</a>
+                        <li><img src="/Images/LockIconWhite.png"><a href="/ChangePassword.html">Edit Password</a>
+                        <li><img src="/Images/LastLoginsWhite.png"><a href="/LastLogins.html">Last Logins</a>
+                        <li><img src="/Images/logoutWhite.png"><a href="">Logout</a>
+                    </li>   
+                   </ul>
+               </div>  
+        </div>
+        <div class="toggleDark">
+            <input type="checkbox" class="toggleDark__checkbox" id="checkbox">
+            <label for="checkbox" class="toggleDark__checkboxLabel">
+                <img src="/Images/moonIcon.png" class="toggleDark__moon">
+                <img src="/Images/sunIcon.png" class="toggleDark__sun">
+                <div class="toggleDark__ball">
+                </div>
+            </label>
+        </div>
+    </header>
+    <div class="sidemenu-wrapper">
+        <nav class="sidemenu">
+            <img src="/Images/WeUseLogo.svg" id="logo"> 
+            <ul>
+                <li><a href="/Dashboard.html"><img src="/Images/DasboardIcon.svg">Dashboard</a></li>
+                <li><a href="#" class="btn--communities"><img src="/Images/PeopleIcon.svg">Communities<span class="fas fa-sort-down first"></span></a></li>
+                <ul class="show--communities">
+                    <li><a href="/HousingAssociation.html">Housing associations</a></li>
+                    <li><a href="/Dormitories.html">Dormitories</a></li>
+                    <li><a href="NewCommunity.html">Add new</a></li>
+                </ul>
+                <li><a href="/Feedback.html"><img src="/Images/FeedbackIcon.svg">Feedback</a></li>
+                <li><a href="#" class="btn--design "><img src="/Images/heartIcon.svg">Design<span class="fas fa-sort-down second"></span></a></li>
+                <ul class="show--design">
+                    <li><a href="/DesignGuidelines.html">Guidelines</a></li>
+                    <li><a href="/DesignColors.html">Colors</a></li>
+                    <li><a href="/DesignFontFamily.html">Font Family</a></li>
+                    <li><a href="/DesignIllustrations.html">Illustrations</a></li>
+                    <li><a href="/DesignComponents.html">Components</a></li>
+                </ul>   
+                <li><a href="#" class="btn--manage"><img src="/Images/ManageIcon.svg">Manage Users<span class="fas fa-sort-down third"></span></a></li>
+                    <ul class="show--manage">
+                        <li><a href="CPUsers.html">Users</a></li>
+                        <li><a href="NewCPUsers.html">Add new</a></li>
+                    </ul>
+            </ul>
+            <ul id="btn__logout">
+                <li><a href="#"><img src="/Images/LogoutIcon.svg">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="dashboard-container mainContent">
+        <h2>Welcome Adam</h2>
+        <ul class="breadcrumb">
+            <li>Dashboard /</a></li>
+        </ul>
+        <div class="dashboard">
+            <section class="section__left">
+                <div class="totals">
+                    <h5>Totals</h5>
+                    <div class="totals__box">
+                        <div class="totals__numbers box1">
+                            <p>Users</p>
+                            <h2>150.000</h2>
+                        </div>  
+                        <div class="totals__numbers box2">
+                            <p>Shared Items</p>
+                            <h2 class="totals--lessMargin">999.000</h2>
+                        </div>  
+                        <div class="totals__numbers box3">
+                            <p>Activities</p>
+                            <h2>50.000</h2>
+                        </div>  
+                        <div class="totals__numbers box4">
+                            <p>Events</p>
+                            <h2>3.000</h2>
+                        </div> 
+                    </div> 
+                </div>
+                    <div class="new">
+                        <h5>New this week</h5>
+                        <div class="new__box">
+                            <div class="tableHeader--new">
+                                <div class="table__cell--new">
+                                    <span>xxxxxxxxxxx</span>
+                                </div>
+                                <div class="table__cell--new number">
+                                    <p>Housing association</p>
+                                </div>
+                                <div class="table__cell--new number">
+                                    <p>Dormitores</p>
+                                </div>
+                            </div>
+                            <div class="table--new">
+                                <div class="table__cell--new">
+                                    <p>Sign ups</p>
+                                </div>
+                                <div class="table__cell--new number">
+                                    <div class="new--green">12 <i class="fas fa-caret-up"></i></div>
+                                </div>
+                                <div class="table__cell--new number">
+                                    <div class="new--green">45 <i class="fas fa-caret-up"></i></div>
+                                </div>
+                            </div>
+                            <div class="table--new">
+                                <div class="table__cell--new">
+                                    <p>New activities created</p>
+                                </div>
+                                <div class="table__cell--new number">
+                                    <div class="new--green">42 <i class="fas fa-caret-up"></i></div>
+                                </div>
+                                <div class="table__cell--new number">
+                                    <div class="new--red">28 <i class="fas fa-caret-down"></i></div>
+                                </div>
+                            </div>
+                            <div class="table--new">
+                                <div class="table__cell--new">
+                                    <p>New Events Created</p>
+                                </div>
+                                <div class="table__cell--new number">
+                                    <div class="new--red">18 <i class="fas fa-caret-down"></i></div>
+                                </div>
+                                <div class="table__cell--new number">
+                                    <div class="new--green">10 <i class="fas fa-caret-up"></i></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="quick">
+                        <h5>Quick action</h5>
+                        <div class="quick__box">
+                            <div class="btn__quick ha">
+                                <a href="/NewCommunity.html"><p class="label">New</p>                              
+                                    <img class="lightMode" src="/Images/PlusCircleIcon.svg"> 
+                                    <img class="darkMode" src="/Images/PlusIconWhite.svg">                             
+                                <p>housing association</p>
+                                <div class="quick__illustration">
+                                    <img class="illustration" src="/Images/HousesIllustration.svg"></a>
+                                </div>
+                            </div>
+                            <div class="btn__quick dorm">
+                                <a href="/NewCPUsers.html"><p class="label">New</p>             
+                                    <img class="lightMode" src="/Images/PlusCircleIcon.svg"> 
+                                    <img class="darkMode" src="/Images/PlusIconWhite.svg"> 
+                                <p>CP User</p> 
+                                <div class="quick__illustration">
+                                    <img class="illustration" src="/Images/NewUserIllustration.svg"></a>
+                                </div>
+                            </div>
+                            <div class="btn__quick fb">
+                                <a href="/Feedback.html"><p class="label">See</p>
+                                <p>Feedback</p>
+                                <div class="quick__illustration">
+                                    <img class="illustration" src="/Images/FeedbackIllustration.svg"></a>
+                                </div>
+                            </div>
+                            <div class="btn__quick design">
+                                <a href="/DesignGuidelines.html"><p class="label">See</p>
+                                <p>Design</p>
+                                <div class="quick__illustration">
+                                    <img class="illustration" src="/Images/DesignIllustration.svg"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <section class="section__right">
+                <div class="latest">
+                    <h5>latest communties</h5>
+                    <div class="latest__box">
+                        <div class="latest__label">
+                            <p>name</p>
+                            <p>Households</p>
+                            <p>Sign Ups</p>
+                        </div>
+                        <div class="latest__listrow">
+                            <p><a href="/HousingAssociation.html">Boligselskabet</a></p>
+                            <p>2000</p>
+                            <p>700</p>
+                        </div>
+                        <div class="latest__listrow">
+                            <p><a href="/HousingAssociation.html">Bovia</a></p>
+                            <p>5600</p>
+                            <p>3300</p>
+                        </div   >
+                        <div class="latest__listrow">
+                            <p><a href="/HousingAssociation.html">Salus</a></p>
+                            <p>1000</p>
+                            <p>400</p>
+                        </div>
+                        <div class="latest__listrow">
+                            <p><a href="/HousingAssociation.html">Boligforeningen Hus</a></p>
+                            <p>7700</p>
+                            <p>5000</p>
+                        </div>
+                        <div class="latest__listrow">
+                            <p><a href="/HousingAssociation.html">Hus til halsen</a></p>
+                            <p>3300</p>
+                            <p>1800</p>
+                        </div>
+                </div>
+            </div>
+                <div class="weusers">
+                    <h5>WeUsers</h5>
+                    <canvas id="weusers__chart" width="400" height="400"></canvas>
+                </div>
+            </section>
+    </div>
+</div>
+<div id="no-mobile">
+    <div class="mobile-message">
+        <h3>This site is onley available on desktop, please change device</h3>
+    </div>
+</div>
+
+    <script src="main.js"></script>
+    <script src="darkMode.js"></script>
+    <script src="chart.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+@use '../abstracts/' as *;
+@use '../layout/' as *;
+@use '../components/' as *;
+
+     /* --------------HOUSEHOLDS--------------*/
+       .mainContent {
+        width: 100%;
+        margin-left: 338px;
+    }
+    .breadcrumb {
+        padding: 10px 0;
+        list-style: none;
+        color: $Whale;
+        
+        li {
+            display: inline;
+            font-size: 18px;
+        }
+        li+li:before {
+            padding: 8px;
+            color: $Whale;
+            content: "/\00a0";
+        }
+        li a {
+            color: $Whale;
+            text-decoration: none;
+        }
+        li a:hover {
+            color: $WeuseGreen;
+            text-decoration: underline;
+        }
+    }

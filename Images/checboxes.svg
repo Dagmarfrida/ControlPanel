@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1139" height="66" viewBox="0 0 1139 66">
+  <g id="Group_620" data-name="Group 620" transform="translate(-416 -1959)">
+    <g id="Rectangle_460" data-name="Rectangle 460" transform="translate(462 1985)" fill="#fff" stroke="#b4bbc3" stroke-width="2">
+      <rect width="40" height="40" rx="8" stroke="none"/>
+      <rect x="1" y="1" width="38" height="38" rx="7" fill="none"/>
+    </g>
+    <rect id="Rectangle_461" data-name="Rectangle 461" width="40" height="40" rx="8" transform="translate(784 1985)" fill="#17a754"/>
+    <rect id="Rectangle_462" data-name="Rectangle 462" width="40" height="40" rx="8" transform="translate(1106 1985)" fill="#dadde1"/>
+    <rect id="Rectangle_463" data-name="Rectangle 463" width="40" height="40" rx="8" transform="translate(1428 1985)" fill="#dadde1"/>
+    <text id="Default_Checkbox" data-name="Default Checkbox" transform="translate(416 1970)" fill="#636363" font-size="14" font-family="Objectivity-Bold, Objectivity" font-weight="700"><tspan x="0" y="0">Default Checkbox</tspan></text>
+    <text id="Checked_Checkbox" data-name="Checked Checkbox" transform="translate(733 1970)" fill="#636363" font-size="14" font-family="Objectivity-Bold, Objectivity" font-weight="700"><tspan x="0" y="0">Checked Checkbox</tspan></text>
+    <text id="Disabled_Checkbox" data-name="Disabled Checkbox" transform="translate(1055 1970)" fill="#636363" font-size="14" font-family="Objectivity-Bold, Objectivity" font-weight="700"><tspan x="0" y="0">Disabled Checkbox</tspan></text>
+    <text id="Disabled_Checked_Checkbox" data-name="Disabled Checked Checkbox" transform="translate(1344 1970)" fill="#636363" font-size="14" font-family="Objectivity-Bold, Objectivity" font-weight="700"><tspan x="0" y="0">Disabled Checked Checkbox</tspan></text>
+    <path id="Icon_metro-checkmark" data-name="Icon metro-checkmark" d="M28.6,5.784l-14.46,14.46L7.391,13.5l-4.82,4.82L14.139,29.885,33.419,10.6Z" transform="translate(786.006 1987.165)" fill="#fff"/>
+    <path id="Icon_metro-checkmark-2" data-name="Icon metro-checkmark" d="M28.6,5.784l-14.46,14.46L7.391,13.5l-4.82,4.82L14.139,29.885,33.419,10.6Z" transform="translate(1430.006 1989.216)" fill="#fff"/>
+  </g>
+</svg>

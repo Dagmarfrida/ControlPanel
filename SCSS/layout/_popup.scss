@@ -1,0 +1,185 @@
+@use '../abstracts/' as *;
+@use '../components/' as *;
+
+.modal__content.form {
+    margin-top: 0px;
+}
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background: $SurfaceColor;
+    /*box-shadow: $boxShadow;*/
+    border-radius: $bordersBig;
+    width: 600px;
+    max-width: 80%;
+    z-index: 10;
+
+    .img--item {
+        float: right;
+        max-width: 220px;
+        clear: both;
+        margin-bottom: 10px;
+        border-radius: $bordersM;
+
+        &.darkMode {
+            display: none;
+        }
+    }
+    &--input {
+        width: calc(100% - 20px);
+    }
+    &__img {
+        text-align: end;
+        align-self: center;
+    }
+}
+.form__content.modal__content {
+    width: 800px;
+    }
+    p {
+    margin-bottom: 0;
+    a {
+    color: $Fox; 
+    }
+}
+
+#textarea {
+    height: 100%;
+}
+#categories {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: $bordersButtons;
+    padding-left: 15px;
+    border: 1px solid #697688;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    margin-bottom: 5px;
+
+    &:valid {
+        border-radius: 1px solid $HeadingColor;
+    }
+    
+}
+.modal.active {
+   transform: translate(-50%, -50%) scale(1); 
+}
+
+    .btn--close,  .close-button{
+        cursor: pointer;
+        border: none;
+        outline: none;
+        background: none;
+        font-weight: bold;
+        font-size: 32px;
+        color: $HeadingColor;
+        box-shadow: none;
+        float: right;
+        max-width: 40px;
+
+    }
+
+.btn--icon, close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    box-shadow: none;
+    max-width: 40px;
+
+}
+.modal__buttons {
+    text-align: center;
+}
+#overlay {
+    position: fixed;
+    opacity: 0; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0, 0.3);
+    pointer-events: none;
+    transition: 200ms ease-in-out;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+       
+}
+
+/*---------- MODAL FOR NEW HOUSING COMMUNITY-------------*/
+
+.modal--input.modal__linksWith {
+    display: flex;
+}
+.form__details.modal--size {
+    display: block;
+    width: 70%;
+    
+    .modal--input {
+        margin-top: 30px;
+    }
+}
+#modal__linksWith {
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+
+    .linksWith--input{
+        width: 100%;
+    }
+
+    .plusIcon {
+        margin-left: 10px;
+        height: 25px;  
+    }
+}
+
+
+
+/*-----Warning modal---------*/
+#modalLogout {
+    width: 306px;
+    height: 270px;
+    border: 4px solid $Warning;
+    border-radius: 85px 0 85px 0;
+    .logout__content {
+        margin-top: 30px;
+        p {
+            padding: 20px;
+        }
+    }
+    .warning--img  {
+        margin: auto auto;
+        display: block;
+    }
+    .btn--cancel {
+    border: none;
+    width: 142px;
+    background: $Warning;
+    padding: 20px 20px;
+    box-shadow: none;
+    border-radius: 0;
+    margin-top: 15px;
+    }
+    .btn--confirm {
+    box-shadow: none;
+    border: none;
+    width: 148px;
+    background: $Warning;
+    border-radius: 0 0 65px 0;
+    padding: 20px 20px;
+    border-right: 0px solid $White;
+    margin: 0;
+    }
+}
+
+
+

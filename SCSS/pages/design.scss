@@ -1,0 +1,118 @@
+@use '../abstracts/' as *;
+@use '../layout/' as *;
+@use '../components/' as *;
+
+.text--medium.design {
+    display: inline-block;
+    max-width: 800px;
+    font-size: $MainTextM;
+    color: $Whale;
+    margin: 20px auto 50px auto;
+    line-height: 30px;   
+}
+.text--large.design {
+    display: inline-block;
+    max-width: 800px;
+    font-size: $MainTextL;
+    color: $HeadingColor;
+    margin: 20px auto 50px auto;
+    line-height: 34px;   
+    }
+.text--small.design {
+    margin-bottom: 0;
+    font-size: $MainTextS;
+    color: $Whale;
+    }
+
+.form__content {
+    hr {
+        background-color: $WeuseGreen;
+    }
+    
+}
+
+.form__content.design {
+    padding: 46px;
+
+    .text--medium {
+        font-size: $MainTextM;
+        color: $Whale;
+       margin: 20px auto 50px auto;
+        line-height: 30px;
+    }
+
+    .btn__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 24px;
+
+        .text--small {
+            font-size: $MainTextS;
+            color: $Whale;
+            margin-bottom: 5px;
+        }
+    }
+
+    .btn__design { 
+        border-radius: $bordersM;
+        overflow: hidden;
+        background-color: $Lion60;
+        width: 165px;
+        height: 155px;
+        box-shadow: $boxShadow;
+        transition: all .2s ease-in-out; 
+
+        &:hover {
+            background: $WeuseGreen40;
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        box-shadow:  0 8px 20px rgb(15, 106, 54, 0.25);
+        }
+    }
+
+    .btn--top {
+        position: relative;
+        background-color: $White;
+        text-align: center;
+        height: 60px;
+
+        img {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%)
+        }
+    }
+
+    .btn--bottom {    
+        padding: 10px;
+        height: 95px;
+    }
+}
+
+.form__content {
+    &.colors, &.fonts, &.illustrations, &.components {
+
+        img {
+            margin: 30px auto;
+            max-width: 700px;
+            height: auto;
+            width: 100%;   
+        } 
+    }
+}
+ /*.form__content.design {
+    .text--medium {
+         
+        display: inline-block;
+        max-width: 800px;
+        font-size: $MainTextM;
+        color: $Whale;
+        margin: 20px auto 50px auto;
+        line-height: 30px;   
+        }
+    
+    .text--large {
+        font-size: $MainTextL;
+        } 
+}*/
