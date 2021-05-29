@@ -4,82 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/SCSS/style.css?v=2">
+    <link rel="stylesheet" href="SCSS/style.css?v=2">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"> 
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <title>Housing Association</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <title>Change Password</title>
 </head>
 <body>
     <div class="desktop">
-        <header class="header">
-            <div class="search">
-                <form action="">
-                    <input type="text" name="" placeholder="Type here..">
-                    <input type="submit" name="" value="Search">
-                </form>
+    <header class="header">
+        <div class="search">
+            <form action="">
+                <input type="text" name="" placeholder="Type here..">
+                <input type="submit" name="" value="Search">
+            </form>
+        </div>
+        <div class="menu">
+            <div class="menu__profile" onclick="menuToggle();">
+               <img src="Images/ProfileAdam.png" alt="profile image"> 
             </div>
-            <div class="menu">
-                <div class="menu__profile" onclick="menuToggle();">
-                   <img src="/Images/ProfileAdam.png" alt="profile image"> 
+               <div class="menu__dropdown">
+                   <p>Adam <br><span>ach@weuse.dk<br>Access: Editor</p></span>
+                   <hr>
+                   <ul>
+                        <li><img src="Images/EditIcon.png"><a href="/EditProfile.html">Edit profile</a>
+                        <li><img src="Images/LockIconWhite.png"><a href="ChangePassword.html">Edit Password</a>
+                        <li><img src="Images/LastLoginsWhite.png"><a href="LastLogins.html">Last Logins</a>
+                        <li><img src="Images/logoutWhite.png"><a href="">Logout</a>
+                    </li>     
+                   </ul>
+               </div>  
+        </div>
+        <div class="toggleDark">
+            <input type="checkbox" class="toggleDark__checkbox" id="checkbox">
+            <label for="checkbox" class="toggleDark__checkboxLabel">
+                <img src="Images/moonIcon.png" class="toggleDark__moon">
+                <img src="Images/sunIcon.png" class="toggleDark__sun">
+                <div class="toggleDark__ball">
                 </div>
-                   <div class="menu__dropdown">
-                       <p>Adam <br><span>ach@weuse.dk<br>Access: Editor</p></span>
-                       <hr>
-                        <ul>
-                            <li><img src="/Images/EditIcon.png"><a href="/EditProfile.html">Edit profile</a>
-                            <li><img src="/Images/LockIconWhite.png"><a href="/ChangePassword.html">Edit Password</a>
-                            <li><img src="/Images/LastLoginsWhite.png"><a href="/LastLogins.html">Last Logins</a>
-                            <li><img src="/Images/logoutWhite.png"><a href="">Logout</a>
-                        </li>   
-                    </ul>
-                   </div>  
-            </div>
-            <div class="toggleDark">
-                <input type="checkbox" class="toggleDark__checkbox" id="checkbox">
-                <label for="checkbox" class="toggleDark__checkboxLabel">
-                    <img src="/Images/moonIcon.png" class="toggleDark__moon">
-                    <img src="/Images/sunIcon.png" class="toggleDark__sun">
-                    <div class="toggleDark__ball">
-                    </div>
-                </label>
-            </div>
-        </header>
-    
-        <div class="sidemenu-wrapper">
-            <nav class="sidemenu">
-                <img src="/Images/WeUseLogo.svg" id="logo"> 
-                <ul>
-                    <li><a href="/Dashboard.html"><img src="/Images/DasboardIcon.svg">Dashboard</a></li>
-                    <li><a href="#" class="btn--communities"><img src="/Images/PeopleIcon.svg">Communities<span class="fas fa-sort-down first"></span></a></li>
-                    <ul class="show--communities">
-                        <li><a href="/HousingAssociation.html">Housing associations</a></li>
-                        <li><a href="/Dormitories.html">Dormitories</a></li>
-                        <li><a href="NewCommunity.html">Add new</a></li>
-                    </ul>
-                    <li><a href="/Feedback.html"><img src="/Images/FeedbackIcon.svg">Feedback</a></li>
-                    <li><a href="#" class="btn--design "><img src="/Images/heartIcon.svg">Design<span class="fas fa-sort-down second"></span></a></li>
-                    <ul class="show--design">
-                        <li><a href="/DesignGuidelines.html">Guidelines</a></li>
-                        <li><a href="/DesignColors.html">Colors</a></li>
-                        <li><a href="/DesignFontFamily.html">Font Family</a></li>
-                        <li><a href="/DesignIllustrations.html">Illustrations</a></li>
-                        <li><a href="/DesignComponents.html">Components</a></li>
-                    </ul>   
-                    <li><a href="#" class="btn--manage"><img src="/Images/ManageIcon.svg">Manage Users<span class="fas fa-sort-down third"></span></a></li>
-                        <ul class="show--manage">
-                            <li><a href="CPUsers.html">Users</a></li>
-                            <li><a href="NewCPUsers.html">Add new</a></li>
-                        </ul>
+            </label>
+        </div>
+    </header>
+    <div class="sidemenu-wrapper">
+        <nav class="sidemenu">
+            <img src="Images/WeUseLogo.svg" id="logo"> 
+            <ul>
+                <li><a href="Dashboard.html"><img src="Images/DasboardIcon.svg">Dashboard</a></li>
+                <li><a href="#" class="btn--communities"><img src="Images/PeopleIcon.svg">Communities<span class="fas fa-sort-down first"></span></a></li>
+                <ul class="show--communities">
+                    <li><a href="HousingAssociation.html">Housing associations</a></li>
+                    <li><a href="Dormitories.html">Dormitories</a></li>
+                    <li><a href="NewCommunity.html">Add new</a></li>
                 </ul>
-                <ul id="btn__logout">
-                    <li><a href="#"><img src="/Images/LogoutIcon.svg">Logout</a></li>
-                </ul>
-            </nav>
+                <li><a href="Feedback.html"><img src="Images/FeedbackIcon.svg">Feedback</a></li>
+                <li><a href="#" class="btn--design "><img src="Images/heartIcon.svg">Design<span class="fas fa-sort-down second"></span></a></li>
+                <ul class="show--design">
+                    <li><a href="DesignGuidelines.html">Guidelines</a></li>
+                    <li><a href="DesignColors.html">Colors</a></li>
+                    <li><a href="DesignFontFamily.html">Font Family</a></li>
+                    <li><a href="DesignIllustrations.html">Illustrations</a></li>
+                    <li><a href="DesignComponents.html">Components</a></li>
+                </ul>   
+                <li><a href="#" class="btn--manage"><img src="Images/ManageIcon.svg">Manage Users<span class="fas fa-sort-down third"></span></a></li>
+                    <ul class="show--manage">
+                        <li><a href="CPUsers.html">Users</a></li>
+                        <li><a href="NewCPUsers.html">Add new</a></li>
+                    </ul>
+            </ul>
+            <ul id="btn__logout">
+                <li><a href="#"><img src="Images/LogoutIcon.svg/">Logout</a></li>
+            </ul>
+        </nav>
         </div>
         <div class="mainContent">
             <ul class="breadcrumb">
-                <li><a href="/Dashboard.html">Dashboard</a></li>
-                <li><a href="/DesignGuidelines.html">Design Guidelines</a></li>
+                <li><a href="Dashboard.html">Dashboard</a></li>
+                <li><a href="DesignGuidelines.html">Design Guidelines</a></li>
                 <li>Components</li>
             </ul>
             <h2>Components</h2>
@@ -104,54 +105,54 @@
                     <p class="text--medium design">Buttons should have minimum width of 80px. Where multiple buttons appear, all of them should be the same size. If possible dependent on text length the horizontal paddings should be minimum 12px. Vertical padding should be minimum 10px. Text should have first letter of every word capitalised.</p>
                     <h4>Primary Button</h4>
                     <p class="text--small design">Should be used sparingly and only when there is need to cancel or delete something</p>
-                    <img src="/Images/primarybuttons.svg" alt="primary button">
+                    <img src="Images/primarybuttons.svg" alt="primary button">
                     <h4>Primary Cancel Button</h4>
                     <p class="text--small design">Should be used sparingly and only when there is need to cancel or delete something</p>
-                    <img src="/Images/primaryCancelButton.svg" alt="primary cancel button">
+                    <img src="Images/primaryCancelButton.svg" alt="primary cancel button">
                     <h4>Secondary button</h4>
                     <p class="text--small design">Can be used f.eks. to navigate to other content on the same page</p>
-                    <img src="/Images/secondaryButton.svg" alt="secondary button">
+                    <img src="Images/secondaryButton.svg" alt="secondary button">
                     <h4>Tertiary button</h4>
                     <p class="text--small design">Should be support to Primary or Secondary buttons or for actions where Primary or Secondary buttons are not needed They er not the main focus but should be easy to discover.</p>
-                    <img src="/Images/tertiaryButton.svg" alt="tertiary button">
+                    <img src="Images/tertiaryButton.svg" alt="tertiary button">
                     <h4>Button with Icons</h4>
                     <p class="text--small design">Icon always displays after the text and the icon should be similar to cap height of the font. Text should be left aligned and icon right aligned with the sem padding </p>
-                    <img src="/Images/iconButton.svg" alt="button with icon">
+                    <img src="Images/iconButton.svg" alt="button with icon">
                 </div>
                 <div class="form__content components">
                     <h3>Checkbox</h3>
                     <hr>
                     <p class="text--medium design">Checkboxes are used when the user can choose between multiple choices where he/she can select one or more. </p>
-                    <img src="/Images/checboxes.svg" alt="checkboxes">
+                    <img src="Images/checboxes.svg" alt="checkboxes">
                
                 </div>
                 <div class="form__content components">
                     <h3>Tableview</h3>
                     <hr>
                     <p class="text--medium design">Tableview is used everywhere lists are displayed. It follows grid of 145 px columns with 16 px gutter. Where text is centered.</p>
-                    <img src="/Images/table.svg" alt="table">
+                    <img src="Images/table.svg" alt="table">
                 </div>
                 <div class="form__content components">
                     <h3>Input fields</h3>
                     <hr>
                     <p class="text--medium design"> Input field is an input that users can fill out a text or edit it. Corner radius is 15px. Border color is Whale 40</p>
                     <h4>Default input field</h4>
-                    <img src="/Images/defaultInput.svg" alt="Input field">
+                    <img src="Images/defaultInput.svg" alt="Input field">
                     <h3>Input field with message</h3>
                     <p class="text--medium design"> Message is a way to let the user know if something worked or not. It has different color depending on the message. The fonts size of message is 14px</p>
-                    <img src="/Images/inputFieldMsg.svg" alt="input field with message">
+                    <img src="Images/inputFieldMsg.svg" alt="input field with message">
                 </div>
                 <div class="form__content components">
                     <h3>Pop ups</h3>
                     <hr>
                     <p class="text--medium design"> Pop Up messages appear when user needs to confirm his action or when he is deleting something that needs to be confirmed. They have different color depending on their action.</p>
-                    <img src="/Images/popup.svg" alt="popup message">
+                    <img src="Images/popup.svg" alt="popup message">
                 </div>
             </div>
         </div>
         <div id="no-mobile">
             <div class="mobile-message">
-                <h3>This site is onley available on desktop, please change device</h3>
+                <h3>This site is only available on desktop, please change device</h3>
             </div>
         </div>
     </div>
