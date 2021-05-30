@@ -46,6 +46,9 @@ body.dark .sidemenu-wrapper nav ul li.active a {
 body.dark .sidemenu-wrapper nav ul ul li.active ul li a {
   background: rgba(51, 51, 51, 0.6);
 }
+body.dark .sidemenu-wrapper nav ul ul li a:hover {
+  background: rgba(51, 51, 51, 0.6) !important;
+}
 body.dark .breadcrumb, body.dark li + li:before, body.dark .basic-table, body.dark .listLabel th, body.dark .radio, body.dark .dropdown-select {
   color: #E8E8E8;
   text-shadow: none;
@@ -340,77 +343,6 @@ nav ul li.active a {
 }
 
 /*----------TABLE----------*/
-/*.table {
-    table-layout: auto;
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 0 24px;
-    margin: 25px 25px 0 0;
-    max-width: 1500px;
-    color: $Whale;
-
-    th {
-        color: $HeadingColor;
-        text-align: left;
-        font-weight: bold;
-        font-size: 14px;
-        font-family: 'Objectivity-Bold';     
-    }
-    img {
-        text-align: right;
-        vertical-align: bottom;
-    }
-    th, td {
-        padding: 36px 15px;
-        min-width: 220px;
-    }
-}
-.table__label {
-    margin-bottom: 10px;
-
-    th {
-        padding-bottom: 0px;
-    }
-}
-.table__listRow {
-    padding: 22px;
-    background-color: $SurfaceColor;
-    box-shadow: $boxShadow;
-    border-radius: $bordersBig;
-
-
-    img {
-        height: 22px;
-    }
-}
-td:first-child {
-    border-top-left-radius: 22px; 
-    border-bottom-left-radius: 22px;
-}
-td:last-child {
-    border-bottom-right-radius: 22px; 
-    border-top-right-radius: 22px; 
-}
-
-/*@media 
-only screen and (max-width: 2000px) {
-    .table {
-        width: 1200px;
-    } 
-}
-@media 
-only screen and (max-width: 1700px) {
-    .table {
-        width: 1000px;
-    } 
-}
-@media 
-only screen and (max-width: 1450px) {
-    .table {
-        width: 700px;
-    } 
-}*/
-/*TEST MED FLEXBOX*/
 .tableHeader {
   display: flex;
   justify-content: space-between;
@@ -654,6 +586,24 @@ only screen and (max-width: 1450px) {
 }
 .radio:hover input:checked + span:after {
   transform: scale(0.4);
+}
+
+.body__ha {
+  background-attachment: fixed;
+}
+
+.table.deactivate {
+  background: inherit;
+}
+.table.deactivate::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(219, 166, 162, 0.8);
+  filter: blur(10px);
 }
 
 /*---------HEADER----------*/
@@ -2041,6 +1991,9 @@ hr {
   font-size: 16px;
   color: #44546A;
   margin-bottom: 5px;
+}
+.form__content.design .btn__wrapper a {
+  text-decoration: none;
 }
 .form__content.design .btn__design {
   border-radius: 15px;

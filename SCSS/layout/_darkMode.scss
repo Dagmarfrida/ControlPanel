@@ -25,6 +25,9 @@ body.dark {
         nav ul ul li.active ul li a {
             background: $DM-MenuHover;
         }
+        nav ul ul li a:hover {
+            background: $DM-MenuHover !important;
+        }
     }
     
     .breadcrumb, li+li:before, .basic-table, .listLabel th, .radio, .dropdown-select {
