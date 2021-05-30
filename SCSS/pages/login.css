@@ -94,6 +94,19 @@ button p {
   background-position: right;
 }
 
+.btn--tertiary {
+  margin: 1.5rem 0.5rem;
+  padding: 12px 10px;
+  background-color: #44546A;
+  color: #fff;
+  border: none;
+  min-width: 155px;
+  transition: all 0.2s ease-in-out;
+}
+.btn--tertiary:hover {
+  transform: scale(1.1);
+}
+
 /*----------LOGIN PAGE---------*/
 .login-body {
   background-repeat: no-repeat;

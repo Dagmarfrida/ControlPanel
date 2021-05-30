@@ -114,6 +114,7 @@
        
 }
 
+
 /*---------- MODAL FOR NEW HOUSING COMMUNITY-------------*/
 
 .modal--input.modal__linksWith {
@@ -145,6 +146,19 @@
 
 
 /*-----Warning modal---------*/
+.modalLogout {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background: $SurfaceColor;
+    /*box-shadow: $boxShadow;*/
+    border-radius: $bordersBig;
+    width: 600px;
+    max-width: 80%;
+    z-index: 10;
+}
 #modalLogout {
     width: 306px;
     height: 270px;
@@ -154,6 +168,9 @@
         margin-top: 30px;
         p {
             padding: 20px;
+        }
+        .darkMode {
+            display: none;
         }
     }
     .warning--img  {
@@ -180,6 +197,25 @@
     margin: 0;
     }
 }
+#overlayLogout {
+    position: fixed;
+    opacity: 0; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0, 0.3);
+    pointer-events: none;
+    transition: 200ms ease-in-out;
+}
 
+#overlayLogout.active {
+    opacity: 1;
+    pointer-events: all;
+       
+}
 
+.modalLogout.active {
+    transform: translate(-50%, -50%) scale(1); 
+ }
 

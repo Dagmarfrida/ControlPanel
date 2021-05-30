@@ -9,7 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    <title>Change Password</title>
+    <title>New User</title>
 </head>
 <body>
     <div class="desktop">
@@ -73,10 +73,21 @@
                     </ul>
             </ul>
             <ul id="btn__logout">
-                <li><a href="#"><img src="Images/LogoutIcon.svg">Logout</a></li>
+                <li data-modal-target="#modalLogout"><a href="#"><img src="Images/LogoutIcon.svg">Logout</a></li>
             </ul>
         </nav>
     </div>
+<!--LOG OUT POP UP MODAL-->
+    <div class="modalLogout" id="modalLogout">
+        <div class="logout__content">
+            <img class="warning--img lightMode"src="Images/warningIcon.svg" alt="warning icon">
+            <img class="warning--img darkMode"src="Images/warningIconDM.svg" alt="warning icon">
+            <p>You are now logging out from WeUse Control Panel</p>
+            <button data-close-button class="btn--cancel">Cancel</button>
+            <button data-close-button class="btn--confirm">Confirm</button>
+        </div>
+    </div>   
+    <div id="overlayLogout"></div>
     
     <div class="newCommunity-container mainContent">
         <ul class="breadcrumb">
@@ -146,5 +157,6 @@
     </div>
         <script src="main.js"></script>
         <script src="darkMode.js"></script>
+        <script src="warning.js"></script>
 </body>
 </html>

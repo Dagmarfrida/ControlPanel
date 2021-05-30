@@ -73,10 +73,20 @@
                     </ul>
             </ul>
             <ul id="btn__logout">
-                <li><a href="#"><img src="Images/LogoutIcon.svg">Logout</a></li>
+                <li data-modal-target="#modalLogout"><a href="#"><img src="Images/LogoutIcon.svg">Logout</a></li>
             </ul>
         </nav>
     </div>
+<!--LOG OUT POP UP MODAL-->
+    <div class="modalLogout" id="modalLogout">
+        <div class="logout__content">
+            <img class="warning--img"src="Images/warningIcon.svg" alt="">
+            <p>You are now logging out from WeUse Control Panel</p>
+            <button data-close-button class="btn--cancel">Cancel</button>
+            <button data-close-button class="btn--confirm">Confirm</button>
+        </div>
+    </div>   
+    <div id="overlayLogout"></div>
         <div class="background"></div>
             <div class="mainContent">
                 <ul class="breadcrumb">
@@ -94,33 +104,33 @@
                 Table
                 ::------------>
                 <div class="tableHeader">
-                    <div class="table__cell">
+                    <div class="table__cell feedback">
                         <p>Feedback</p>
                     </div>
-                    <div class="table__cell">
+                    <div class="table__cell feedback">
                         <p>From</p>
                     </div>
-                    <div class="table__cell">
+                    <div class="table__cell feedback">
                         <p>Category <i class="fas fa-chevron-down"></i></p>
                     </div>
-                    <div class="table__cell">
+                    <div class="table__cell feedback">
                         <p>Owner</p>
                     </div>
-                    <div class="table__cell">
+                    <div class="table__cell feedback">
                        <p>Action</p>
                     </div>
                 </div>
                 <div class="table" id="T1">
-                    <div class="table__cell">
+                    <div class="table__cell feedback">
                         <p>The categories button is not working, it only shows an empty site and I really need to find a hammer because I want to hang up a picture frame</p>
                     </div>
-                    <div class="table__cell">
+                    <div class="table__cell feedback">
                         <p>Michael Mogensen</p>
                     </div>
-                    <div class="table__cell">
+                    <div class="table__cell feedback">
                         <p>14.05.2021</p>
                     </div>
-                    <div class="table__cell">
+                    <div class="table__cell feedback">
                         <div class="dropdown">
                             <select name="one" class="dropdown-select">
                                 <option value="">Name…</option>
@@ -130,7 +140,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="table__cell">
+                    <div class="table__cell feedback">
                         <div>
                             <label class="radio">
                                 <input type="radio" name="T1" value="radio" onClick="changeColour('NAN','T1')">
@@ -152,16 +162,16 @@
                     </div>
                 </div>
                     <div class="table" id="T2">
-                        <div class="table__cell">
+                        <div class="table__cell feedback">
                             <p>I think the green color on the upload button is not the right green, it is confusing. I would consider using purple instead</p>
                         </div>
-                        <div class="table__cell">
+                        <div class="table__cell feedback">
                             <p>Sine Lautrup</p>
                         </div>
-                        <div class="table__cell">
+                        <div class="table__cell feedback">
                             <p>4.05.2021</p>
                         </div>
-                        <div class="table__cell">
+                        <div class="table__cell feedback">
                             <div class="dropdown">
                                 <select name="one" class="dropdown-select">
                                     <option value="">Name…</option>
@@ -171,7 +181,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="table__cell">
+                        <div class="table__cell feedback">
                             <div>
                                 <label class="radio">
                                     <input type="radio" name="T2" value="radio1" onClick="changeColour('NAN','T2')" >
@@ -193,16 +203,16 @@
                         </div>
                     </div>
                         <div class="table" id="T3">
-                            <div class="table__cell">
+                            <div class="table__cell feedback">
                                 <p>The search function is not good enough. I never find the items I am searching for. Can you please look at it?</p>
                             </div>
-                            <div class="table__cell">
+                            <div class="table__cell feedback">
                                 <p>Andre Fransen</p>
                             </div>
-                            <div class="table__cell">
+                            <div class="table__cell feedback">
                                 <p>22.04.2021</p>
                             </div>
-                            <div class="table__cell">
+                            <div class="table__cell feedback">
                                 <div class="dropdown">
                                     <select name="one" class="dropdown-select">
                                         <option value="">Name…</option>
@@ -212,7 +222,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="table__cell">
+                            <div class="table__cell feedback">
                                 <div>
                                     <label class="radio">
                                         <input type="radio" name="T3" onClick="changeColour('NAN','T3')"  value="radio" >
@@ -243,5 +253,6 @@
     </div>
     <script src="main.js"></script>
     <script src="darkMode.js"></script>
+    <script src="warning.js"></script>
 </body>
 </html>

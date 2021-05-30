@@ -73,10 +73,20 @@
                     </ul>
             </ul>
             <ul id="btn__logout">
-                <li><a href="#"><img src="Images/LogoutIcon.svg">Logout</a></li>
+                <li data-modal-target="#modalLogout"><a href="#"><img src="Images/LogoutIcon.svg">Logout</a></li>
             </ul>
         </nav>
     </div>
+<!--LOG OUT POP UP MODAL-->
+    <div class="modalLogout" id="modalLogout">
+        <div class="logout__content">
+            <img class="warning--img"src="Images/warningIcon.svg" alt="">
+            <p>You are now logging out from WeUse Control Panel</p>
+            <button data-close-button class="btn--cancel">Cancel</button>
+            <button data-close-button class="btn--confirm">Confirm</button>
+        </div>
+    </div>   
+    <div id="overlayLogout"></div>
 
 
       <div class="background"></div>
@@ -511,7 +521,7 @@
                     <a href="#" class="btn-ha--dark4"><img class="btn--darkMode4" src="Images/DropDownBtnDM.svg"></a>
                 </div>
                 <div class="table__cell ha">
-                    <p>Boligforeningen Ungdomsbo</p>
+                    <span></span>
                 </div>
                 <div class="table__cell ha">
                     <p>Søbo</p>
@@ -527,6 +537,16 @@
                 </div>
                 <div class="table__cell--icon">
                     <a href="EditCommunity.html"><img class="btn--lightMode" src="Images/EditIconDark.svg"><img class="btn--darkMode" src="Images/editIconDM.svg"></a>
+                </div>
+                <div class="deactive__top">
+                    <div class="text__deactivate">
+                        <p>Boligforeningen Ungdomsbo</p>
+                        <p><i> This housing association is deactivated</i></p>
+                    </div>
+                    <div class="btn__deactivate">
+                        <button class="btn--delete">Delete</button>
+                        <button class=btn--tertiary>Activate</button>
+                    </div>
                 </div>
             </div>
             <div class="table__dropDown4">
@@ -643,5 +663,6 @@
 <script src="main.js"></script>
 <script src="darkMode.js"></script>
 <script src="listDropDown.js"></script>
+<script src="warning.js"></script>
 </body>
 </html>

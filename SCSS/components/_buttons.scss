@@ -89,3 +89,17 @@ button {
         background-position: right;
     }
 }
+.btn--tertiary {
+    margin: 1.5rem 0.5rem;
+    padding: 12px 10px;
+    background-color: $Whale;
+    color: $White;
+    border: none;
+    min-width: 155px;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}

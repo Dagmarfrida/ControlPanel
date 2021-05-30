@@ -95,6 +95,19 @@ button p {
   background-position: right;
 }
 
+.btn--tertiary {
+  margin: 1.5rem 0.5rem;
+  padding: 12px 10px;
+  background-color: #44546A;
+  color: #fff;
+  border: none;
+  min-width: 155px;
+  transition: all 0.2s ease-in-out;
+}
+.btn--tertiary:hover {
+  transform: scale(1.1);
+}
+
 /*--------DARK MODE---------*/
 body.dark {
   background-color: #121212;
@@ -102,6 +115,8 @@ body.dark {
   /*----------DROPDOWN-------*/
   /*------DROP DOWN HA/DORMS------*/
   /*-------DESIGN SITES-------*/
+  /*-------DEACTIVATED OVERLAY HOUSING ASSOCIATION------*/
+  /*-----Warning modal---------*/
 }
 body.dark .body--editUser {
   background: #121212 url(/Images//EditUserDM.png) no-repeat bottom center;
@@ -308,10 +323,36 @@ body.dark .form__content.design .btn__design {
 body.dark .form__content.design .btn--top {
   background-color: #E8E8E8;
 }
+body.dark .table.deactivate {
+  color: #44546A;
+}
+body.dark .table.deactivate::before {
+  box-shadow: inset 0 0 2000px rgba(184, 77, 69, 0.9);
+  filter: blur(7px);
+}
+body.dark .modalLogout {
+  background: #2E3846;
+}
+body.dark #modalLogout {
+  border-color: #DB5F00;
+}
+body.dark #modalLogout .btn--cancel {
+  background: #DB5F00;
+  color: #E8E8E8;
+}
+body.dark #modalLogout .btn--confirm {
+  background: #DB5F00;
+  color: #E8E8E8;
+}
+body.dark #modalLogout .darkMode {
+  display: block;
+}
+body.dark #modalLogout .lightMode {
+  display: none;
+}
 
 /*------------ SIDEMENU---------- */
 .sidemenu-wrapper {
-  /*margin-top: 200px;*/
   display: flex;
   position: relative;
   border-radius: 50%;
@@ -339,14 +380,10 @@ body.dark .form__content.design .btn--top {
 
 nav ul {
   list-style: none;
-  /*li:last-child {
-      border-bottom: 1px solid rgba(255,255,255,0.05);
-      }*/
 }
 nav ul ul {
   position: static;
   display: none;
-  /*padding-left: 20px;*/
 }
 nav ul ul li {
   line-height: 30px;
@@ -372,7 +409,6 @@ nav ul .show--manage.show3 {
 }
 nav ul li {
   line-height: 50px;
-  /*border-top: 1px solid rgba(255,255,255,0.1);*/
 }
 nav ul li a {
   position: relative;
@@ -424,7 +460,8 @@ nav ul li.active a {
   position: absolute;
   display: inline-block;
   bottom: 0;
-  padding-bottom: 30xp;
+  margin-bottom: 40px;
+  width: 100%;
 }
 
 /*----------TABLE----------*/
@@ -478,7 +515,7 @@ nav ul li.active a {
   display: none;
 }
 
-.table__cell.ratings {
+.table__cell.ratings, .table__cell.feedback {
   max-width: 290px;
 }
 
@@ -687,10 +724,33 @@ nav ul li.active a {
   left: 0;
   right: 0;
   bottom: 0;
-  box-shadow: inset 0 0 2000px rgba(219, 166, 162, 0.8);
+  box-shadow: inset 0 0 2000px rgba(219, 166, 162, 0.9);
   filter: blur(10px);
+  border-radius: 22px;
 }
 
+.deactive__top {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.text__deactivate p {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1550px) {
+  .table__cell {
+    max-width: 100px;
+  }
+}
 /*---------HEADER----------*/
 .header {
   display: flex;
@@ -1216,6 +1276,20 @@ p a {
 }
 
 /*-----Warning modal---------*/
+.modalLogout {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  background: #f7f7f7;
+  /*box-shadow: $boxShadow;*/
+  border-radius: 22px;
+  width: 600px;
+  max-width: 80%;
+  z-index: 10;
+}
+
 #modalLogout {
   width: 306px;
   height: 270px;
@@ -1227,6 +1301,9 @@ p a {
 }
 #modalLogout .logout__content p {
   padding: 20px;
+}
+#modalLogout .logout__content .darkMode {
+  display: none;
 }
 #modalLogout .warning--img {
   margin: auto auto;
@@ -1250,6 +1327,27 @@ p a {
   padding: 20px 20px;
   border-right: 0px solid #fff;
   margin: 0;
+}
+
+#overlayLogout {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+  transition: 200ms ease-in-out;
+}
+
+#overlayLogout.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modalLogout.active {
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .table__dropDown1, .table__dropDown2, .table__dropDown3, .table__dropDown4, .table__dropDown5, .table__dropDown6, .table__dropDown7 {

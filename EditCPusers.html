@@ -73,20 +73,32 @@
                     </ul>
             </ul>
             <ul id="btn__logout">
-                <li><a href="#"><img src="Images/LogoutIcon.svg">Logout</a></li>
+                <li data-modal-target="#modalLogout"><a href="#"><img src="Images/LogoutIcon.svg">Logout</a></li>
             </ul>
         </nav>
     </div>
+<!--LOG OUT POP UP MODAL-->
+    <div class="modalLogout" id="modalLogout">
+        <div class="logout__content">
+            <img class="warning--img"src="Images/warningIcon.svg" alt="">
+            <p>You are now logging out from WeUse Control Panel</p>
+            <button data-close-button class="btn--cancel">Cancel</button>
+            <button data-close-button class="btn--confirm">Confirm</button>
+        </div>
+    </div>   
+    <div id="overlayLogout"></div>
     <div class="background"></div>
         <div class="mainContent">
             <ul class="breadcrumb">
                 <li><a href="Dashboard.html">Dashboard</a></li>
-                <li><a href="CPUsers.html">WeUsers</a></li>
+                <li><a href="CPUsers.html">Users</a></li>
                 <li>Edit User</li>
             </ul>
             <h2>Edit User</h2>
            
-            <H3>*Disse side er kun et eksempel</H3>
+            <H3 style="color: #A62117">*Disse side er kun et eksempel</H3>
+            <img src="images/editUser.png" alt="edit user form">
+            
         </div>
     </div>
     <div id="no-mobile">
@@ -96,5 +108,6 @@
     </div>
 <script src="main.js"></script>
 <script src="darkMode.js"></script>
+<script src="warning.js"></script>
 </body>
 </html>
