@@ -13,6 +13,10 @@
 /*--------DARK MODE---------*/
 body.dark {
   background-color: #121212;
+  /*------BUTTONS------*/
+  /*----------DROPDOWN-------*/
+  /*------DROP DOWN HA/DORMS------*/
+  /*-------DESIGN SITES-------*/
 }
 body.dark .body--editUser {
   background: #121212 url(/Images//EditUserDM.png) no-repeat bottom center;
@@ -29,7 +33,7 @@ body.dark :-ms-input-placeholder {
   color: #E8E8E8;
   font-weight: normal;
 }
-body.dark h2, body.dark h3, body.dark h4, body.dark h5, body.dark p, body.dark ::placeholder, body.dark .text--large.design, body.dark .text--medium.design, body.dark .text--small.design {
+body.dark h2, body.dark h3, body.dark h4, body.dark h5, body.dark p, body.dark ::placeholder, body.dark .text--large.design, body.dark .text--medium.design, body.dark .text--small.design, body.dark .btn__wrapper .text--small.design {
   color: #E8E8E8;
   font-weight: normal;
 }
@@ -82,6 +86,23 @@ body.dark .form__content p a {
 body.dark .form__content .btn--save input {
   background-color: #50869A;
   color: #E8E8E8;
+  border: none;
+}
+body.dark .form__content .btn--save input:hover {
+  box-shadow: 0 5px 18px rgba(60, 103, 119, 0.4);
+}
+body.dark #textarea, body.dark #categories {
+  background-color: #333;
+  border: 2px solid #121212;
+}
+body.dark textarea:focus, body.dark input:focus, body.dark select {
+  color: #E8E8E8;
+}
+body.dark .table__cell .darkMode {
+  display: unset;
+}
+body.dark .table__cell .lightMode {
+  display: none;
 }
 body.dark button, body.dark a {
   /*font-size: $MainTextM;
@@ -94,22 +115,41 @@ body.dark button .darkMode, body.dark a .darkMode {
 body.dark button .lightMode, body.dark a .lightMode {
   display: none;
 }
-body.dark .table__cell .darkMode {
+body.dark .btn--darkMode, body.dark .btn--darkMode1, body.dark .btn--darkMode2, body.dark .btn--darkMode3, body.dark .btn--darkMode4, body.dark .btn--darkMode5, body.dark .btn--darkMode6, body.dark .btn--darkMode7 {
   display: unset;
 }
-body.dark .table__cell .lightMode {
+body.dark .btn--lightMode, body.dark .btn--lightMode1, body.dark .btn--lightMode2, body.dark .btn--lightMode3, body.dark .btn--lightMode4, body.dark .btn--lightMode5, body.dark .btn--lightMode6, body.dark .btn--lightMode7 {
   display: none;
 }
 body.dark .btn--close, body.dark .close-button {
   color: #E8E8E8;
 }
-body.dark .button-main {
+body.dark .btn--main {
   background-color: #17a754;
   color: #E8E8E8;
+  transition: all 0.2s ease-in-out;
 }
-body.dark .button-secondary {
-  background-color: #2E3846;
+body.dark .btn--main:hover {
+  box-shadow: 0 5px 18px rgba(15, 106, 54, 0.4);
+}
+body.dark .btn--secondary {
+  /*background-color: #333;*/
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+}
+body.dark .btn--secondary p {
+  color: #17a754;
+}
+body.dark .btn--secondary:hover {
+  box-shadow: 0 5px 18px rgba(15, 106, 54, 0.4);
+}
+body.dark .btn--delete {
+  background-color: #DD2C00;
   color: #E8E8E8;
+  transition: all 0.2s ease-in-out;
+}
+body.dark .btn--delete:hover {
+  box-shadow: 0 5px 18px rgba(163, 36, 4, 0.4);
 }
 body.dark .search input {
   box-shadow: none;
@@ -145,18 +185,6 @@ body.dark .plusIcon .darkMode {
 body.dark .plusIcon .lightMode {
   display: none;
 }
-body.dark .btn--secondary {
-  background: #121212;
-}
-body.dark .btn--secondary p {
-  color: #17a754;
-}
-body.dark .btn--darkMode, body.dark .btn--darkMode1, body.dark .btn--darkMode2, body.dark .btn--darkMode3, body.dark .btn--darkMode4, body.dark .btn--darkMode5, body.dark .btn--darkMode6, body.dark .btn--darkMode7 {
-  display: unset;
-}
-body.dark .btn--lightMode, body.dark .btn--lightMode1, body.dark .btn--lightMode2, body.dark .btn--lightMode3, body.dark .btn--lightMode4, body.dark .btn--lightMode5, body.dark .btn--lightMode6, body.dark .btn--lightMode7 {
-  display: none;
-}
 body.dark .dropdown {
   background: #333;
   border: 1px solid #121212;
@@ -177,8 +205,22 @@ body.dark #lastLogins .lightMode {
 body.dark .table--keycode {
   background-color: #00796B;
 }
+body.dark .table--new .table__cell--flex .color--green {
+  background-color: #3D5AFE;
+}
+body.dark .table--new .table__cell--flex .color--red {
+  background-color: #2E7D32;
+}
+body.dark .table--new .table__cell--flex .color--yellow {
+  background-color: #AB47BC;
+}
+body.dark .form__content.design .btn__design {
+  background-color: #00796B;
+}
+body.dark .form__content.design .btn--top {
+  background-color: #E8E8E8;
+}
 
-/*------DESIGN SITES------*/
 /*------------ SIDEMENU---------- */
 .sidemenu-wrapper {
   /*margin-top: 200px;*/
@@ -378,6 +420,7 @@ only screen and (max-width: 1450px) {
   font-weight: bold;
   font-size: 14px;
   margin-top: 50px;
+  margin-bottom: -10;
   padding: 0 24px;
 }
 
@@ -397,18 +440,37 @@ only screen and (max-width: 1450px) {
 
 .table__cell {
   min-width: 0;
+  max-width: 142px;
   box-sizing: border-box;
   flex-grow: 1;
   width: 100%;
   padding: 10px 5px;
   list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 7px;
 }
 .table__cell--icon {
-  width: 50%;
+  width: 80px;
   padding: 10px 0;
+}
+.table__cell--icon span {
+  opacity: 0;
 }
 .table__cell .darkMode {
   display: none;
+}
+
+.table__cell.ratings {
+  max-width: 290px;
+}
+
+.table__cell.ha {
+  max-width: 200px;
+}
+
+.table__cell.item {
+  max-width: 250px;
 }
 
 .btn--darkMode, .btn--darkMode1, .btn--darkMode2, .btn--darkMode3, .btn--darkMode4, .btn--darkMode5, .btn--darkMode6, .btn--darkMode7 {
@@ -784,15 +846,23 @@ button p {
   color: #fff;
   border: none;
   min-width: 155px;
+  transition: all 0.2s ease-in-out;
+}
+.btn--main:hover {
+  transform: scale(1.1);
 }
 
 .btn--secondary {
   margin: 1.5rem 0.5rem;
   padding: 10px 6px;
-  background-color: #fff;
-  color: #44546A;
+  background-color: #f7f7f7;
+  color: #17a754;
   border: 3px solid #17a754;
   min-width: 155px;
+  transition: all 0.2s ease-in-out;
+}
+.btn--secondary:hover {
+  transform: scale(1.1);
 }
 .btn--secondary .darkMode {
   display: none;
@@ -805,6 +875,17 @@ button p {
   color: #fff;
   border: none;
   min-width: 155px;
+  transition: all 0.2s ease-in-out;
+}
+.btn--delete:hover {
+  transform: scale(1.1);
+}
+
+.btn--save input {
+  transition: all 0.2s ease-in-out;
+}
+.btn--save input:hover {
+  transform: scale(1.1);
 }
 
 .btn__submit {
@@ -823,7 +904,7 @@ button p {
   cursor: pointer;
   transition: 0.5s;
   box-shadow: 0 8px 24px rgba(15, 106, 54, 0.16);
-  min-width: 155px;
+  min-width: 300px;
 }
 .btn__submit:hover {
   background-position: right;
@@ -870,6 +951,7 @@ button p {
   font-size: 16px;
   border-radius: 8px;
   padding-left: 15px;
+  padding-top: 10px;
   border: 1px solid #697688;
   border-bottom-width: 2px;
   transition: all 0.3s ease;
@@ -963,7 +1045,7 @@ form .password__details {
 .form .btn--save input {
   padding: 10px 6px;
   background-color: #fff;
-  color: #44546A;
+  color: #17a754;
   font-size: 18px;
   border: 3px solid #17a754;
   width: 260px;
@@ -1080,7 +1162,7 @@ form .password__details {
 }
 
 .form__content.modal__content {
-  width: 800px;
+  width: 600px;
 }
 
 p {
@@ -1330,6 +1412,24 @@ p a {
 }
 .table__cell--flex p {
   width: 100px;
+}
+.table__cell--flex .color--green {
+  background-color: #d1eddd;
+  padding: 3px;
+  border-radius: 12px;
+  line-height: 20px;
+}
+.table__cell--flex .color--red {
+  background-color: #edd3d1;
+  padding: 3px;
+  border-radius: 12px;
+  line-height: 20px;
+}
+.table__cell--flex .color--yellow {
+  background-color: #fef2cc;
+  padding: 3px;
+  border-radius: 12px;
+  line-height: 20px;
 }
 
 .addNew {

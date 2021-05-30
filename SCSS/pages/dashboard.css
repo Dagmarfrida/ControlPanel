@@ -57,37 +57,6 @@
 
 .new {
   margin-top: 30px;
-  /*
-      &__table {
-          display: flex;
-          table-layout: fixed;
-          border-collapse: collapse;
-          background-color: $SurfaceColor;
-          box-shadow: $boxShadow;
-          border-radius: $bordersBig;
-          padding: 20px;
-          width: 100%;
-
-          th {
-              text-align: left;
-
-              &:nth-child(1){
-                  width: 40%;
-              }
-          }
-          td {
-              border-bottom: 2px solid $lineColor;
-          }
-
-                  tr:last-child td { 
-                      padding-bottom: 45px;
-                  }
-
-          th, td {
-              padding-top: 10px;
-              padding-left: 70px;
-               }
-      }*/
 }
 
 .new__box {
@@ -103,6 +72,7 @@
   padding: 10px;
   max-width: 1200px;
   color: #44546A;
+  align-items: center;
 }
 
 .tableHeader--new {
@@ -125,7 +95,7 @@
   box-sizing: border-box;
   flex-grow: 1;
   width: 100%;
-  padding: 10px 0;
+  padding: 5px 0;
   list-style: none;
 }
 .table__cell--new.number {
@@ -146,6 +116,11 @@
 }
 .table__cell--new p {
   text-transform: capitalize;
+}
+
+hr {
+  border-top: 1px solid #dadde1;
+  margin-right: 20px;
 }
 
 .quick__box {
@@ -201,7 +176,6 @@
 }
 
 .latest__label {
-  /*text-align: left;*/
   display: flex;
   padding: 10px 0px 0px 40px;
   justify-content: space-between;
@@ -246,7 +220,7 @@
   max-width: 600px;
 }
 
-@media only screen and (max-width: 1745px) {
+@media only screen and (max-width: 1775px) {
   .totals__box, .quick__box {
     gap: 5px;
   }
@@ -265,16 +239,8 @@
     margin-bottom: 20px;
     margin-top: 20px;
   }
-
-  .new__table {
-    padding: 15px;
-  }
-  .new td tr:last-child td {
-    padding-bottom: 35px;
-  }
-  .new th, .new td {
-    padding-left: 40px;
-  }
+}
+@media only screen and (max-width: 1600px) {
   .new__text {
     font-size: 18px;
   }
@@ -286,7 +252,7 @@
   }
 
   .quick__box {
-    padding: 33px 25px;
+    padding: 33px 10px;
   }
 
   .btn__quick {
@@ -299,9 +265,9 @@
     font-size: 16px;
   }
 }
-@media only screen and (max-width: 1442px) {
+@media only screen and (max-width: 1454px) {
   .totals__box, .quick__box {
-    gap: 0px;
+    gap: 5px;
   }
 
   .totals__numbers {
@@ -343,7 +309,7 @@
   }
 
   .quick__box {
-    padding: 23px 15px;
+    padding: 23px 10px;
   }
 
   .btn__quick {
@@ -353,6 +319,10 @@
   .btn__quick p {
     font-size: 16px;
   }
+  .btn__quick img {
+    height: 28px;
+    width: 28px;
+  }
 
   .quick__illustration {
     padding-top: 10px;
@@ -361,7 +331,14 @@
     height: 60px;
   }
   .quick__illustration img {
-    width: 50%;
+    width: 30%;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+  }
+
+  .btn__quick {
+    position: relative;
   }
 
   .latest__table {

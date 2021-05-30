@@ -12,10 +12,8 @@
     box-shadow: $boxShadow;
     margin-top: -5px;
     
-
     p {
         text-transform: capitalize; 
-
     }
 }
 
@@ -62,7 +60,6 @@
     display: flex;  
 }
 
-
 .btn--lightMode1.rotate, .btn--lightMode2.rotate, .btn--lightMode3.rotate, .btn--lightMode4.rotate, .btn--lightMode5.rotate, .btn--lightMode6.rotate, .btn--lightMode7.rotate {
     transform: translateY(-50%) rotate(-180deg);
 }
@@ -97,13 +94,31 @@
     display: flex;
     justify-content: space-between;
     width: 300px;
-    span {
-        opacity: 0;
-    }
-    p {
-        width: 100px;
-    }
-} 
+        span {
+            opacity: 0;
+        }
+        p {
+            width: 100px;
+        }
+        .color--green {
+            background-color: $WeuseGreen20;
+            padding: 3px;
+            border-radius: 12px;
+            line-height: 20px;
+        }
+        .color--red {
+            background-color: $Fox20;
+            padding: 3px;
+            border-radius: 12px;
+            line-height: 20px;
+        }
+        .color--yellow {
+            background-color: $Lion20;
+            padding: 3px;
+            border-radius: 12px;
+            line-height: 20px;
+        }
+    } 
 }
 .addNew {
     display: flex;

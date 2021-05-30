@@ -1,4 +1,5 @@
     @use '../abstracts/' as *;
+    @use '../components/' as *;
     /*----------LOGIN PAGE---------*/
 .login-body {
     background-repeat: no-repeat;
@@ -12,10 +13,10 @@
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap :7rem;
+    grid-gap: 7rem;
     padding: 0 2rem;
 
-    a{
+    a {
         display: block;
         text-align: right;
         text-decoration: none;
@@ -24,7 +25,7 @@
         transition: .3s;
    
         &:hover {
-            color: $WeuseGreen;
+            color: $Whale;
         }
     
 } 
@@ -40,7 +41,8 @@
     
     .login {
         display: flex;
-        justify-content: flex-start;
+        flex-flow: column;
+        justify-content: center;
         align-items: center;
         text-align: center;
 
@@ -93,58 +95,58 @@
             width: 50%;
         }
         
-        &__input.focus > &__text > h5 {
-            top: -5px;
-            font-size: 15px;
-        }
         
-        &__input.focus > &__icon > i {
-            color: $WeuseGreen;
-        }
         
-        &__input > &__text > input {
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-            outline: none;
-            background: none;
-            padding: 0.5rem 0.7rem;
-            font-size: $MainTextM;
-            color: $White;
-            font-family: 'poppins', sans-serif;
-        }
+    }
+    .login__input > .login__text {
+        position: relative;
+        height: 45px;
+    }
+    .login__input > .login__text > input {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+        outline: none;
+        background: none;
+        padding: 0.5rem 0.7rem;
+        font-size: $MainTextM;
+        color: $White;
         
-        &__input.login--password {
-            margin-bottom: 4px;
-        }
-        &__input > &__text {
-            position: relative;
-            height: 45px;
-        }
-        
-        &__input > &__text > h5 {
-            position: absolute;
-            letter-spacing: 1px;
-            left: 10px;
-            top: 50%;
-            transform: translateY(-50%);
-            color: $White;
-            font-size: 18px;
-            transition: .3s;
-        }
-        
-        &__input:before, &__input:after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            width: 0%;
-            height: 2px;
-            background-color: $WeuseGreen;
-            transition: .4s;
-        }
+    }
+    .login__input.login--password {
+        margin-bottom: 4px;
+    }
+   
+    .login__input > .login__text > h5 {
+        position: absolute;
+        letter-spacing: 1px;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: $White;
+        font-size: 18px;
+        transition: .3s;
+    }
+    
+    .login__input:before, .login__input:after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        width: 0%;
+        height: 2px;
+        background-color: $Whale;
+        transition: .4s;
+    }
+    .login__input.focus > .login__text > h5 {
+        top: -5px;
+        font-size: 15px;
+    }
+    
+    .login__input.focus > .login__icon > i {
+        color: $Whale;
     }
 }
-    
+

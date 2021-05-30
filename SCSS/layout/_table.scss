@@ -82,6 +82,7 @@ only screen and (max-width: 1450px) {
     font-weight: bold;
     font-size: 14px;
     margin-top: 50px;
+    margin-bottom: -10;
     padding: 0 24px;
 }
 .table {
@@ -101,18 +102,36 @@ only screen and (max-width: 1450px) {
 }
 .table__cell {
     min-width: 0;
+    max-width: 142px;
     box-sizing: border-box;
     flex-grow: 1;
     width: 100%;
     padding: 10px 5px;
     list-style: none;
-   &--icon{
-    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  
+    &--icon{
+    width: 80px;
     padding: 10px 0;
+   
+        span {
+            opacity: 0;
+        }
     }
     .darkMode {
         display: none;
     }
+}
+.table__cell.ratings {
+    max-width: 290px;
+}
+.table__cell.ha {
+    max-width: 200px;
+}
+.table__cell.item {
+    max-width: 250px;
 }
 .btn--darkMode, .btn--darkMode1, .btn--darkMode2, .btn--darkMode3, .btn--darkMode4, .btn--darkMode5, .btn--darkMode6, .btn--darkMode7 {
     display: none;

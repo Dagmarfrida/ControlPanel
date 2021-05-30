@@ -45,6 +45,7 @@
                 font-size: 16px;
                 border-radius: $bordersButtons;
                 padding-left: 15px;
+                padding-top: 10px;
                 border: 1px solid $MenuHover;
                 border-bottom-width: 2px;
                 transition: all 0.3s ease;
@@ -145,7 +146,7 @@ form .password__details {
    input {
     padding: 10px 6px;
     background-color: $White;
-    color: $Whale;
+    color: $WeuseGreen;
     font-size: $MainTextM;
     border: 3px solid $WeuseGreen;
     width: 260px;

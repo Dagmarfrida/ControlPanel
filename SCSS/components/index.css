@@ -30,15 +30,23 @@ button p {
   color: #fff;
   border: none;
   min-width: 155px;
+  transition: all 0.2s ease-in-out;
+}
+.btn--main:hover {
+  transform: scale(1.1);
 }
 
 .btn--secondary {
   margin: 1.5rem 0.5rem;
   padding: 10px 6px;
-  background-color: #fff;
-  color: #44546A;
+  background-color: #f7f7f7;
+  color: #17a754;
   border: 3px solid #17a754;
   min-width: 155px;
+  transition: all 0.2s ease-in-out;
+}
+.btn--secondary:hover {
+  transform: scale(1.1);
 }
 .btn--secondary .darkMode {
   display: none;
@@ -51,6 +59,17 @@ button p {
   color: #fff;
   border: none;
   min-width: 155px;
+  transition: all 0.2s ease-in-out;
+}
+.btn--delete:hover {
+  transform: scale(1.1);
+}
+
+.btn--save input {
+  transition: all 0.2s ease-in-out;
+}
+.btn--save input:hover {
+  transform: scale(1.1);
 }
 
 .btn__submit {
@@ -69,7 +88,7 @@ button p {
   cursor: pointer;
   transition: 0.5s;
   box-shadow: 0 8px 24px rgba(15, 106, 54, 0.16);
-  min-width: 155px;
+  min-width: 300px;
 }
 .btn__submit:hover {
   background-position: right;

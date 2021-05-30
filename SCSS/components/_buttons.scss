@@ -20,20 +20,30 @@ button {
     color: $White;
     border: none;
     min-width: 155px;
-    
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);  
+    }
 }
 .btn--secondary {
     margin: 1.5rem 0.5rem;
     padding: 10px 6px;
-    background-color: $White;
-    color: $Whale;
+    background-color: $SurfaceColor;
+    color: $WeuseGreen;
     border: 3px solid $WeuseGreen;
     min-width: 155px;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+    }
 
     .darkMode {
         display: none;
-    }
-    
+    }  
 }
 .btn--delete {
     margin: 1.5rem 0.5rem;
@@ -42,6 +52,20 @@ button {
     color: $White;
     border: none;
     min-width: 155px;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+.btn--save input {
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+    }
 }
 .btn__submit {
     display: block;
@@ -59,7 +83,7 @@ button {
     cursor: pointer;
     transition: .5s;
     box-shadow: $boxShadow;
-    min-width: 155px;
+    min-width: 300px;
 
     &:hover {
         background-position: right;

@@ -11,7 +11,7 @@ body.dark {
         background: radial-gradient(circle, rgba(51,51,51,1) 0%, rgba(26,26,26,1) 84%); ;
     }
 
-    h2, h3, h4, h5, p, ::placeholder, .text--large.design, .text--medium.design, .text--small.design {
+    h2, h3, h4, h5, p, ::placeholder, .text--large.design, .text--medium.design, .text--small.design, .btn__wrapper .text--small.design{
         color: $DM-Text;
         font-weight: normal;
     } 
@@ -56,11 +56,12 @@ body.dark {
         background-color: #333 ;
         border: 2px solid #121212;
         }
+        
         .form__details {
         color: $DM-Text;
-        .input--small a {
-            color: $WeuseGreen;
-        }
+            .input--small a {
+                color: $WeuseGreen;
+            }
         }
         .checkbox__holder .checkmark__span {
             background-color: #333 ;
@@ -72,9 +73,32 @@ body.dark {
         .btn--save input {
             background-color: #50869A;
             color: $DM-Text;
+            border: none;
+
+            &:hover {
+            box-shadow: 0 5px 18px rgb(60, 103, 119, 0.40);
+            }
         }
     }
+    #textarea, #categories {
+        background-color: #333 ;
+        border: 2px solid #121212;
+    }
+    textarea:focus, input:focus, select {
+        color: $DM-Text
+    }
     
+    
+    .table__cell {
+        .darkMode {
+            display: unset;
+        }
+        .lightMode {
+            display: none;
+        }
+    }
+    /*------BUTTONS------*/
+
     button, a {
         /*font-size: $MainTextM;
         min-width: 155px;*/
@@ -87,25 +111,46 @@ body.dark {
             display: none;
         }
     }
-    .table__cell {
-        .darkMode {
-            display: unset;
-        }
-        .lightMode {
-            display: none;
-        }
+    
+    .btn--darkMode, .btn--darkMode1, .btn--darkMode2, .btn--darkMode3, .btn--darkMode4, .btn--darkMode5, .btn--darkMode6, .btn--darkMode7  {
+        display: unset;
+    }
+    .btn--lightMode, .btn--lightMode1, .btn--lightMode2, .btn--lightMode3, .btn--lightMode4, .btn--lightMode5, .btn--lightMode6, .btn--lightMode7 {
+        display: none;
     }
     .btn--close, .close-button {
         color: $DM-Text;
     }
-    .button-main {
+    .btn--main {
         background-color: $WeuseGreen;
         color: $DM-Text;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            box-shadow: 0 5px 18px rgb(15, 106, 54, 0.40);
+        }
     }
-    .button-secondary {
-        background-color: $DM-Surface;
+    .btn--secondary {
+        /*background-color: #333;*/
+        background-color: transparent;
+        transition: all 0.2s ease-in-out;
+        p {
+            color: $WeuseGreen;
+        }
+
+        &:hover {  
+            box-shadow: 0 5px 18px rgb(15, 106, 54, 0.40);
+          }
+    }
+    .btn--delete {
+        background-color: #DD2C00;
         color: $DM-Text;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            box-shadow: 0 5px 18px rgb(163, 36, 4, 0.40);
+        }
     }
+
     .search  input {
         box-shadow: none;
      
@@ -145,18 +190,8 @@ body.dark {
         }
     }
     
-    .btn--secondary {
-        background: #121212;
-        p {
-            color: $WeuseGreen;
-        }
-    }
-    .btn--darkMode, .btn--darkMode1, .btn--darkMode2, .btn--darkMode3, .btn--darkMode4, .btn--darkMode5, .btn--darkMode6, .btn--darkMode7  {
-        display: unset;
-    }
-    .btn--lightMode, .btn--lightMode1, .btn--lightMode2, .btn--lightMode3, .btn--lightMode4, .btn--lightMode5, .btn--lightMode6, .btn--lightMode7 {
-        display: none;
-    }
+
+    /*----------DROPDOWN-------*/
     .dropdown {
         background: #333;
         border: 1px solid #121212;
@@ -179,8 +214,30 @@ body.dark {
     .table--keycode {
         background-color: #00796B;
     } 
-}
+    /*------DROP DOWN HA/DORMS------*/
 
-/*------DESIGN SITES------*/
+    .table--new .table__cell--flex {
+
+        .color--green {
+            background-color: #3D5AFE;
+        }
+        .color--red {
+            background-color: #2E7D32;
+        }
+        .color--yellow {
+            background-color: #AB47BC;
+        }
+    }
+    /*-------DESIGN SITES-------*/
+
+    .form__content.design {
+        .btn__design {
+        background-color:#00796B;
+        }
+        .btn--top {
+            background-color: $DM-Text;
+        }
+    }
+}
 
 

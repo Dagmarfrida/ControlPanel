@@ -37,7 +37,7 @@
     .text--medium {
         font-size: $MainTextM;
         color: $Whale;
-       margin: 20px auto 50px auto;
+       margin: 0 auto 5px auto;
         line-height: 30px;
     }
 
@@ -64,11 +64,11 @@
 
         &:hover {
             background: $WeuseGreen40;
-        -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        transform: scale(1.1);
-        box-shadow:  0 8px 20px rgb(15, 106, 54, 0.25);
-        }
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1);
+            box-shadow:  0 8px 20px rgb(15, 106, 54, 0.25);
+            }
     }
 
     .btn--top {
