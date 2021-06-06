@@ -26,11 +26,14 @@
             .form__input {
                 width: calc(100% / 2 - 20px);
             }
+
             .form--large {
                 margin-bottom: 30px;
             }
+
             .input--small {
                 width: calc(100% / 3 - 20px);
+
                 a {
                     padding-top: 10px;
                     text-align: right;
@@ -38,84 +41,85 @@
                 }            
             }
         }
-            input, textarea {
-                height: 45px;
-                width: 100%;
-                outline: none;
-                font-size: 16px;
-                border-radius: $bordersButtons;
-                padding-left: 15px;
-                padding-top: 10px;
-                border: 1px solid $MenuHover;
-                border-bottom-width: 2px;
-                transition: all 0.3s ease;
-                margin-bottom: 5px;
-              
-                &:focus, &:valid {
-                  border-color: $WeuseGreen;
-                  }
+        input, textarea {
+            height: 45px;
+            width: 100%;
+            outline: none;
+            font-size: 16px;
+            border-radius: $bordersButtons;
+            padding-left: 15px;
+            padding-top: 10px;
+            border: 1px solid $MenuHover;
+            border-bottom-width: 2px;
+            transition: all 0.3s ease;
+            margin-bottom: 5px;
+            
+            &:focus, &:valid {
+                border-color: $WeuseGreen;
             }
+        }
     }
-        .checkbox__holder {
-            display: block;
-            line-height: 25px;
-            position: relative;
-            padding-left: 35px;
-            margin-bottom: 12px;
-            cursor: pointer;
-            font-size: $MainTextS;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-          
-            input {
-                position: absolute;
-                opacity: 0;
-                cursor: pointer;
-                height: 0;
-                width: 0;
-
-                &:checked ~ .checkmark__span {
-                    background-color: $WeuseGreen;
-                  }
-                &:checked ~ .checkmark__span:after {
-                    display: block;
-                  }
-            }
-            .checkmark__span {
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 25px;
-                width: 25px;
-                background-color: rgb(225, 224, 224);
-                border-radius: $bordersButtons;
-                
-                &:after {
-                    left: 9px;
-                    top: 5px;
-                    width: 5px;
-                    height: 10px;
-                    border: solid $White;
-                    border-width: 0 3px 3px 0;
-                    -webkit-transform: rotate(45deg);
-                    -ms-transform: rotate(45deg);
-                    transform: rotate(45deg);
-                }
-            }
-        }
-        .checkmark__span:after {
-            content: "";
+    .checkbox__holder {
+        display: block;
+        line-height: 25px;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: $MainTextS;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        
+        input {
             position: absolute;
-            display: none;
-          }
-          p {
-              margin-bottom: 50px;
-          a {
-              color: $HeadingColor;  
-          }
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+
+            &:checked ~ .checkmark__span {
+                background-color: $WeuseGreen;
+            }
+            &:checked ~ .checkmark__span:after {
+                display: block;
+            }
         }
+        .checkmark__span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            background-color: rgb(225, 224, 224);
+            border-radius: $bordersButtons;
+            
+            &:after {
+                left: 9px;
+                top: 5px;
+                width: 5px;
+                height: 10px;
+                border: solid $White;
+                border-width: 0 3px 3px 0;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+        }
+    }
+    .checkmark__span:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    p {
+        margin-bottom: 50px;
+
+        a {
+            color: $HeadingColor;  
+        }
+    }
 }
 form .password__details {
     margin: 20px 0 12px 0;
@@ -194,6 +198,7 @@ form .password__details {
     padding: 20px; 
     margin: 0 auto;
 }
+
 .profile__img {
     display: inline-block;
     width: 49%;
@@ -210,6 +215,7 @@ form .password__details {
     height: 90px;
     vertical-align: super;
     color: $Whale;
+    
     .text--medium {
         font-weight: 600;
     }

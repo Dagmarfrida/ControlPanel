@@ -30,7 +30,6 @@ body {
     font-family: objectivity;
     background-color: $BgColor;
     transition: background-color 0.3s linear;
-    /*overflow-x: hidden;*/
 
     h2 {
       text-transform: capitalize;
@@ -82,7 +81,7 @@ body {
     h3 {
         color: $Fox;
         text-transform: uppercase;
-}
+    }
 }
    /*------MAIN CONTENT-------*/ 
 .mainContent {
@@ -94,41 +93,40 @@ body {
  
   /*------MOBILE MESSAGE------*/
   @media only screen and (max-width: 1200px) {
-      body {
+    body {
         background-image: linear-gradient(to top, #fcc000, #d4c000, #adbd12, #87b929, #60b23d, #3baa5a, #14a170, #00967e, #008789, #087689, #34647e, #44546a);
         background-attachment: fixed;    
     }
-      .desktop {
-          visibility: hidden;
-        }
-        #no-mobile {
-            visibility: visible;
-            position: absolute;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            
-            
-        }
-        .mobile-message {
-            height: 400px;
-            width: 300px;
-            background: $Lion;
-            color: #333;
-            padding: 20px;
-            border-radius: $bordersM;
-        }
+    .desktop {
+        visibility: hidden;
+    }
+
+    #no-mobile {
+        visibility: visible;
+        position: absolute;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);  
+    }
+
+    .mobile-message {
+        height: 400px;
+        width: 300px;
+        background: $Lion;
+        color: #333;
+        padding: 20px;
+        border-radius: $bordersM;
+    }
   }
   @media only screen and (min-width: 1201px) {
-      #no-mobile {
-          visibility: hidden;
-      }
-      body {
-         visibility: visible;
-      }
-
+    #no-mobile {
+        visibility: hidden;
+    }
+    body {
+        visibility: visible;
+    }
   }
 
 

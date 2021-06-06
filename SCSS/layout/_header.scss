@@ -1,14 +1,14 @@
 @use '../abstracts' as *; 
  
  /*---------HEADER----------*/
-    .header {
-        display: flex;
-        float: right;
-        align-items: center;
-        margin: 16px auto 50px 16px;
-        margin-top: 16px;
-        margin-right: 16px;
-    }
+.header {
+    display: flex;
+    float: right;
+    align-items: center;
+    margin: 16px auto 50px 16px;
+    margin-top: 16px;
+    margin-right: 16px;
+}
     /*-----------SEARCH-----------*/
 .search {
     margin-right: 0px;
@@ -21,6 +21,7 @@
         transition: 0.5s;
         box-shadow: $boxShadow;
     }
+
     input[type="text"]{
         background: $SurfaceColor;
         width: 260px;
@@ -48,7 +49,6 @@
 }
             /*-------------PROFILE--------------*/
 .menu {
-    /*position: fixed;*/
     margin-right: 30px;
     top: 20px;
     right: 30px;
@@ -78,7 +78,6 @@
         padding: 10px 20px;
         background-color: $WeuseGreen;
         width: 200px;
-        /*box-sizing: 0 5px 25px rgba(0,0,0.1);*/
         border-radius: $bordersBig;
         transition: 0.5sek;
         visibility: hidden;
@@ -92,23 +91,24 @@
             color: $White;
             line-height: 1.2em;
         }
+
         span {
             font-size: $MainTextS;
             color: $White;
         }
+
         ul li {
             list-style: none;
             padding: 10px 0;
-            /*border-top: 1px solid rgba(0,0,0.05);*/
             display: flex;
             align-items: center;
-            /*justify-content: center;*/
     
             img {
                 max-width: 20px;
                 margin-right: 10px;
                 transition: 0.5sek;
             }
+            
             a {
                 display: inline-block;
                 text-decoration: none;

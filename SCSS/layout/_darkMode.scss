@@ -1,10 +1,10 @@
 @use '../abstracts/' as *;
 /*--------DARK MODE---------*/
 body.dark {
-    background-color: #121212;
+    background-color: $DM-Background;
 
     .body--editUser {
-        background: #121212 url(/Images//EditUserDM.png) no-repeat bottom center;
+        background: $DM-Background url(/Images//EditUserDM.png) no-repeat bottom center;
     }
     .toggleDark__checkboxLabel {
         background: rgb(51,51,51);
@@ -56,8 +56,8 @@ body.dark {
     
     .form__content {
         .form input {
-        background-color: #333 ;
-        border: 2px solid #121212;
+        background-color: $DM-bgForm ;
+        border: 2px solid $DM-Background;
         }
         
         .form__details {
@@ -67,8 +67,8 @@ body.dark {
             }
         }
         .checkbox__holder .checkmark__span {
-            background-color: #333 ;
-            border: 2px solid #121212;
+            background-color: $DM-bgForm ;
+            border: 2px solid $DM-Background;
         }
         p a {
             color: $WeuseGreen;
@@ -84,8 +84,8 @@ body.dark {
         }
     }
     #textarea, #categories {
-        background-color: #333 ;
-        border: 2px solid #121212;
+        background-color: $DM-bgForm ;
+        border: 2px solid $DM-Background;
     }
     textarea:focus, input:focus, select {
         color: $DM-Text
@@ -103,8 +103,6 @@ body.dark {
     /*------BUTTONS------*/
 
     button, a {
-        /*font-size: $MainTextM;
-        min-width: 155px;*/
         box-shadow: none;
 
         .darkMode {
@@ -134,7 +132,6 @@ body.dark {
         }
     }
     .btn--secondary {
-        /*background-color: #333;*/
         background-color: transparent;
         transition: all 0.2s ease-in-out;
         p {
@@ -196,8 +193,8 @@ body.dark {
 
     /*----------DROPDOWN-------*/
     .dropdown {
-        background: #333;
-        border: 1px solid #121212;
+        background: $DM-bgForm;
+        border: 1px solid $DM-Background;
         box-shadow: none;
         &:before, &:after {
             border-color: $WeuseGreen transparent;
@@ -215,7 +212,7 @@ body.dark {
         }
     }
     .table--keycode {
-        background-color: #00796B;
+        background-color: $DM-mainBtn;
     } 
     /*------DROP DOWN HA/DORMS------*/
 
@@ -235,7 +232,7 @@ body.dark {
 
     .form__content.design {
         .btn__design {
-        background-color:#00796B;
+        background-color:$DM-mainBtn;
         }
         .btn--top {
             background-color: $DM-Text;
@@ -249,33 +246,31 @@ body.dark {
         {
             box-shadow: inset 0 0 2000px rgba(184, 77, 69, .9);
             filter: blur(7px);
-            
         }
       }
       /*-----Warning modal---------*/
-.modalLogout {
-    background: $DM-Surface; 
+    .modalLogout {
+        background: $DM-Surface; 
+        }
+    #modalLogout {
+        border-color:#DB5F00;
+        
+        .btn--cancel {
+        background: #DB5F00;
+        color: $DM-Text;
+        }
+        .btn--confirm {
+        
+        background: #DB5F00;
+        color: $DM-Text;
+        }
+        .darkMode {
+            display: block;
+        }
+        .lightMode {
+            display: none;
+        }
     }
-#modalLogout {
-    border-color:#DB5F00;
-    
-    
-    .btn--cancel {
-    background: #DB5F00;
-    color: $DM-Text;
-    }
-    .btn--confirm {
-    
-    background: #DB5F00;
-    color: $DM-Text;
-    }
-    .darkMode {
-        display: block;
-    }
-    .lightMode {
-        display: none;
-    }
-}
 
 }
 

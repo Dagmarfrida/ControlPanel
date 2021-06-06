@@ -2,104 +2,103 @@
   /*----------TABLE----------*/
 
 .tableHeader {
-    display: flex;
-    justify-content: space-between;
-    font-weight: bold;
-    max-width: 1200px;
-    color: $HeadingColor;
-    font-weight: bold;
-    font-size: 14px;
-    margin-top: 50px;
-    margin-bottom: -10;
-    padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  max-width: 1200px;
+  color: $HeadingColor;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 50px;
+  margin-bottom: -10;
+  padding: 0 24px;
 }
-.table {
-    display: flex;
-    justify-content: space-between;
-   // background: $SurfaceColor;
-    border-radius: $bordersBig;
-    box-shadow: $boxShadow;
-    padding: 24px; 
-    max-width: 1200px;
-    color: $Whale;
-    align-items: center;
-    margin-top: 24px;
-    z-index: 2;
-    transform-style: preserve-3d;
 
+.table {
+  display: flex;
+  justify-content: space-between;
+  border-radius: $bordersBig;
+  box-shadow: $boxShadow;
+  padding: 24px; 
+  max-width: 1200px;
+  color: $Whale;
+  align-items: center;
+  margin-top: 24px;
+  z-index: 2;
+  transform-style: preserve-3d;
 }
+
 .table__cell {
-    min-width: 0;
-    max-width: 142px;
-    box-sizing: border-box;
-    flex-grow: 1;
-    width: 100%;
-    padding: 10px 5px;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 7px;
-  
-    &--icon{
+  min-width: 0;
+  max-width: 142px;
+  box-sizing: border-box;
+  flex-grow: 1;
+  width: 100%;
+  padding: 10px 5px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  &--icon {
     width: 80px;
     padding: 10px 0;
-   
-        span {
-            opacity: 0;
-        }
+
+    span {
+      opacity: 0;
     }
-    .darkMode {
-        display: none;
-    }
+  }
+  .darkMode {
+    display: none;
+  }
 }
 .table__cell.ratings, .table__cell.feedback {
-    max-width: 290px;
+  max-width: 290px;
 }
 .table__cell.ha {
-    max-width: 200px;
+  max-width: 200px;
 }
 .table__cell.item {
-    max-width: 250px;
+  max-width: 250px;
 }
 .btn--darkMode, .btn--darkMode1, .btn--darkMode2, .btn--darkMode3, .btn--darkMode4, .btn--darkMode5, .btn--darkMode6, .btn--darkMode7 {
-    display: none;
+  display: none;
 }
 
 /*------ FEEDBACK - TABLE ---------*/
 
-/*drop down made with help from https://codepen.io/Thibaut/pen/Jasci*/
+/*drop down (employees) made with help from https://codepen.io/Thibaut/pen/Jasci */
 #owner {
-    width: 200px;
-    height: 40px;
-    border-radius: $bordersButtons;
-    color: $Whale;
-    border: solid 2px $Whale;
-
+  width: 200px;
+  height: 40px;
+  border-radius: $bordersButtons;
+  color: $Whale;
+  border: solid 2px $Whale;
 }
+
 .container > .dropdown {
-    margin: 0 20px;
-    vertical-align: top;
-  }
+  margin: 0 20px;
+  vertical-align: top;
+}
   
-  .dropdown {
-    display: inline-block;
-    position: relative;
-    overflow: hidden;
-    height: 32px;
-    width: 150px;
-    background: $White;
-    border: 1px solid;
-    border-color: $Whale;
-    border-radius: $bordersButtons;
-    background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
-    background-image: -moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
-    background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
-    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.06));
-    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
-  }
-  
-  .dropdown:before, .dropdown:after {
+.dropdown {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  height: 32px;
+  width: 150px;
+  background: $White;
+  border: 1px solid;
+  border-color: $Whale;
+  border-radius: $bordersButtons;
+  background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+  background-image: -moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+  background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.06));
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+
+  &:before, &:after {
     content: '';
     position: absolute;
     z-index: 2;
@@ -112,17 +111,17 @@
     pointer-events: none;
   }
   
-  .dropdown:before {
+  &:before {
     border-bottom-style: solid;
     border-top: none;
   }
-  
-  .dropdown:after {
+
+  &:after {
     margin-top: 7px;
     border-top-style: solid;
     border-bottom: none;
   }
-  
+
   .dropdown-select {
     position: relative;
     width: 130%;
@@ -133,22 +132,21 @@
     font-size: $MainTextS;
     color: $Whale;
     text-shadow: 0 1px white;
-    background: #f2f2f2; /* Fallback for IE 8 */
-    background: rgba(0, 0, 0, 0) !important; /* "transparent" doesn't work with Opera */
+    background: #f2f2f2; /* For IE 8 */
+    background: rgba(0, 0, 0, 0) !important;
     border: 0;
     border-radius: 0;
     -webkit-appearance: none;
   }
-  
+
   .dropdown-select:focus {
     z-index: 3;
     width: 100%;
     color: $Whale;
     outline: 2px solid $WeuseGreen;
-    outline: 2px solid -webkit-focus-ring-color;
     outline-offset: -2px;
   }
-  
+
   .dropdown-select > option {
     margin: 3px;
     padding: 6px 8px;
@@ -157,160 +155,127 @@
     border-radius: 3px;
     cursor: pointer;
   }
-  
- 
-  
-  /*------- Drop down Dark Mode--------*/
-  .dropdown-dark {
-    background: $Whale;
-    border-color: #111111 #0a0a0a black;
-    background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.4));
-    background-image: -moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.4));
-    background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.4));
-    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4));
-    -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0 1px 1px rgba(0, 0, 0, 0.2);
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0 1px 1px rgba(0, 0, 0, 0.2);
-  }
-  
-  .dropdown-dark:before {
-    border-bottom-color: #aaa;
-  }
-  
-  .dropdown-dark:after {
-    border-top-color: #aaa;
-  }
-  
-  .dropdown-dark .dropdown-select {
-    color: #aaa;
-    text-shadow: 0 1px black;
-    background: #444;  /* Fallback for IE 8*/ 
-  }
-  
-  .dropdown-dark .dropdown-select:focus {
-    color: #ccc;
-  }
-  
-  .dropdown-dark .dropdown-select > option {
-    background: #444;
-    text-shadow: 0 1px rgba(0, 0, 0, 0.4);
-  }
-
+} 
   /*----------RADIO BUTTONS-----------*/
 
-  /*Code from: https://codepen.io/AbubakerSaeed/pen/QPOZdY*/
+  /*Code from: hhttps://codepen.io/aaroniker/pen/yqBVJY */
+/*$radioBorder: $Whale;
+$radioActive: $WeuseGreen;*/
 
-  $radioSize: 20px;
-  $radioBorder: $Whale;
-  $radioActive: $WeuseGreen;
-  
-  .radio {
-      margin: 12px 0;
+.radio {
+  margin: 12px 0;
+  display: block;
+  cursor: pointer;
+
+  input {
+    display: none;
+
+    & + span {
+      line-height: $radioSize;
+      height: $radioSize;
+      padding-left: $radioSize;
       display: block;
-      cursor: pointer;
-      input {
-          display: none;
-          & + span {
-              line-height: $radioSize;
-              height: $radioSize;
-              padding-left: $radioSize;
-              display: block;
-              position: relative;
-              &:not(:empty) {
-                  padding-left: $radioSize + 8;
-              }
-              &:before,
-              &:after {
-                  content: '';
-                  width: $radioSize;
-                  height: $radioSize;
-                  display: block;
-                  border-radius: 50%;
-                  left: 0;
-                  top: 0;
-                  position: absolute;
-              }
-              &:before {
-                  background: $radioBorder;
-                  transition: background .2s ease, transform .4s cubic-bezier(.175, .885, .32, 2);
-              }
-              &:after {
-                  background: #fff;
-                  transform: scale(.78);
-                  transition: transform .6s cubic-bezier(.175, .885, .32, 1.4);
-              }
-          }
-          &:checked + span {
-              &:before {
-                  transform: scale(1.04);
-                  background: $radioActive;
-              }
-              &:after {
-                  transform: scale(.4);
-                  transition: transform .3s ease;
-              }
-          }
-      }
-      &:hover {
-          input {
-              & + span {
-                  &:before {
-                      transform: scale(.92);
-                  }
-                  &:after {
-                      transform: scale(.74);
-                  }
-              }
-              &:checked + span {
-                  &:after {
-                      transform: scale(.4);
-                  }
-              }
-          }
-      }
-  }
+      position: relative;
 
-  .body__ha {
-    background-attachment: fixed;
-  }
-  .table.deactivate {
-    background: inherit;
-    
-    &::before
-    {
+      &:not(:empty) {
+        padding-left: $radioSize + 8;
+      }
+
+      &:before,
+      &:after {
         content: '';
-        position: absolute;
-        top: 0;
+        width: $radioSize;
+        height: $radioSize;
+        display: block;
+        border-radius: 50%;
         left: 0;
-        right: 0;
-        bottom: 0;
-        box-shadow: inset 0 0 2000px rgba(219, 166, 162, .9);
-        filter: blur(10px);
-        border-radius: $bordersBig;
+        top: 0;
+        position: absolute;
+      }
+
+      &:before {
+        background: $Whale;
+        transition: background .2s ease, transform .4s cubic-bezier(.175, .885, .32, 2);
+      }
+
+      &:after {
+        background: #fff;
+        transform: scale(.78);
+        transition: transform .6s cubic-bezier(.175, .885, .32, 1.4);
+      }
+    }
+    &:checked + span {
+      &:before {
+        transform: scale(1.04);
+        background: $radioActive;
+      }
+
+      &:after {
+        transform: scale(.4);
+        transition: transform .3s ease;
+      }
+    }
+    &:hover {
+      input {
+        & + span {
+          &:before {
+            transform: scale(.92);
+          }
+          
+          &:after {
+            transform: scale(.74);
+          }
+        }
+        &:checked + span {
+          &:after {
+            transform: scale(.4);
+          }
+        }
+      }
     }
   }
-  .deactive__top {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      height: 100%;
-      width: 100%;
+}
+.body__ha {
+  background-attachment: fixed;
+}
+.table.deactivate {
+  background: inherit;
+  
+  &::before {
+      content: '';
       position: absolute;
       top: 0;
       left: 0;
+      right: 0;
+      bottom: 0;
+      box-shadow: inset 0 0 2000px rgba(219, 166, 162, .9);
+      filter: blur(10px);
+      border-radius: $bordersBig;
   }
-  .text__deactivate {
-      p {
-       margin-top: 10px;   
-      font-size: $MainTextM;
-      font-weight: bold;
-    }
+}
+.deactive__top {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.text__deactivate {
+    p {
+      margin-top: 10px;   
+    font-size: $MainTextM;
+    font-weight: bold;
   }
+}
 
-  @media 
-  only screen and (max-width: 1550px) {
-    .table__cell {
-        max-width: 100px;
-    }      
+@media 
+only screen and (max-width: 1550px) {
+  .table__cell {
+      max-width: 100px;
+  }      
 
-  }
+}
  

@@ -5,7 +5,6 @@
     max-width: 1200px;
     display: none;
     justify-content: space-between;
-    /*padding: 10px;*/
     background-color: #EBEBEB;
     border-radius: 0 0 22px 22px;
     color: $Whale;
@@ -94,24 +93,29 @@
     display: flex;
     justify-content: space-between;
     width: 300px;
+
         span {
             opacity: 0;
         }
+
         p {
             width: 100px;
         }
+
         .color--green {
             background-color: $WeuseGreen20;
             padding: 3px;
             border-radius: 12px;
             line-height: 20px;
         }
+
         .color--red {
             background-color: $Fox20;
             padding: 3px;
             border-radius: 12px;
             line-height: 20px;
         }
+
         .color--yellow {
             background-color: $Lion20;
             padding: 3px;
@@ -126,6 +130,7 @@
     padding: 20px;
     align-items: center;
     justify-content: space-between;
+
     p {
         margin-right: 10px;
     }
@@ -136,6 +141,7 @@
 .table__dropdownLeft {
     width: 400px; 
 }
+
 .table__text {
     display: flex;
     padding: 10px 20px;
@@ -146,6 +152,7 @@
         .label {
             font-weight: bold;
         }
+
         p {
             margin-top: 10px;
         }
@@ -158,6 +165,7 @@
     padding: 10px 20px;
     border-radius: $bordersButtons;
     margin: 20px 10px 0 50px;
+
     span {
         font-weight: bold;
     }
@@ -168,6 +176,7 @@
     border-radius: 0 15px 0 15px;
     padding: 10px;
     margin: 35px 10px 0 0;
+    
     p {
         padding: 5px;
         font-size: $MainTextS;

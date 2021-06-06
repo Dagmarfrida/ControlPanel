@@ -208,8 +208,6 @@ body.dark .table__cell .lightMode {
   display: none;
 }
 body.dark button, body.dark a {
-  /*font-size: $MainTextM;
-  min-width: 155px;*/
   box-shadow: none;
 }
 body.dark button .darkMode, body.dark a .darkMode {
@@ -236,7 +234,6 @@ body.dark .btn--main:hover {
   box-shadow: 0 5px 18px rgba(15, 106, 54, 0.4);
 }
 body.dark .btn--secondary {
-  /*background-color: #333;*/
   background-color: transparent;
   transition: all 0.2s ease-in-out;
 }
@@ -424,12 +421,10 @@ nav ul li a span {
   position: absolute;
   top: 40%;
   right: 20px;
-  /*padding: 6px 8px 6px 16px;*/
   text-decoration: none;
   transform: translateY(-50%);
   transition: transform 0.4s;
   font-size: 24px;
-  /*display: block;*/
 }
 nav ul li a span.rotate {
   transform: translateY(-50%) rotate(-180deg);
@@ -532,7 +527,7 @@ nav ul li.active a {
 }
 
 /*------ FEEDBACK - TABLE ---------*/
-/*drop down made with help from https://codepen.io/Thibaut/pen/Jasci*/
+/*drop down (employees) made with help from https://codepen.io/Thibaut/pen/Jasci */
 #owner {
   width: 200px;
   height: 40px;
@@ -559,7 +554,6 @@ nav ul li.active a {
   background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.06));
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
 }
-
 .dropdown:before, .dropdown:after {
   content: "";
   position: absolute;
@@ -572,19 +566,16 @@ nav ul li.active a {
   border-color: #44546A transparent;
   pointer-events: none;
 }
-
 .dropdown:before {
   border-bottom-style: solid;
   border-top: none;
 }
-
 .dropdown:after {
   margin-top: 7px;
   border-top-style: solid;
   border-bottom: none;
 }
-
-.dropdown-select {
+.dropdown .dropdown-select {
   position: relative;
   width: 130%;
   margin: 0;
@@ -595,24 +586,20 @@ nav ul li.active a {
   color: #44546A;
   text-shadow: 0 1px white;
   background: #f2f2f2;
-  /* Fallback for IE 8 */
+  /* For IE 8 */
   background: rgba(0, 0, 0, 0) !important;
-  /* "transparent" doesn't work with Opera */
   border: 0;
   border-radius: 0;
   -webkit-appearance: none;
 }
-
-.dropdown-select:focus {
+.dropdown .dropdown-select:focus {
   z-index: 3;
   width: 100%;
   color: #44546A;
   outline: 2px solid #17a754;
-  outline: 2px solid -webkit-focus-ring-color;
   outline-offset: -2px;
 }
-
-.dropdown-select > option {
+.dropdown .dropdown-select > option {
   margin: 3px;
   padding: 6px 8px;
   text-shadow: none;
@@ -621,40 +608,10 @@ nav ul li.active a {
   cursor: pointer;
 }
 
-/*------- Drop down Dark Mode--------*/
-.dropdown-dark {
-  background: #44546A;
-  border-color: #111111 #0a0a0a black;
-  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4));
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0 1px 1px rgba(0, 0, 0, 0.2);
-}
-
-.dropdown-dark:before {
-  border-bottom-color: #aaa;
-}
-
-.dropdown-dark:after {
-  border-top-color: #aaa;
-}
-
-.dropdown-dark .dropdown-select {
-  color: #aaa;
-  text-shadow: 0 1px black;
-  background: #444;
-  /* Fallback for IE 8*/
-}
-
-.dropdown-dark .dropdown-select:focus {
-  color: #ccc;
-}
-
-.dropdown-dark .dropdown-select > option {
-  background: #444;
-  text-shadow: 0 1px rgba(0, 0, 0, 0.4);
-}
-
 /*----------RADIO BUTTONS-----------*/
-/*Code from: https://codepen.io/AbubakerSaeed/pen/QPOZdY*/
+/*Code from: hhttps://codepen.io/aaroniker/pen/yqBVJY */
+/*$radioBorder: $Whale;
+$radioActive: $WeuseGreen;*/
 .radio {
   margin: 12px 0;
   display: block;
@@ -700,13 +657,13 @@ nav ul li.active a {
   transform: scale(0.4);
   transition: transform 0.3s ease;
 }
-.radio:hover input + span:before {
+.radio input:hover input + span:before {
   transform: scale(0.92);
 }
-.radio:hover input + span:after {
+.radio input:hover input + span:after {
   transform: scale(0.74);
 }
-.radio:hover input:checked + span:after {
+.radio input:hover input:checked + span:after {
   transform: scale(0.4);
 }
 
@@ -800,7 +757,6 @@ nav ul li.active a {
 
 /*-------------PROFILE--------------*/
 .menu {
-  /*position: fixed;*/
   margin-right: 30px;
   top: 20px;
   right: 30px;
@@ -829,7 +785,6 @@ nav ul li.active a {
   padding: 10px 20px;
   background-color: #17a754;
   width: 200px;
-  /*box-sizing: 0 5px 25px rgba(0,0,0.1);*/
   border-radius: 22px;
   transition: 0.5sek;
   visibility: hidden;
@@ -850,10 +805,8 @@ nav ul li.active a {
 .menu__dropdown ul li {
   list-style: none;
   padding: 10px 0;
-  /*border-top: 1px solid rgba(0,0,0.05);*/
   display: flex;
   align-items: center;
-  /*justify-content: center;*/
 }
 .menu__dropdown ul li img {
   max-width: 20px;
@@ -1147,7 +1100,6 @@ form .password__details {
   transform: translate(-50%, -50%) scale(0);
   transition: 200ms ease-in-out;
   background: #f7f7f7;
-  /*box-shadow: $boxShadow;*/
   border-radius: 22px;
   width: 600px;
   max-width: 80%;
@@ -1283,7 +1235,6 @@ p a {
   transform: translate(-50%, -50%) scale(0);
   transition: 200ms ease-in-out;
   background: #f7f7f7;
-  /*box-shadow: $boxShadow;*/
   border-radius: 22px;
   width: 600px;
   max-width: 80%;
@@ -1354,7 +1305,6 @@ p a {
   max-width: 1200px;
   display: none;
   justify-content: space-between;
-  /*padding: 10px;*/
   background-color: #EBEBEB;
   border-radius: 0 0 22px 22px;
   color: #44546A;
@@ -2172,7 +2122,6 @@ body {
   font-family: objectivity;
   background-color: #f2f2f2;
   transition: background-color 0.3s linear;
-  /*overflow-x: hidden;*/
 }
 body h2 {
   text-transform: capitalize;

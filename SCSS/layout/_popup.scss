@@ -11,7 +11,6 @@
     transform: translate(-50%, -50%) scale(0);
     transition: 200ms ease-in-out;
     background: $SurfaceColor;
-    /*box-shadow: $boxShadow;*/
     border-radius: $bordersBig;
     width: 600px;
     max-width: 80%;
@@ -28,9 +27,11 @@
             display: none;
         }
     }
+
     &--input {
         width: calc(100% - 20px);
     }
+
     &__img {
         text-align: end;
         align-self: center;
@@ -39,8 +40,10 @@
 .form__content.modal__content {
     width: 600px;
     }
+
     p {
     margin-bottom: 0;
+
     a {
     color: $Fox; 
     }
@@ -49,6 +52,7 @@
 #textarea {
     height: 100%;
 }
+
 #categories {
     height: 45px;
     width: 100%;
@@ -63,11 +67,11 @@
 
     &:valid {
         border-radius: 1px solid $HeadingColor;
-    }
-    
+    }   
 }
+
 .modal.active {
-   transform: translate(-50%, -50%) scale(1); 
+    transform: translate(-50%, -50%) scale(1); 
 }
 
     .btn--close,  .close-button{
@@ -81,7 +85,6 @@
         box-shadow: none;
         float: right;
         max-width: 40px;
-
     }
 
 .btn--icon, close-button {
@@ -153,12 +156,12 @@
     transform: translate(-50%, -50%) scale(0);
     transition: 200ms ease-in-out;
     background: $SurfaceColor;
-    /*box-shadow: $boxShadow;*/
     border-radius: $bordersBig;
     width: 600px;
     max-width: 80%;
     z-index: 10;
 }
+
 #modalLogout {
     width: 306px;
     height: 270px;
@@ -166,17 +169,21 @@
     border-radius: 85px 0 85px 0;
     .logout__content {
         margin-top: 30px;
+
         p {
             padding: 20px;
         }
+
         .darkMode {
             display: none;
         }
     }
+
     .warning--img  {
         margin: auto auto;
         display: block;
     }
+
     .btn--cancel {
     border: none;
     width: 142px;
@@ -186,6 +193,7 @@
     border-radius: 0;
     margin-top: 15px;
     }
+
     .btn--confirm {
     box-shadow: none;
     border: none;
@@ -211,8 +219,7 @@
 
 #overlayLogout.active {
     opacity: 1;
-    pointer-events: all;
-       
+    pointer-events: all;      
 }
 
 .modalLogout.active {

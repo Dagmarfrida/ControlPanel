@@ -1,118 +1,127 @@
 @use '../abstracts/' as *;
 /*------------ SIDEMENU---------- */
-    .sidemenu-wrapper {
-        display: flex;
-        position: relative;
-        border-radius: 50%;
-        clear: both;
-        margin-left: 16px;
-    
-        img {
-            padding: 0 15px;
-            vertical-align: middle;
-        }
-        #logo {
-            width: 100px;
-            height: 100px;
-            padding: 0;
-            text-align: center;
-            margin: -50px 111px 50px;
-        }
-        .sidemenu {
-            position: fixed;
-            width: 322px;
-            height: 85vh;
-            background-color: $Whale;
-            border-radius: $bordersBig;
-        }
+.sidemenu-wrapper {
+    display: flex;
+    position: relative;
+    border-radius: 50%;
+    clear: both;
+    margin-left: 16px;
+
+    img {
+        padding: 0 15px;
+        vertical-align: middle;
     }
-        nav ul {
-            list-style: none;
-    
-            ul {
-                position: static;
-                display: none;
-    
-                li {
-                    line-height: 30px;
-                    border-top: none;
-                    
-                    a{
-                        font-size: $MainTextS;
-                        color: $White;
-                        padding-left: 100px;
-                    }
-                    a:hover {
-                        color: $White!important;
-                        background-color: $MenuHover!important;
-                    }
-                }
-            }    
-            .show--communities.show1 {
-                display: block;  
-            }
-            .show--design.show2 {
-                display: block;  
-            }
-            .show--manage.show3 {
-                display: block;  
-            }
-            li {
-                line-height: 50px;
-        
-                a {
-                position: relative;
+
+    #logo {
+        width: 100px;
+        height: 100px;
+        padding: 0;
+        text-align: center;
+        margin: -50px 111px 50px;
+    }
+
+    .sidemenu {
+        position: fixed;
+        width: 322px;
+        height: 85vh;
+        background-color: $Whale;
+        border-radius: $bordersBig;
+    }
+}
+nav ul {
+    list-style: none;
+
+    ul {
+        position: static;
+        display: none;
+
+        li {
+            line-height: 30px;
+            border-top: none;
+            
+            a{
+                font-size: $MainTextS;
                 color: $White;
-                display: block;
-                padding-left: 30px;
-                text-decoration: none;
-                border-left: 4px solid transparent;
-                font-size: $MainTextM;
-                width: 100%;
-    
-                    span {
-                        position: absolute;
-                        top: 40%;
-                        right: 20px;
-                        /*padding: 6px 8px 6px 16px;*/
-                        text-decoration: none;
-                        transform: translateY(-50% );
-                        transition: transform 0.4s;
-                        font-size:  $MainTextL;
-                        /*display: block;*/
-                        }
-                    span.rotate {
-                        transform: translateY(-50%) rotate(-180deg);
-                }
-                }
-                a:hover {
-                    background: $MenuHover;
-                }
+                padding-left: 100px;
             }
-            li.active ul li a {
-                background: $MenuHover;
-                color: $White;
-                border-left-color: transparent;
-            }       
-           
-            li.active a {
-                color: $White;
-                background: $MenuHover;
-                border-left-color: $Lion;
+
+            a:hover {
+                color: $White!important;
+                background-color: $MenuHover!important;
             }
         }
-        .fa-sort-down {
-            color: $Lion;
-        }
-        .fa-sort-down:hover {
-            color: $Lion;
-        }
-        #btn__logout {
-            position: absolute;
-            display: inline-block;
-            bottom: 0;
-            margin-bottom: 40px;
+    }    
+
+    .show--communities.show1 {
+        display: block;  
+    }
+
+    .show--design.show2 {
+        display: block;  
+    }
+
+    .show--manage.show3 {
+        display: block;  
+    }
+
+    li {
+        line-height: 50px;
+
+        a {
+            position: relative;
+            color: $White;
+            display: block;
+            padding-left: 30px;
+            text-decoration: none;
+            border-left: 4px solid transparent;
+            font-size: $MainTextM;
             width: 100%;
+
+            span {
+                position: absolute;
+                top: 40%;
+                right: 20px;
+                text-decoration: none;
+                transform: translateY(-50% );
+                transition: transform 0.4s;
+                font-size:  $MainTextL;
+            }
+
+            span.rotate {
+                transform: translateY(-50%) rotate(-180deg);
+            }
         }
+            a:hover {
+                background: $MenuHover;
+            }
+    }
+
+    li.active ul li a {
+        background: $MenuHover;
+        color: $White;
+        border-left-color: transparent;
+    }       
+    
+    li.active a {
+        color: $White;
+        background: $MenuHover;
+        border-left-color: $Lion;
+    }
+}
+.fa-sort-down {
+    color: $Lion;
+}
+
+.fa-sort-down:hover {
+    color: $Lion;
+}
+
+#btn__logout {
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    margin-bottom: 40px;
+    width: 100%;
+}
 
         
