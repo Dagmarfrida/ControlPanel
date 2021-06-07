@@ -172,6 +172,7 @@ body.dark .table--contact {
 body.dark .form__content .form input {
   background-color: #333;
   border: 2px solid #121212;
+  color: #E8E8E8;
 }
 body.dark .form__content .form__details {
   color: #E8E8E8;
