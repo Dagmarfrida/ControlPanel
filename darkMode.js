@@ -66,7 +66,7 @@ function darkTakki(){
                     break;
                     case 'S':
                         if(x == 'false'){
-                            color = "#CCFAFE";
+                            color = "#D1EDDD";
                         }
                         else{
                             color = "#0E9F7A";
