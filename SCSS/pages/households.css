@@ -28,15 +28,15 @@ body.dark .toggleDark__checkboxLabel {
   background: radial-gradient(circle, #333333 0%, #1a1a1a 84%);
 }
 body.dark ::-moz-placeholder {
-  color: #E8E8E8;
+  color: #f7f7f7;
   font-weight: normal;
 }
 body.dark :-ms-input-placeholder {
-  color: #E8E8E8;
+  color: #f7f7f7;
   font-weight: normal;
 }
 body.dark h2, body.dark h3, body.dark h4, body.dark h5, body.dark p, body.dark ::placeholder, body.dark .text--large.design, body.dark .text--medium.design, body.dark .text--small.design, body.dark .btn__wrapper .text--small.design {
-  color: #E8E8E8;
+  color: #f7f7f7;
   font-weight: normal;
 }
 body.dark .sidemenu-wrapper nav ul li a:hover {
@@ -52,15 +52,15 @@ body.dark .sidemenu-wrapper nav ul ul li a:hover {
   background: rgba(51, 51, 51, 0.6) !important;
 }
 body.dark .breadcrumb, body.dark li + li:before, body.dark .basic-table, body.dark .listLabel th, body.dark .radio, body.dark .dropdown-select {
-  color: #E8E8E8;
+  color: #f7f7f7;
   text-shadow: none;
 }
 body.dark li a {
-  color: #E8E8E8;
+  color: #f7f7f7;
   text-decoration: none;
 }
 body.dark li ahover {
-  color: #E8E8E8;
+  color: #f7f7f7;
   text-decoration: underline;
 }
 body.dark .sidemenu, body.dark .listRow, body.dark .quick__box, body.dark .latest__box, body.dark .new__box, body.dark .form__content, body.dark .table__dropDown1.dark1, body.dark .table__dropDown2.dark2, body.dark .table__dropDown3.dark3, body.dark .table__dropDown4.dark4, body.dark .table__dropDown5.dark5, body.dark .table__dropDown6.dark6, body.dark .table__dropDown7.dark7 {
@@ -74,10 +74,10 @@ body.dark .table--contact {
 body.dark .form__content .form input {
   background-color: #333;
   border: 2px solid #121212;
-  color: #E8E8E8;
+  color: #f7f7f7;
 }
 body.dark .form__content .form__details {
-  color: #E8E8E8;
+  color: #f7f7f7;
 }
 body.dark .form__content .form__details .input--small a {
   color: #17a754;
@@ -91,7 +91,7 @@ body.dark .form__content p a {
 }
 body.dark .form__content .btn--save input {
   background-color: #50869A;
-  color: #E8E8E8;
+  color: #f7f7f7;
   border: none;
 }
 body.dark .form__content .btn--save input:hover {
@@ -102,7 +102,7 @@ body.dark #textarea, body.dark #categories {
   border: 2px solid #121212;
 }
 body.dark textarea:focus, body.dark input:focus, body.dark select {
-  color: #E8E8E8;
+  color: #f7f7f7;
 }
 body.dark .table__cell .darkMode {
   display: unset;
@@ -126,11 +126,11 @@ body.dark .btn--lightMode, body.dark .btn--lightMode1, body.dark .btn--lightMode
   display: none;
 }
 body.dark .btn--close, body.dark .close-button {
-  color: #E8E8E8;
+  color: #f7f7f7;
 }
 body.dark .btn--main {
   background-color: #17a754;
-  color: #E8E8E8;
+  color: #f7f7f7;
   transition: all 0.2s ease-in-out;
 }
 body.dark .btn--main:hover {
@@ -148,7 +148,7 @@ body.dark .btn--secondary:hover {
 }
 body.dark .btn--delete {
   background-color: #DD2C00;
-  color: #E8E8E8;
+  color: #f7f7f7;
   transition: all 0.2s ease-in-out;
 }
 body.dark .btn--delete:hover {
@@ -160,7 +160,7 @@ body.dark .search input {
 body.dark .search input[type=text] {
   background: #333333;
   background: radial-gradient(circle, #333333 0%, #1a1a1a 84%);
-  color: #E8E8E8;
+  color: #f7f7f7;
 }
 body.dark .totals__numbers {
   background-image: linear-gradient(to right bottom, #00796b, #258a7d, #3c9b8f, #51ada2, #65bfb5);
@@ -179,7 +179,7 @@ body.dark .latest__listrow {
   background-image: linear-gradient(to right, #02a77c, #059e77, #089571, #0b8d6c, #0e8466);
 }
 body.dark .latest__listrow a {
-  color: #E8E8E8;
+  color: #f7f7f7;
 }
 body.dark .plusIcon .darkMode {
   display: unset;
@@ -221,7 +221,7 @@ body.dark .form__content.design .btn__design {
   background-color: #00796B;
 }
 body.dark .form__content.design .btn--top {
-  background-color: #E8E8E8;
+  background-color: #f7f7f7;
 }
 body.dark .table.deactivate {
   color: #44546A;
@@ -238,11 +238,11 @@ body.dark #modalLogout {
 }
 body.dark #modalLogout .btn--cancel {
   background: #DB5F00;
-  color: #E8E8E8;
+  color: #f7f7f7;
 }
 body.dark #modalLogout .btn--confirm {
   background: #DB5F00;
-  color: #E8E8E8;
+  color: #f7f7f7;
 }
 body.dark #modalLogout .darkMode {
   display: block;
