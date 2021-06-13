@@ -13,9 +13,9 @@ const enableDarkMode = () => {
 };
 
 const disableDarkMode = () => {
-    //add class dark mode to body
+    //remove class dark mode
     document.body.classList.remove('dark')
-    //update darkmode in localStorage
+    //update in localStorage
     localStorage.setItem('darkMode', 'null');
 };
 
@@ -41,54 +41,53 @@ function darkTakki(){
     }
 
 //RADIO BUTTONS COLORS AND DARK MODE 
-        //console.log(x);
-        function changeColour(value, id)
+    function changeColour(value, id)
+        {
+            var color = document.getElementById(id).style.backgroundColor;
+            let x = darkTakki();
+            switch(value)
             {
-                var color = document.getElementById(id).style.backgroundColor;
-                let x = darkTakki();
-                switch(value)
-                {
-                    case 'NAN':
-                        if(x == 'false'){
-                            color = "#FEF2CC";
-                        }
-                        else{
-                            color = "#AB47BC";
-                        }
-                    break;
-                    case 'IP':
-                        if(x == 'false'){
-                            color = "#CCFAFE";
-                        }
-                        else{
-                            color = "#3D5AFE";
-                        }
-                    break;
-                    case 'S':
-                        if(x == 'false'){
-                            color = "#D1EDDD";
-                        }
-                        else{
-                            color = "#0E9F7A";
-                        }
-                    break;
-                    case 'D':
-                        if(x == 'false'){
-                            color = "#F7F7F7";
-                        }
-                        else{
-                            color = "#333";
-                        }
-                    break;
-                    default:
-                    if(x == 'true'){
-                        color = "#333";}
-                    else 
+                case 'NAN':
+                    if(x == 'false'){
+                        color = "#FEF2CC";
+                    }
+                    else{
+                        color = "#9C27B0";
+                    }
+                break;
+                case 'IP':
+                    if(x == 'false'){
+                        color = "#CCFAFE";
+                    }
+                    else{
+                        color = "#3D5AFE";
+                    }
+                break;
+                case 'S':
+                    if(x == 'false'){
+                        color = "#D1EDDD";
+                    }
+                    else{
+                        color = "#00796B";
+                    }
+                break;
+                case 'D':
+                    if(x == 'false'){
                         color = "#F7F7F7";
-                }
-                document.getElementById(id).style.backgroundColor = color;
-                
+                    }
+                    else{
+                        color = "#333";
+                    }
+                break;
+                default:
+                if(x == 'true'){
+                    color = "#333";}
+                else 
+                    color = "#F7F7F7";
             }
+            document.getElementById(id).style.backgroundColor = color;
+            
+        }
 
             
 
